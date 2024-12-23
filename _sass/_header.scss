@@ -1,0 +1,280 @@
+header {
+  padding: 24px 0px;
+  position: relative;
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      height: 32px;
+    }
+  }
+
+  .navbar {
+    @include center-flex;
+    justify-content: space-between;
+    position: relative;
+
+    .nav-links {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      @include font-headline-2-bold;
+      align-items: center;
+
+      .item {
+        position: relative;
+        a {
+          color: $gray10;
+          text-decoration: none;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: $gray10;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      .contact-item {
+        display: none;
+      }
+    }
+    .contact-link {
+      display: block;
+
+      .contact {
+        height: 48px;
+      }
+    }
+    .menu-logo-container {
+      display: none;
+      width: 100%;
+      padding: 24px $spacing;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18.4px;
+    height: 16.4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    span {
+      width: 100%;
+      height: 2px;
+      background: $gray10;
+      transition: all 0.3s ease;
+      border-radius: 1px;
+      transform-origin: center;
+    }
+
+    &.active {
+      span {
+        &:first-child {
+          transform: translateY(7px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.home-header {
+  background: $primary-color;
+  .navbar {
+    .nav-links {
+      .item {
+        a {
+          color: $white;
+        }
+        &::after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .hamburger-menu {
+    span {
+      background: $white;
+    }
+    &.active {
+      span {
+        background: $gray10;
+      }
+    }
+  }
+}
+.default-header {
+  background: $white;
+}
+
+@include breakpoint(desktop-small) {
+  header {
+    .navbar {
+      .menu-logo-container {
+        display: flex;
+      }
+      .hamburger-menu {
+        display: flex;
+      }
+
+      > .contact-link {
+        display: none;
+      }
+
+      .nav-links {
+        position: fixed;
+        gap: 0px;
+        left: 0;
+        right: 0;
+        top: -100%;
+        transform: none;
+        width: 100%;
+        height: auto;
+        background: $white;
+        padding: 0;
+        flex-direction: column;
+        transition: top 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        align-items: flex-start;
+        &.active {
+          top: 0px;
+        }
+
+        .item {
+          width: 100%;
+
+          a {
+            @include font-body-2-normal---regular;
+            color: $gray8;
+            padding: 16px $spacing;
+            display: block;
+
+            &.active {
+              color: #2272eb;
+            }
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+
+        .contact-item {
+          display: block;
+        }
+      }
+
+      .contact-link {
+        display: none;
+      }
+    }
+  }
+
+  .home-header .nav-links {
+    background: $primary-color;
+  }
+
+  .home-header {
+    .navbar {
+      .nav-links {
+        .item {
+          a {
+            color: $gray10;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  header {
+    .logo-link {
+      .logo {
+        height: 25px;
+      }
+    }
+    .navbar {
+      .nav-links {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar {
+  .nav-links {
+    .item {
+      a {
+        &.active {
+          @media screen and (min-width: 1024px) {
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              bottom: -2px;
+              left: 50%;
+              transform: translateX(-50%);
+              background-color: $gray10;
+              transition: width 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:hover ~ .item a.active::after {
+        width: 0;
+      }
+      &:hover a.active::after {
+        width: 0;
+      }
+    }
+  }
+}
+
+.home-header {
+  .navbar {
+    .nav-links {
+      .item {
+        a.active {
+          @media screen and (min-width: 1024px) {
+            &::after {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

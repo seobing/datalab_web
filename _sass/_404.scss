@@ -1,0 +1,40 @@
+.error-404-container {
+  @include center-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+
+  h1 {
+    @include font-display-1-bold;
+    color: $gray10;
+    margin-bottom: 12px;
+    text-align: center;
+
+    @include breakpoint(mobile) {
+      font-size: clamp(32px, 8vw, 56px);
+    }
+  }
+
+  p {
+    @include font-headline-2-regular;
+    color: $gray8;
+    margin-bottom: 32px;
+    text-align: center;
+
+    @include breakpoint(mobile) {
+      font-size: clamp(15px, 4vw, 17px);
+      margin-bottom: 24px;
+    }
+  }
+
+  .go-home-button {
+    @include border-button($gray10);
+
+    @include breakpoint(mobile) {
+      padding: 8px 24px;
+      font-size: 14px;
+    }
+  }
+}

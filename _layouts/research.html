@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="research-detail container">
+  <article class="research-content">
+    <div class="research-entry">
+      <header class="research-header">
+        <h2>{{ page.title }}</h2>
+        <div class="research-meta">
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}"
+            >{{ page.date | date: "%Y.%m.%d" }}</time
+          >
+          {% if page.author %}
+          <span class="author">{{ page.author }}</span>
+          {% endif %}
+        </div>
+      </header>
+
+      <div class="research-body">{{ content }}</div>
+
+      <div class="research-navigation">
+        <div class="nav-links">
+          {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="prev">‹ Prev</a>
+          {% endif %}
+
+          <span class="separator">|</span>
+
+          {% if page.next %}
+          <a href="{{ page.next.url }}" class="next">Next ›</a>
+          {% endif %}
+        </div>
+
+        <a href="/research" class="back">Back to list</a>
+      </div>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,313 @@
+.research-container {
+  padding: 64px 100px;
+
+  .page-title {
+    @include font-display-2-medium;
+    margin-bottom: 40px;
+    color: $gray10;
+    @include breakpoint(mobile) {
+      @include font-title-3-medium;
+      margin-bottom: 16px;
+    }
+  }
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .research-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+    // 그림자 효과 추가
+    padding: 12px;
+
+    &.hidden {
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .item-image {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background-color: $gray2;
+      border: 1px solid $gray3;
+      //   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+      img {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
+        backface-visibility: hidden;
+      }
+
+      .alt-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray2;
+        // background-color: #f5f5f5;
+        color: $gray10;
+        @include font-title-2-medium;
+      }
+    }
+
+    .item-info {
+      padding: 16px 0;
+      transform: translateZ(0);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      h3 {
+        @include font-heading-1-medium;
+        color: $gray10;
+        margin-bottom: 4px;
+        font-family: $font-stack;
+      }
+
+      p {
+        @include font-body-2-reading---regular;
+        color: $gray7;
+        font-family: $font-stack;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: 32px 20px;
+
+    .research-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+}
+
+// 모달 스타일
+.research-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // ... (나머지 모달 스타일은 gallery.scss와 동일)
+}
+
+.research-detail {
+  padding: 64px 100px;
+
+  .page-title {
+    @include font-display-2-medium;
+    margin-bottom: 40px;
+    color: $gray10;
+  }
+
+  .research-content {
+    margin: 0 auto;
+  }
+
+  .research-entry {
+    .research-header {
+      margin-bottom: 32px;
+      padding: 26px 0;
+      border-top: 2px solid $gray10;
+      border-bottom: 1px solid $gray5;
+
+      h2 {
+        @include font-title-3-medium;
+        color: $gray10;
+        margin-bottom: 8px;
+      }
+
+      .research-meta {
+        display: flex;
+        gap: 16px;
+        color: $gray7;
+        @include font-body-1-normal---medium;
+
+        time {
+          color: inherit;
+        }
+
+        .author {
+          &::before {
+            content: "|";
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .research-body {
+    color: $gray9;
+
+    // 강조 텍스트(제목) 다음에 오는 리스트의 간격 조정
+    strong + ul,
+    strong + ol {
+      margin-top: 4px; // 제목과 리스트 사이 간격을 줄임
+      margin-bottom: 24px; // 리스트와 다음 요소 사이 간격
+    }
+
+    // 리스트 기본 스타일 조정
+    ul,
+    ol {
+      margin-top: 24px; // 다른 요소 다음에 오는 리스트의 기본 간격
+      margin-bottom: 24px;
+
+      li {
+        list-style-position: outside;
+        margin-left: 15px;
+        margin-bottom: 8px; // 리스트 아이템 간 간격
+
+        &:last-child {
+          margin-bottom: 0; // 마지막 아이템의 아래 여백 제거
+        }
+      }
+    }
+
+    // 강조 텍스트(제목) 스타일
+    strong {
+      display: block; // 블록 레벨로 변경하여 줄바꿈 보장
+      margin-top: 24px; // 위 요소와의 간격
+      margin-bottom: 0; // 아래 요소와의 간격 제거
+    }
+
+    p {
+      @include font-body-1-reading---regular;
+      margin-bottom: 24px;
+      text-align: justify;
+      overflow-wrap: break-word;
+      text-justify: inter-word;
+      hyphens: auto;
+      word-spacing: normal;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 32px 0;
+      border-radius: 8px;
+    }
+
+    h3 {
+      @include font-title-2-bold;
+      color: $gray10;
+      margin: 48px 0 24px;
+    }
+
+    dl {
+      dt {
+        @include font-body-1-normal---bold;
+        color: $gray9;
+        margin-bottom: 8px;
+      }
+
+      dd {
+        @include font-body-1-reading---regular;
+        color: $gray8;
+        margin-bottom: 16px;
+        margin-left: 0;
+      }
+    }
+
+    a {
+      word-break: break-all;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .research-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    padding: 16px 0;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: $gray10;
+
+      .separator {
+        color: $gray10;
+      }
+
+      a {
+        @include font-body-1-normal---medium;
+        color: $gray10;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $gray6;
+        }
+      }
+    }
+
+    .back {
+      @include font-body-1-normal---medium;
+      color: $gray10;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $gray6;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: 32px 20px;
+
+    .research-navigation {
+      .nav-links {
+        padding-left: 8px;
+      }
+
+      .back {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  @include breakpoint(mobile) {
+    p {
+      text-align: left;
+      hyphens: none;
+    }
+  }
+}

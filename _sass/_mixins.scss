@@ -1,0 +1,583 @@
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $point == desktop-small {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin font-display-1-bold {
+  // Display 1/Bold //
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 56px;
+  /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+   you can change 5vw value
+    font-size:clamp(44.8px, 5vw, 56px); */
+  line-height: 128.6%;
+  text-decoration: none;
+  letter-spacing: -3.2%;
+}
+
+@mixin font-display-1-medium {
+  // Display 1/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 56px;
+  /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+   you can change 5vw value
+    font-size:clamp(44.8px, 5vw, 56px); */
+  line-height: 128.6%;
+  text-decoration: none;
+  letter-spacing: -3.2%;
+}
+
+@mixin font-display-1-regular {
+  // Display 1/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 56px;
+  /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+   you can change 5vw value
+    font-size:clamp(44.8px, 5vw, 56px); */
+  line-height: 128.6%;
+  text-decoration: none;
+  letter-spacing: -3.2%;
+}
+
+@mixin font-display-2-regular {
+  // Display 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+}
+
+@mixin font-display-2-bold {
+  // Display 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+}
+
+@mixin font-display-2-medium {
+  // Display 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+}
+
+@mixin font-title-1-bold {
+  // Title 1/Bold //
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.7%;
+}
+
+@mixin font-title-1-medium {
+  // Title 1/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.7%;
+}
+
+@mixin font-title-1-regular {
+  // Title 1/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.7%;
+}
+
+@mixin font-title-2-bold {
+  // Title 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+}
+
+@mixin font-title-2-medium {
+  // Title 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+}
+
+@mixin font-title-2-regular {
+  // Title 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+}
+
+@mixin font-title-3-bold {
+  // Title 3/Bold //
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+}
+
+@mixin font-title-3-medium {
+  // Title 3/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+}
+
+@mixin font-title-3-regular {
+  // Title 3/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+}
+
+@mixin font-heading-1-bold {
+  // Heading 1/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 136.4%;
+  text-decoration: none;
+  letter-spacing: -1.9%;
+}
+
+@mixin font-heading-1-medium {
+  // Heading 1/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 136.4%;
+  text-decoration: none;
+  letter-spacing: -1.9%;
+}
+
+@mixin font-heading-1-regular {
+  // Heading 1/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 136.4%;
+  text-decoration: none;
+  letter-spacing: -1.9%;
+}
+
+@mixin font-heading-2-bold {
+  // Heading 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+}
+
+@mixin font-heading-2-medium {
+  // Heading 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+}
+
+@mixin font-heading-2-regular {
+  // Heading 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+}
+
+@mixin font-headline-1-bold {
+  // Headline 1/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 144.5%;
+  text-decoration: none;
+  letter-spacing: -0%;
+}
+
+@mixin font-headline-1-medium {
+  // Headline 1/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.5%;
+  text-decoration: none;
+  letter-spacing: -0%;
+}
+
+@mixin font-headline-1-regular {
+  // Headline 1/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144.5%;
+  text-decoration: none;
+  letter-spacing: -0%;
+}
+
+@mixin font-headline-2-bold {
+  // Headline 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-headline-2-medium {
+  // Headline 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-headline-2-regular {
+  // Headline 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-body-1-normal---regular {
+  // Body 1/Normal - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-1-normal---medium {
+  // Body 1/Normal - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-1-normal---bold {
+  // Body 1/Normal - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-1-reading---regular {
+  // Body 1/Reading - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-1-reading---medium {
+  // Body 1/Reading - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-1-reading---bold {
+  // Body 1/Reading - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+
+@mixin font-body-2-normal---regular {
+  // Body 2/Normal - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-body-2-normal---medium {
+  // Body 2/Normal - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-body-2-normal---bold {
+  // Body 2/Normal - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-body-2-reading---regular {
+  // Body 2/Reading - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-body-2-reading---medium {
+  // Body 2/Reading - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-body-2-reading---bold {
+  // Body 2/Reading - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 160%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+
+@mixin font-label-1-normal---bold {
+  // Label 1/Normal - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 142.9%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-1-normal---medium {
+  // Label 1/Normal - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.9%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-1-normal---regular {
+  // Label 1/Normal - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 142.9%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-1-reading---bold {
+  // Label 1/Reading - Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157.1%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-1-reading---medium {
+  // Label 1/Reading - Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 157.1%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-1-reading---regular {
+  // Label 1/Reading - Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157.1%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+
+@mixin font-label-2-regular {
+  // Label 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138.5%;
+  text-decoration: none;
+  letter-spacing: 1.9%;
+}
+
+@mixin font-label-2-medium {
+  // Label 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 138.5%;
+  text-decoration: none;
+  letter-spacing: 1.9%;
+}
+
+@mixin font-label-2-bold {
+  // Label 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 138.5%;
+  text-decoration: none;
+  letter-spacing: 1.9%;
+}
+
+@mixin font-caption-1-regular {
+  // Caption 1/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: 2.5%;
+}
+
+@mixin font-caption-1-medium {
+  // Caption 1/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: 2.5%;
+}
+
+@mixin font-caption-1-bold {
+  // Caption 1/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: 2.5%;
+}
+
+@mixin font-caption-2-regular {
+  // Caption 2/Regular //
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 127.3%;
+  text-decoration: none;
+  letter-spacing: 3.1%;
+}
+
+@mixin font-caption-2-medium {
+  // Caption 2/Medium //
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 127.3%;
+  text-decoration: none;
+  letter-spacing: 3.1%;
+}
+
+@mixin font-caption-2-bold {
+  // Caption 2/Bold //
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 127.3%;
+  text-decoration: none;
+  letter-spacing: 3.1%;
+}
+
+@mixin border-button($color) {
+  border: 1px solid $color;
+  border-radius: 24px;
+  padding: 10px 32px;
+  color: $color;
+  cursor: pointer;
+  @include font-body-2-normal---bold();
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: rgba($color, 0.15);
+  }
+}

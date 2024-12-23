@@ -1,0 +1,56 @@
+<header
+  class="{% if page.url == '/' %}home-header{% else %}default-header{% endif %} header"
+>
+  <nav class="navbar container">
+    <a href="/" class="logo-link">
+      <img
+        src="{% if page.url == '/' %}/assets/images/logos/logo-white.png{% else %}/assets/images/logos/logo-black.png{% endif %}"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="hamburger-menu" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <div class="menu-logo-container">
+        <a href="/" class="logo-link">
+          <img
+            src="/assets/images/logos/logo-black.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="hamburger-menu" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <li class="item"><a href="/research">Research</a></li>
+      <li class="item"><a href="/professor">Professor</a></li>
+      <li class="item"><a href="/students">Students</a></li>
+      <li class="item"><a href="/publication">Publication</a></li>
+      <li class="item"><a href="/courses">Courses</a></li>
+      <li class="item"><a href="/gallery">Gallery</a></li>
+      <!-- <li class="item contact-item">
+        <a href="mailto:gangman@dongguk.edu" class="contact-link">
+          <img
+            src="/assets/images/icons/mail-black.png"
+            class="contact"
+            alt="contact"
+          />
+        </a>
+      </li> -->
+    </ul>
+    <a href="mailto:gangman@dongguk.edu" class="contact-link">
+      <img
+        src="{% if page.url == '/' %}/assets/images/icons/mail-white.png{% else %}/assets/images/icons/mail-black.png{% endif %}"
+        class="contact"
+        alt="contact"
+      />
+    </a>
+  </nav>
+</header>

@@ -1,0 +1,28 @@
+@include breakpoint(tablet) {
+  body {
+    font-size: 14px;
+  }
+
+  header .logo {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 $spacing;
+  }
+}
+
+@include breakpoint(mobile) {
+  .container {
+    max-width: 100%;
+    padding: 0px $spacing;
+  }
+}
+
+@include breakpoint(desktop-small) {
+  .container {
+    max-width: 100%;
+    padding: 0px $spacing;
+  }
+}

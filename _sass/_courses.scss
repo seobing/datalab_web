@@ -1,0 +1,120 @@
+.courses-container {
+  padding-left: 100px;
+  padding-top: 64px;
+
+  .page-title {
+    @include font-display-2-medium;
+    margin-bottom: 40px;
+  }
+
+  .year-section {
+    margin-bottom: 20px;
+
+    .courses-grid {
+      display: grid;
+      border-left: 1px solid #d1d6db;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-left: 10px;
+      padding-left: 18px;
+      opacity: 1;
+      max-height: 1000px;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: top;
+
+      &.collapsed {
+        max-height: 0;
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        gap: 0;
+      }
+    }
+
+    .year-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      @include font-heading-1-bold;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("/assets/images/icons/icon-arrow-down-mono.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #2272eb;
+        margin-right: 8px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &.collapsed::before {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .semester-card {
+      background: $gray0;
+      border: 1px solid $gray5;
+      border-radius: 8px;
+      padding: 20px;
+      border-radius: 8px;
+
+      .semester {
+        color: $gray7;
+
+        margin-bottom: 8px;
+        @include font-label-2-regular;
+      }
+
+      .course-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          color: $gray10;
+          margin-bottom: 8px;
+
+          @include font-body-1-reading---medium;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(desktop-small) {
+  .courses-container {
+    padding: 32px 20px;
+
+    .page-title {
+      @include font-title-3-medium;
+      margin-bottom: 28px;
+    }
+
+    .courses-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .year-toggle {
+      @include font-heading-2-bold;
+    }
+  }
+}

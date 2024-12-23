@@ -1,0 +1,577 @@
+- category: Journals
+  link: https://ieeexplore.ieee.org/abstract/document/10574232
+  title:
+    S. Ilkhomjon, S. Peng, S. Siet, D. Kim, D. Park and G. Yi, "Algorithm for
+    Mining Maximal Balanced Bicliques using Formal Concept Analysis," IEEE Access,
+    2024
+  year: "2024"
+- category: Journals
+  link: https://doi.org/10.1007/s12539-024-00618-x
+  title:
+    'Mingeun Ji, Yejin Kan, Dongyeon Kim, Seungmin Lee, and Gangman Yi, "DeepPI:
+    alignment-free analysis of flexible length proteins based on deep learning and
+    image generator," Interdisciplinary Sciences: Computational Life Sciences, vol.
+    16, pp 1-12 2024'
+  year: "2024"
+- category: Journals
+  link: https://peerj.com/articles/cs-1921/
+  title:
+    'Bushra AA, Kim D, Kan Y, Yi G, "AutoSCAN: automatic detection of DBSCAN
+    parameters and efficient clustering of data in overlapping density regions," PeerJ
+    Computer Science, 10:e1921, 2024'
+  year: "2024"
+- category: Journals
+  link: https://iopscience.iop.org/article/10.1088/2632-2153/ad113b
+  title:
+    'Dongyeon Kim, Yejin Kan, Seungmin Lee, and Gangman Yi, "Parameter-Free Basis
+    Allocation for Efficient Multiple Metric Learning," Machine Learning: Science
+    and Technology, 2023'
+  year: "2023"
+- category: Journals
+  link: https://doi.org/10.1016/j.heliyon.2023.e20931
+  title:
+    Dongyeon Kim, Yejin Kan, YooJin Aum, Wanhee Lee, and Gangman Yi, "Hotspots-based
+    patrol route optimization algorithm for smart policing," Heliyon, Volume 9, Issue
+    10, 2023
+  year: "2023"
+- category: Journals
+  link: https://doi.org/10.7717/peerj.14186
+  title:
+    'F. D. Midekso and G. Yi, "RFfiller: a robust and fast statistical algorithm
+    for gap filling in draft genomes," PeerJ, 10:e14186, 2022'
+  year: "2022"
+- category: Journals
+  link: https://doi.org/10.3390/ijms231911484
+  title:
+    'Mingeun Ji, Yejin Kan, Dongyeon Kim, Jaehee Jung, and Gangman Yi, "cPlot:
+    Contig-Plotting Visualization for the Analysis of Short-Read Nucleotide Sequence
+    Alignments,"  Int. J. Mol. Sci., 23(19):11484, 2022'
+  year: "2022"
+- category: Journals
+  link: https://doi.org/10.7717/peerj.12707
+  title:
+    'Ejigu GF, Yi G, Kim JI and Jung J, "ReGSP: a visualized application for
+    homology-based gene searching and plotting using multiple reference sequences,"
+    PeerJ, 9:e12707, 2021'
+  year: "2021"
+- category: Journals
+  link: https://doi.org/10.7717/peerj-cs.636
+  title:
+    F. D. Midekso and G. Yi, "Empirical Evaluation of Methods for De Novo Genome
+    Assembly," PeerJ Computer Science, 7:e636, 2021
+  year: "2021"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2021.3089036
+  title:
+    A. A. Bushra and G. Yi, "Comparative Analysis Review of Pioneering DBSCAN
+    and Successive Density-Based Clustering Algorithms," IEEE Access, vol. 9, pp.
+    87918-87935, 2021
+  year: "2021"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2020.3031159
+  title:
+    J. Kim, M. Ji and G. Yi, "A Review on Sequence Alignment Algorithms for Short
+    Reads Based on Next-Generation Sequencing," IEEE Access, vol. 8, pp. 189811-189822,
+    2020
+  year: "2020"
+- category: Journals
+  link: https://doi.org/10.1016/j.future.2017.07.010
+  title:
+    Hyun-Woo Kim, Gangman Yi, Jong Hyuk Park, Young-Sik Jeong, "Adaptive resource
+    management using many-core processing for fault tolerance based on cyber–physical
+    cloud systems," Future Generation Computer Systems, Vol. 105, pp. 884-893, 2020
+  year: "2020"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2019.2963373
+  title:
+    M. Ji, G. Yi and J. Jung, "Central Prediction System for Time Series Comparison
+    and Analysis of Water Usage Data," IEEE Access, vol. 8, pp. 10342-10351, 2020
+  year: "2020"
+- category: Journals
+  link: https://doi.org/10.1007/s00500-018-3573-3
+  title:
+    Jung, J., Yi, G., "A performance analysis of genome search by matching whole
+    targeted reads on different environments," Soft Computing, vol. 23, pp. 9153–9160,
+    2019
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2019.2939937
+  title:
+    B. Kim and G. Yi, "Location-Based Parallel Sequential Pattern Mining Algorithm,"
+    IEEE Access, vol. 7, pp. 128651-128658, 2019
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.1093/bioinformatics/btz596
+  title:
+    'Jung J, Kim JI, Yi G., "geneCo: a visualized comparative genomic method
+    to analyze multiple genome structures," Bioinformatics, vol. 35(24), pp. 5303-5305,
+    2019'
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.3390/sym11070836
+  title:
+    Choi, Sangil; Yi, Gangman., "Neighbor Discovery Optimization for Big Data
+    Analysis in Low-Power, Low-Cost Communication Networks," Symmetry, Vol. 11(7),
+    2019
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.1007/s11227-019-02937-z
+  title:
+    Yi, G., Loia, V., "High-performance computing systems and applications for
+    AI," Journal of Supercomputing, vol. 75, pp 4248–4251, 2019
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.1007/s10586-017-1598-5
+  title:
+    Li, Y., Yi, G. & Shin, BS, "Spatial task management method for location privacy
+    aware crowdsourcing," Cluster Computing, vol. 22, pp. 1797–1803, 2019
+  year: "2019"
+- category: Journals
+  link: https://doi.org/10.1007/s00500-018-3522-1
+  title:
+    Yi, G., Pan, Y., "Advanced computer science and applications for soft computing
+    of converged IT environments," Soft Computing, vol. 22, pp. 6617–6619, 2018
+  year: "2018"
+- category: Journals
+  link: https://doi.org/10.1007/s12652-017-0578-1
+  title:
+    'Yi, G., Heo, YA., Byun, H. et al., "MRM: mobile resource management scheme
+    on mobile cloud computing, J Ambient Intell Human Computing, vol. 9, pp. 1245–1257,
+    2018'
+  year: "2018"
+- category: Journals
+  link: https://doi.org/10.1093/bioinformatics/bty196
+  title:
+    'Jung J, Kim JI, Jeong YS, Yi G., "AGORA: organellar genome annotation from
+    the amino acid and nucleotide references," Bioinformatics, vol. 34(15), pp. 2661-2663,
+    2018'
+  year: "2018"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2018.2803730.
+  title:
+    G. Yi, H. Kim, J. H. Park and Y. Jeong, "Job Allocation Mechanism for Battery
+    Consumption Minimization of Cyber-Physical-Social Big Data Processing Based on
+    Mobile Cloud Computing," IEEE Access, vol. 6, pp. 21769-21777, 2018
+  year: "2018"
+- category: Journals
+  link: https://doi.org/10.1186/s12864-018-4626-9
+  title:
+    'Kim JI, Yoon HS, Yi G, Shin W, Archibald JM., "Comparative mitochondrial
+    genomics of cryptophyte algae: gene shuffling and dynamic mobile genetic elements,"
+    BMC Genomics, vol. 19(1), 275, 2018'
+  year: "2018"
+- category: Journals
+  link: https://doi.org/10.3390/sym9090192
+  title:
+    Jung, Jaehee; Kim, Jong I.; Jeong, Young-Sik; Yi, Gangman., "A Robust Method
+    for Finding the Automated Best Matched Genes Based on Grouping Similar Fragments
+    of Large-Scale References for Genome Assembly," Symmetry, vol. 9(9), 192, 2017
+  year: "2017"
+- category: Journals
+  link: https://doi.org/10.1007/s11227-017-2018-6
+  title:
+    Park, J.H., Sung, Y., Sharma, P.K. et al., "Novel assessment method for accessing
+    private data in social network security services," Journal of Supercomputing,
+    vol. 73, pp. 3307–3325, 2017
+  year: "2017"
+- category: Journals
+  link: https://doi.org/10.1007/s11227-017-2099-2
+  title:
+    Hung, J.C., Yi, G., "Advances in next era cloud-empowered computing and techniques,"
+    Journal of Supercomputing, vol. 73, pp. 2843–2850, 2017
+  year: "2017"
+- category: Journals
+  link: https://doi.org/10.1093/gbe/evx123
+  title:
+    Kim JI, Moore CE, Archibald JM, Bhattacharya D, Yi G, Yoon HS, Shin W., "Evolutionary
+    Dynamics of Cryptophyte Plastid Genomes," Genome Biology and Evolution, vol. 9(7),
+    pp. 1859-1872, 2017
+  year: "2017"
+- category: Journals
+  link: https://doi.org/10.3390/sym9050062
+  title:
+    Kim B, Kim J, Yi G., "Analysis of Clustering Evaluation Considering Features
+    of Item Response Data Using Data Mining Technique for Setting Cut-Off Scores,"
+    Symmetry, vol. 9, 62, 2017
+  year: "2017"
+- category: Journals
+  link: https://doi.org/10.1007/s11277-016-3321-x
+  title:
+    Choi, S., Yi, G., "Energy Consumption and Efficiency Issues in Human Activity
+    Monitoring System," Wireless Personal Communications, vol. 91, pp. 1799–1815,
+    2016
+  year: "2016"
+- category: Journals
+  link: https://doi.org/10.1109/ACCESS.2016.2630715.
+  title:
+    G. Yi, J. H. Park and S. Choi, "Energy-Efficient Distributed Topology Control
+    Algorithm for Low-Power IoT Communication Networks," IEEE Access, vol. 4, pp.
+    9193-9203, 2016
+  year: "2016"
+- category: Journals
+  link: "https://doi.org/10.1166/asl.2016.7850. "
+  title:
+    Yi, Gangman & Jung, Jaehee, "The Research Reviews for the Image Processing
+    Using Captured Drone Images," Advanced Science Letters, vol. 22, pp. 2520-2523,
+    2016
+  year: "2016"
+- category: Journals
+  link: https://doi.org/10.3390/su8050431
+  title:
+    Choi S, Yi G., "Asymmetric Block Design-Based Neighbor Discovery Protocol
+    in Sensor Networks," Sustainability, vol. 8(5), 431, 2016
+  year: "2016"
+- category: Journals
+  link: https://doi.org/10.1007/s11227-016-1706-y
+  title:
+    Han, SH., Yi, G., "High performance clustering algorithm for analysis of
+    protein family clusters," Journal of Supercomputing, vol. 72, pp. 1878–1896,2016
+  year: "2016"
+- category: Journals
+  link: https://doi.org/10.1007/s11235-015-0045-2
+  title:
+    Jeong, HY., Yi, G. & Park, J.H., "A service composition model based on user
+    experience in Ubi-cloud comp," Telecommunication Systems, vol. 61, pp. 897–907,
+    2016
+  year: "2016"
+- category: Journals
+  link: https://doi.org/10.1093/gbe/evv147
+  title:
+    Yang EC, Kim KM, Kim SY, Lee J, Boo GH, Lee JH, Nelson WA, Yi G, Schmidt
+    WE, Fredericq S, Boo SM, Bhattacharya D, Yoon HS., "Highly Conserved Mitochondrial
+    Genomes among Multicellular Red Algae of the Florideophyceae," Genome Biology
+    and Evolution, vol. 7(8), pp. 2394-2406, 2015
+  year: "2015"
+- category: Journals
+  link: https://doi.org/10.1155/2015/508698
+  title:
+    Choi M, Park J-H, Yi G., "Attendance Check System and Implementation for
+    Wi-Fi Networks Supporting Unlimited Number of Concurrent Connections," International
+    Journal of Distributed Sensor Networks, 2015
+  year: "2015"
+- category: Journals
+  link: https://doi.org/10.1155/2015/647296
+  title:
+    Gangman Yi, "An Optimized Prediction Model Based on Feature Probability for
+    Functional Identification of Large-Scale Ubiquitous Data," Mathematical Problems
+    in Engineering, vol. 2015, Article ID 647296, 7 pages, 2015
+  year: "2015"
+- category: Journals
+  link: https://doi.org/10.1371/journal.pone.0129284
+  title:
+    Kim JI, Yoon HS, Yi G, Kim HS, Yih W, Shin W, "The Plastid Genome of the
+    Cryptomonad Teleaulax amphioxeia," PLoS ONE, vol. 10(6), e0129284, 2015
+  year: "2015"
+- category: Journals
+  link: https://doi.org/10.3390/su6096351
+  title:
+    Yi G, Choi S-J, Hwang K-i., "A Light-Weight Metering File System for Sustainable
+    Real-Time Meter Data Management," Sustainability, vol. 6(9), pp. 6351-6361, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/395295
+  title:
+    Gangman Yi, Neil Y. Yen, "Development of Highly Interactive Service Platform
+    for Social Learning via Ubiquitous Media", Mathematical Problems in Engineering,
+    vol. 2014, Article ID 395295, 8 pages, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1007/s10586-014-0348-1
+  title:
+    'Slagter, K., Hsu, CH., Chung, YC. et al., "SmartJoin: a network-aware multiway
+    join for MapReduce," Cluster Computing, vol. 17, pp. 629–641, 2014'
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1007/s11227-014-1190-1
+  title:
+    Ouyang, YC., Chiang, YJ., Hsu, CH. et al., "An optimal control policy to
+    realize green cloud systems with SLA-awareness," Journal of Supercomputing, vol.
+    69, pp. 1284–1310, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/473132
+  title:
+    Kwang-il Hwang, Gangman Yi, "Adaptive Low-Power Listening MAC Protocol Based
+    on Transmission Rates," The Scientific World Journal, vol. 2014, Article ID 473132,
+    6 pages, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/156083
+  title:
+    Heung Ki Lee, Jaehee Jung, Gangman Yi, "Resource Management Scheme Based
+    on Ubiquitous Data Analysis," The Scientific World Journal, vol. 2014, Article
+    ID 156083, 11 pages, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.3109/19401736.2013.800501
+  title:
+    Kim KM, Yang EC, Yi G, Yoon HS., "Complete mitochondrial genome of sublittoral
+    macroalga Rhodymenia pseudopalmata (Rhodymeniales, Rhodophyta)," Mitochondrial
+    DNA, vol. 25(4), pp.273-274, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/139682
+  title:
+    Yi G, Yu D, Kim N., "Adjusting Control Packet Transmission Intervals in Low
+    Power Sensor Systems," International Journal of Distributed Sensor Networks, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/542824
+  title:
+    Jaehee Jung, Heung Ki Lee, Gangman Yi, "A Novel Method for Functional Annotation
+    Prediction Based on Combination of Classification Methods," The Scientific World
+    Journal, vol. 2014, Article ID 542824, 9 pages, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/109435
+  title:
+    Hwa-Young Jeong, Gangman Yi, "A Service Based Adaptive U-Learning System
+    Using UX," The Scientific World Journal, vol. 2014, Article ID 109435, 9 pages,
+    2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1155/2014/195781
+  title:
+    Heung Ki Lee, Jaehee Jung, Kyung Jin Ahn, Hwa-Young Jeong, Gangman Yi, "Numeric
+    Analysis for Relationship-Aware Scalable Streaming Scheme," Journal of Applied
+    Mathematics, pp. 1-12, 2014
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1007/s10681-014-1158-5
+  title:
+    'Bang, Haejeen & Yi, Gangman & Kim, Sunggil & Leskovar, Daniel & Patil, Bhimanagouda.,
+    "Watermelon lycopene β-cyclase: promoter characterization leads to the development
+    of a PCR marker for allelic selection," Euphytica, vol. 200. pp. 363-378, 2014'
+  year: "2014"
+- category: Journals
+  link: https://doi.org/10.1089/cmb.2011.0044
+  title:
+    Yi G, Thon MR, Sze SH., "Supervised protein family classification and new
+    family construction," Journal of Computational Biology, Vol. 19(8), pp. 957-967,
+    2012
+  year: "2012"
+- category: Conferences
+  link: No Link
+  title:
+    Yejin Kan, Jinkyung Yang and Gangman Yi, "Integration of multi-view features
+    of protein sequences for improved protein function prediction", The 23rd European
+    Conference on Computational Biology (ECCB), 2024
+  year: "2024"
+- category: Conferences
+  link: No Link
+  title:
+    'Kim, Dongyeon; Kan, Yejin; Yi, Gangman, "Novel Patrol Route Optimization
+    Method Based on Big Data Analysis", In: 2022 IEEE International Conference on
+    Big Data (Big Data). IEEE, 2022. p. 6699-6701.'
+  year: "2022"
+- category: Conferences
+  link: No Link
+  title:
+    Y. Kan, D. Kim and G. Yi, "A Novel Gap-Filling Method Based on Hybrid Read
+    Information Analysis," in 2022 IEEE International Conference on Bioinformatics
+    and Biomedicine (BIBM), Las Vegas, NV, USA, 2022 pp. 3827-3829.
+  year: "2022"
+- category: Conferences
+  link: No Link
+  title:
+    Jaehee Jung, Gangman Yi, "A computational model based on long short-term
+    memory for predicting organellar genes in plastid genomes," 2019 IEEE International
+    Conference on Bioinformatics and Biomedicine (BIBM), 2019.
+  year: "2019"
+- category: Conferences
+  link: No Link
+  title:
+    'Mingeun Ji, Jeongkyu Kim, Gangman Yi, "GO Cluster Finder: Visualization
+    tool to identify gene clusters that are composed of functionally related genes,"
+    Inteligent Systems for Molecular Biology (ISMB), 2019.'
+  year: "2019"
+- category: Conferences
+  link: No Link
+  title:
+    Jaehee Jung, Gangman Yi, "A tool for analyzing evolutionary trees of reconciled
+    genes and single gene," 2018 IEEE International Conference on Bioinformatics and
+    Biomedicine (BIBM), 2762-2763, 2018.
+  year: "2018"
+- category: Conferences
+  link: No Link
+  title:
+    Jeong, H.Y., Lee, D.G., Lee, J.D., Yi, G., Park, J.H., “Topic Mali Based
+    Ontology Model for SaaS Application in Cloud Computing”, 7th International Conference
+    on Ubi-Media Computing and Workshops U-MEDIA 2014.
+  year: "2014"
+- category: Conferences
+  link: No Link
+  title:
+    Lee, H.K., Ahn, K.J., Jung, J.H., Yi, G., “Performance Optimization by Simplification
+    of Relationshili in Scalable Layer”, IEEE WAINA2014, 887 – 894, 2014.
+  year: "2014"
+- category: Conferences
+  link: No Link
+  title:
+    Jung, J., Yi, G., Sukno, S.A. and Thon, M.R., “A Database of Fungal Protein
+    Clusters for Comparative Genomics”, 25th Fungal Genetics Conference, Asilomar,
+    CA, USA. March 17-22, 2009.
+  year: "2009"
+- category: Conferences
+  link: No Link
+  title:
+    Jung, J., Yi, G., Sukno, S.A. and Thon, M.R., “A Protein Function Classifier
+    for Fungi”, 25th Fungal Genetics Conference, Asilomar, CA, USA. March 17-22, 2009.
+  year: "2009"
+- category: Conferences
+  link: No Link
+  title:
+    "Jung, J., Yi, G., Sukno, S. and Thon, M.R., “FPC-DB: the fungal protein
+    cluster database”,9th European conference on fungal genetics, Edinburgh, Scotland,
+    April 4-5, 2008."
+  year: "2008"
+- category: Conferences
+  link: No Link
+  title:
+    Yi, G., Jung, J., Benito, E.P., Eslava, A.P., Díaz-Mínguez, J.M., Sukno,
+    S.A., Thon, M.R. XXXVI Congreso de la Sociedad Española de Genética. Leon, España,
+    Sep. 18-21, (2007).
+  year: "2007"
+- category: Conferences
+  link: No Link
+  title:
+    Yi, G., Jung, J., Sukno, S. and Thon, M.R., “Computational resources for
+    fungal genomics”,24th Fungal Genetics Conference, Asilomar, CA, USA, March 20-25,
+    2007.
+  year: "2007"
+- category: Conferences
+  link: No Link
+  title:
+    이예린, 김동연, 간예진, 이승민 & 이강만. (2024). 시공간 정보 포함 공개데이터 기반 핫스팟 탐지 및 순찰경로 최적화. 한국정보과학회
+    학술발표논문집, 414-416.
+  year: "2024"
+- category: Conferences
+  link: No Link
+  title: 이승민, 양유진, 김나연, & 이강만. (2022). 랭킹 기반의 캠퍼스 웹사이트 검색 알고리즘. 한국정보과학회 학술발표논문집, 1742-1744.
+  year: "2022"
+- category: Conferences
+  link: No Link
+  title:
+    간예진, 김동연, 지민근, 이승민, 이강만, Gap Filling 알고리즘 연구를 위한 BLAST 기반 Gap 분석, 한국정보과학회
+    2022 한국컴퓨터종합학술대회, VOL 49 NO. 01 PP.1625~1627 2022. 06
+  year: "2022"
+- category: Conferences
+  link: No Link
+  title:
+    정재희, 지민근, 이강만 , "IoT 디바이스 기반 공공서비스 데이터의 지능형 예측 모델," 정보처리학회 추계 학술대회, VOL 26
+    NO. 02 PP. 1014 ~ 1015, 2019
+  year: "2019"
+- category: Conferences
+  link: No Link
+  title:
+    도예진, 박희정, 구해린, 이강만, "블록체인 기반 통합 마일리지 서비스 연구", 2018년도 한국멀티미디어학회 춘계학술발표대회,
+    VOL 21 NO. 01.
+  year: Unknown
+- category: Conferences
+  link: No Link
+  title:
+    조준영, 길기용, 용창민, 이강만. (2017). Chatscript와 대화 주제 유도 알고리즘을 이용한 챗봇 개발. 한국정보과학회
+    학술발표논문집, 2017.12, 1884-1886.
+  year: "2017"
+- category: Conferences
+  link: No Link
+  title:
+    정재희, 지민근, 정유라, 이강만 ,참고 모델 시퀀스를 이용한 세포내 기관별 분석 방법, 2017 정보처리학회 춘계 학술대회, VOL
+    24 NO. 848-849.
+  year: "2017"
+- category: Conferences
+  link: No Link
+  title:
+    한석현, 이강만, “단백질의기능분석을위한클러스터링알고리즘연구”, 한국정보처리학회2015년춘계학술발표대회, VOL 22 NO. 01
+    PP. 0737 ~ 0740 2015. 04.
+  year: "2015"
+- category: Conferences
+  link: No Link
+  title:
+    조준영, 길기용, 용창민, 이강만. (2017). Chatscript와 대화 주제 유도 알고리즘을 이용한 챗봇 개발. 한국정보과학회
+    학술발표논문집, 2017.12, 1884-1886.
+  year: "2017"
+- category: Conferences
+  link: No Link
+  title:
+    배기동, 황은지, 임호균, 이강만, “소리감지를이용한유아보호스마트통신시스템구현”, 한국정보처리학회2015년춘계학술발표대회, VOL
+    22 NO. 01 PP. 0081 ~ 0083 2015. 04.
+  year: "2015"
+- category: Conferences
+  link: No Link
+  title:
+    배기동, 황은지, 임호균, 이강만, “가스측정을통한간편한건강상태확인시스템구현”, 한국정보처리학회2015년춘계학술발표대회, VOL 22
+    NO. 01 PP. 0078 ~ 0080 2015. 04.
+  year: "2015"
+- category: Conferences
+  link: No Link
+  title:
+    김한준, 황은지, 양경민, 양지영, 이강만, “모션센서를이용한가상분할데스크탑구현”, 한국정보과학회2014년제41회정기총회및동계학술발표회VOL
+    41, NO. 02.
+  year: Unknown
+- category: Conferences
+  link: No Link
+  title:
+    오현석, 주재웅, 강원민, 이강만, 정화영, 박종혁, “웰니스서비스의u-Healthcare 보안연구동향및고찰”, 한국정보처리학회2014년제42회추계학술발표대회,
+    VOL 21 NO. 02 PP. 0457 ~ 0459 2014. 11월.
+  year: "2014"
+- category: Conferences
+  link: No Link
+  title: 이강만, “냄새센서를이용한사용자의장건강상태에관한연구”, 강릉원주대학과학기술연구소, 2013.
+  year: "2013"
+- category: Conferences
+  link: No Link
+  title:
+    지민근, 이강만, “C-Hunter 알고리즘을이용한유전자기능분석구현에관한연구”, 한국정보처리학회2013년제40회추계학술발표대회, VOL
+    20 NO. 02 PP. 1340 ~ 1342, 2013. 11월.
+  year: "2013"
+- category: Conferences
+  link: No Link
+  title: 이강만, “생물정보의빅데이터처리”, 한국정보기술학회지, 제10권, 제3호, 45-49, 2012
+  year: "2012"
+- category: Edited Volumes
+  link: No Link
+  title:
+    "Advanced Multimedia and Ubiquitous Engineering: MUE/FutureTech 2018, C Pak,
+    V Loia, KKR Choo, G Yi, LNEE, Springer, 2019"
+  year: "2018"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Advances in Computer Science and Ubiquitous Computing, Park, J. H., Loia,
+    V., Yi, G., Sung, Y., LNEE, Springer, 2018
+  year: "2018"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Advances in Computer Science and Ubiquitous Computing, Park, J. H., Pan,
+    Y., Yi, G., Loia, V., LNEE, Springer, 2017
+  year: "2017"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Advances in Parallel and Distributed Computing and Ubiquitous Services, Park,
+    J. H., Yi, G., Jeong, Y., Shen, H., LNEE, Springer, 2016
+  year: "2016"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Computer Science and its Applications Ubiquitous Information Technologies,
+    Park, J.H., Stojmenovic, I., Jeong, H.Y., Yi, G., LNEE, Springer, 2015
+  year: "2015"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Ubiquitous Computing Application and Wireless Sensor, Park, J. H., Pan, Y.,
+    Chao, H., Yi, G., LNEE, Springer, 2015
+  year: "2015"
+- category: Edited Volumes
+  link: No Link
+  title:
+    Ubiquitous Computing Application and Wireless Sensor (UCAWSN-14), Park, J.H.,
+    Pan, Y., Chao, H.-C., Yi, G., LNEE, Springer, 2014
+  year: "2014"
+- category: Patents
+  link: No Link
+  title: '"헤드 마운트 디스플레이 장치 및 그 동작 방법" [제 10-1653591 호]'
+  year: Unknown

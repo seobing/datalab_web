@@ -1,0 +1,89 @@
+2024:
+  - semester: "2024.02"
+    courses:
+      - name: "CSC4020 Database Design"
+  - semester: "2024.01"
+    courses:
+      - name: "CSC2001 Basic Programming"
+      - name: "CSC2007 Data Structure"
+      - name: "CSC4009 Database"
+
+2023:
+  - semester: "2023.02"
+    courses:
+      - name: "ASW2006 Algorithm"
+      - name: "MME4121 Computer Network"
+
+2022:
+  - semester: "2022.01"
+    courses:
+      - name: "MME2042 Multimedia Data Structure"
+      - name: "MME4011 Multimedia Database"
+      - name: "GME7026 Special Topics 2 on Multimedia Engineering"
+
+2021:
+  - semester: "2021.02"
+    courses:
+      - name: "MME2045 Introduction to Programming in C"
+      - name: "MME4089 Multimedia Network"
+      - name: "MME4118 Multimedia Convergence Engineering"
+      - name: "GME6056 Special Topic in Data Processing of Big Data"
+  - semester: "2021.01"
+    courses:
+      - name: "MME2042 Multimedia Data Structure"
+      - name: "MME4011 Multimedia Database"
+      - name: "MME4090 Capstone Design"
+      - name: "MME4098 Multimedia Operating System"
+      - name: "GME6058 Bigdata Computing"
+
+2020:
+  - semester: "2020.02"
+    courses:
+      - name: "MME2045 Introduction to Programming in C"
+      - name: "MME4011 Multimedia Database"
+      - name: "MME4089 Multimedia Network"
+      - name: "GME6010 Network-based Game Development"
+  - semester: "2020.01"
+    courses:
+      - name: "MME4108 Introduction to Multimedia Big Data"
+      - name: "MME2042 Multimedia Data Structure"
+      - name: "GME7026 Multimedia Seminar"
+
+2019:
+  - semester: "2019.02"
+    courses:
+      - name: "MME4089 Multimedia Network"
+      - name: "MME4011 Multimedia Database"
+      - name: "GME6031 Visualization"
+      - name: "FIB7023 Data Science Computing"
+
+2018:
+  - semester: "2018.02"
+    courses:
+      - name: "MME2041 Multimedia Algorithm"
+      - name: "MME4090 Capstone Design"
+      - name: "MME4092 Visualization of Multimedia Information"
+      - name: "GME6056 Special topic in Data Processing of Big Data"
+  - semester: "2018.01"
+    courses:
+      - name: "MME2042 Multimedia Data Structure"
+      - name: "MME4096 Introduction to Multimedia Big Data"
+      - name: "GME6055 Special topic in Big Data Computing"
+
+2017:
+  - semester: "2017.02"
+    courses:
+      - name: "MME2041 Multimedia Algorithm"
+      - name: "MME2006 Introduction to Programming in C"
+      - name: "GME6036 Multimedia System Design"
+  - semester: "2017.01"
+    courses:
+      - name: "MME4096 Introduction to Multimedia Big Data"
+      - name: "MME2038 Creative Engineering Design"
+      - name: "MME2007 Multimedia Programming"
+
+2016:
+  - semester: "2016.02"
+    courses:
+      - name: "MME4023 Multimedia Systems and Applications"
+      - name: "MME2006 Introduction to Programming in C"

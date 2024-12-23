@@ -1,0 +1,130 @@
+categories:
+  - name: All
+    id: all
+  - name: Ph.D.
+    id: phd
+  - name: M.S.
+    id: ms
+  - name: Undergraduate
+    id: undergraduate
+
+current_students:
+  - name: Yejin Kan
+    position: Ph.D. Student
+    category: phd
+    image: /assets/images/students/yejin.jpg
+    research:
+      - Research on De novo Assemblers
+      - Research on Protein Function Prediction
+    education:
+      - degree: M.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2021.03 - 2023.02
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2017.03 - 2021.02
+
+  - name: Dongyeon Kim
+    position: Ph.D. Student
+    category: phd
+    image: /assets/images/students/Dongyeon.jpg
+    research:
+      - Research on Metric Learning Algorithms
+      - Research on Multi-Label Learning Algorithms
+    education:
+      - degree: M.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2021.09 - 2023.08
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2016.03 - 2021.08
+
+  - name: Seungmin Lee
+    position: M.S. Student
+    category: ms
+    image: /assets/images/students/seungmin.png
+    research:
+      - Research on Multi-View Clutering Algorithms
+    education:
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2019.03 - 2023.02
+
+  - name: Jinkyung Yang
+    position: M.S. Student
+    category: ms
+    image: /assets/images/students/jinkyung.jpeg
+    research:
+      - Research on Protein Function Prediction
+    education:
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2020.03 - 2024.02
+
+  - name: Minseop Kim
+    position: Undergraduate Student
+    category: undergraduate
+    image: /assets/images/students/Minseob.jpeg
+    education:
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2019.03 - Current
+
+  - name: Minseop Kim
+    position: Undergraduate Student
+    category: undergraduate
+    image: /assets/images/students/minseop.jpg
+    education:
+      - degree: B.S. in Multimedia Engineering
+        institution: Dongguk University, Korea
+        period: 2020.03 - Current
+
+part_time_students:
+  - name: Hodong Shin
+    affiliation: 2024.3 ~ Current (Kaonmedia, Seongnam-si, Gyeonggi-do, Korea)
+    course: Ph.D. Student
+
+  - name: HyungJoon Seo
+    affiliation: 2018.9 ~ Current (Yonhap News, Seoul, Korea)
+    course: Ph.D. Student
+
+  - name: Hongsoo Yoon
+    affiliation: Current (JR Industry, Uiwang-si, Gyeonggi-do)
+    course: Ph.D. Student
+
+alumni:
+  - name: Yerin Lee
+    thesis: Research on identifying hotspots and optimizing patrol routes using open data-based spatiotemporal information
+    degree: Master Student (2022. 09 ~ 2024.08)
+
+  - name: Hodong Shin
+    thesis: A Study for processing large-scale data using edge computing based on the next-generation mobile communication
+    degree: Master Student (2021. 03 ~ 2024.02)
+
+  - name: Dongyeon Kim
+    thesis: A Study on Parameter Automation Algorithm for Clustering-based Multi-metric Learning
+    degree: Master Student (2021. 09 ~ 2023. 08)
+
+  - name: Yejin Kan
+    thesis: A Study on Similarity-based Gap Filling Algorithm Using Hybrid Reads
+    degree: Master Student (2021. 03 ~ 2023. 02)
+
+  - name: Adil Abdu
+    thesis: A Study on Automatic Detection of DBSCAN Parameters and Efficient Clustering of Data in Overlapping Density Region
+    degree: Master Student (2020. 03 ~ 2022. 02)
+
+  - name: Firaol Dida
+    thesis: A Study on Gap Filling Algorithm Based On Markov Chain for Sequence Assembly
+    degree: Master Student (2020. 03 ~ 2022. 02)
+
+  - name: Jeongkyu Kim
+    thesis: Research on Anchoring–based Alignment Algorithm of DNA Sequences
+    degree: Master Student (2019. 03 ~ 2021. 02)
+
+  - name: Mingeun Ji
+    thesis: A Study on Read Alignment Algorithm based on Index for Analysis Similarity of DNA Sequences
+    degree: Master Student (2018. 03 ~ 2020. 08)
+
+  - name: Youra Jeong
+    thesis: The computational balance of sequence alignments on donnated computing resources
+    degree: Master Student (2017. 03 ~ 2019. 02)

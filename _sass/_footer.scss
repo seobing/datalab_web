@@ -1,0 +1,40 @@
+footer {
+  background: $gray2;
+  color: $gray7;
+  padding: 10px 0px;
+  @include font-body-2-normal---regular;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+
+    @include breakpoint(desktop-small) {
+      height: auto;
+      padding: 10px 16px;
+      gap: 16px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      @include breakpoint(mobile) {
+        p {
+          font-size: 13px;
+          line-height: 1.4;
+        }
+      }
+
+      img {
+        height: 27px;
+      }
+    }
+  }
+}

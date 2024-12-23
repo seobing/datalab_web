@@ -1,0 +1,148 @@
+// 섹션 스타일
+.publication-section {
+  margin-top: 64px;
+  .title-container {
+    margin-bottom: 26px;
+    h1 {
+      @include font-display-2-medium;
+      color: $gray10;
+    }
+  }
+
+  // 버튼 스타일
+  .category-btn {
+    margin-right: 16px;
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    /* Caption/Medium */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+
+    border: 1px solid $gray3;
+    background-color: transparent;
+    color: $gray8;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $gray2;
+      //   color: white;
+    }
+
+    &.active {
+      background-color: $gray9;
+      color: white;
+    }
+  }
+
+  .category-section {
+    margin-top: 10px;
+    display: none; // 기본적으로 숨김 처리
+
+    .title {
+      margin-bottom: 26px;
+      h1 {
+        @include font-display-2-medium;
+        color: $gray10;
+      }
+    }
+
+    &.active {
+      display: block; // 활성화된 섹션만 보이도록 설정
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #045b98;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+        padding: 20px 24px;
+        border: 1px solid $gray3;
+        border-radius: 8px;
+
+        h3 {
+          @include font-body-1-reading---regular;
+          color: $gray10;
+          margin-bottom: 15px;
+        }
+
+        .list-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          .year {
+            /* SubTitle/XxSmall */
+            font-family: Pretendard;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 160%; /* 19.2px */
+            color: $gray7;
+            border-radius: 8px;
+            background: #f3f5f7;
+            color: #4e5760;
+            padding: 4px 6px;
+          }
+          a {
+            color: $gray8;
+            padding: 4px 12px;
+            border-radius: 6px;
+            background: #e9f5ff;
+            color: #1b90e8;
+            text-decoration: none;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+          }
+        }
+        p {
+          margin: 0 0 10px;
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .publication-section {
+    margin-top: 32px;
+    .title-container {
+      margin-bottom: 16px;
+      h1 {
+        @include font-title-3-medium;
+      }
+    }
+    .category-btn {
+      margin-right: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 16px;
+
+        h3 {
+          @include font-body-2-reading---regular;
+        }
+      }
+    }
+  }
+}

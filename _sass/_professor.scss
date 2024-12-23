@@ -1,0 +1,215 @@
+.professor-container {
+  padding: 64px 0px;
+
+  .page-title {
+    @include font-display-2-medium;
+    margin-bottom: 90px;
+    color: $gray10;
+  }
+
+  .professor-content {
+    padding: 0 100px;
+    margin: 0 auto;
+  }
+
+  .professor-info {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 48px;
+
+    .professor-image {
+      flex-shrink: 0;
+      width: 300px;
+
+      img {
+        border: 1px solid $gray3;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+
+    .professor-details {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+
+      .name-division {
+        h2 {
+          @include font-display-2-bold;
+          color: $gray10;
+          margin-bottom: 8px;
+        }
+
+        .division {
+          @include font-headline-2-medium;
+          color: $gray9;
+        }
+      }
+
+      .contact-info {
+        .contact-info-wrap {
+          display: flex;
+          gap: 17px;
+        }
+        p {
+          @include font-body-1-normal---regular;
+          color: $gray8;
+          margin-bottom: 8px;
+
+          &.location {
+            margin-left: 48px;
+          }
+
+          strong {
+            @include font-body-1-normal---medium;
+            color: $gray10;
+            display: inline-block;
+            width: 48px;
+          }
+        }
+      }
+
+      .justify {
+        @include font-body-1-reading---regular;
+        color: $gray8;
+      }
+    }
+  }
+
+  .content-section {
+    margin-bottom: 32px;
+
+    h3 {
+      @include font-body-1-normal---medium;
+      color: $gray10;
+      margin-bottom: 18px;
+      padding: 10px 24px;
+      background-color: $gray2;
+      border-radius: 8px;
+    }
+
+    h4 {
+      @include font-body-1-reading---regular;
+      color: $gray8;
+      margin: 24px 0 12px;
+    }
+
+    p {
+      @include font-body-1-normal---regular;
+      color: $gray10;
+      padding: 0 24px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0px 24px;
+
+      li {
+        @include font-body-1-normal---regular;
+        color: $gray10;
+        margin-bottom: 12px;
+        padding-left: 16px;
+        position: relative;
+        line-height: 1.6;
+
+        &:before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: $primary-color;
+        }
+
+        ul {
+          padding: 0px 6px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(desktop-small) {
+    padding: 16px $spacing;
+
+    .page-title {
+      @include font-heading-1-bold;
+      margin-bottom: 60px;
+      color: $gray10;
+    }
+
+    .professor-content {
+      padding: 0px $spacing;
+      margin: 0 auto;
+    }
+    .professor-info {
+      flex-direction: column;
+      gap: 24px;
+
+      .professor-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .professor-details {
+        .name-division {
+          h2 {
+            @include font-heading-2-bold;
+          }
+          .division {
+            @include font-body-1-normal---medium;
+          }
+        }
+
+        .contact-info {
+          .contact-info-wrap {
+            strong {
+              @include font-body-2-normal---medium;
+            }
+            p {
+              @include font-body-2-normal---regular;
+            }
+          }
+        }
+
+        .justify {
+          @include font-body-2-reading---regular;
+        }
+      }
+    }
+
+    .content-section {
+      margin-bottom: 32px;
+
+      h3 {
+        @include font-body-1-normal---bold;
+        margin-bottom: 16px;
+        padding: 8px 16px;
+      }
+
+      h4 {
+        @include font-body-2-normal---medium;
+        margin: 20px 0 10px;
+      }
+
+      p {
+        @include font-body-2-normal---regular;
+        padding: 0 12px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0px 12px;
+
+        li {
+          @include font-body-2-normal---regular;
+          margin-bottom: 10px;
+          padding-left: 12px;
+
+          ul {
+            padding: 8px 4px 0;
+          }
+        }
+      }
+    }
+  }
+}

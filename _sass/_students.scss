@@ -1,0 +1,328 @@
+.students-container {
+  padding: 64px 100px;
+  position: relative; // 추가
+  z-index: 0;
+
+  .page-title {
+    @include font-display-2-medium;
+    margin-bottom: 40px;
+    color: $gray10;
+
+    @include breakpoint(mobile) {
+      @include font-title-3-medium;
+      margin-bottom: 16px;
+    }
+  }
+
+  h2 {
+    @include font-heading-2-bold;
+    margin-bottom: 16px;
+    color: $gray10;
+    margin-top: 48px;
+  }
+
+  hr {
+    background: #b0b8c1;
+    height: 1px;
+    border: none;
+  }
+
+  .category-toggles {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+
+    .category-toggle {
+      padding: 8px 16px;
+      border: 1px solid $gray5;
+      border-radius: 20px;
+      background: $white;
+      color: $gray8;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: $font-stack;
+
+      &:hover {
+        background: $gray1;
+      }
+
+      &.active {
+        background: $primary-color;
+        color: $white;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+    z-index: 0;
+  }
+
+  .student-item {
+    z-index: 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    order: 0;
+    cursor: pointer;
+    will-change: transform;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+      .student-image img {
+        transform: scale(1.05);
+      }
+
+      .student-image {
+        border-radius: 0px;
+      }
+    }
+
+    &.hidden {
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .student-image {
+      width: 100%;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: border-radius 0.3s ease-in-out;
+
+      border: 1px solid $gray3;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+      }
+    }
+
+    .student-info {
+      padding: 16px;
+
+      h3 {
+        @include font-heading-2-bold;
+        margin-bottom: 4px;
+        color: $gray10;
+      }
+
+      .position {
+        display: inline;
+        @include font-label-2-bold;
+        color: $gray7;
+        padding: 4px;
+        border-radius: 4px;
+        background: $gray2;
+      }
+    }
+  }
+
+  .students-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: $spacing * 2;
+
+    thead {
+      border-radius: 8px;
+      overflow: hidden;
+
+      th:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding-left: 24px;
+      }
+
+      th:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding-right: 24px;
+      }
+
+      td:first-child {
+        margin-left: 24px;
+      }
+
+      td:last-child {
+        margin-right: 24px;
+      }
+    }
+
+    th,
+    td {
+      padding: 12px 24px;
+      text-align: left;
+    }
+
+    td:first-child {
+      padding-left: 24px;
+    }
+
+    td:last-child {
+      padding-right: 24px;
+    }
+
+    td {
+      border-bottom: 1px solid $gray3;
+    }
+
+    th {
+      @include font-body-1-normal---medium;
+      background: $gray1;
+    }
+
+    td {
+      @include font-label-1-reading---regular;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: 32px 16px;
+
+    .students-grid {
+      grid-template-columns: 2fr;
+    }
+
+    .students-table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+}
+
+.student-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 20px;
+    background: $white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .modal-header {
+    background: $gray9;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-title {
+    color: $white;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+
+  .modal-section {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-header {
+    background: $gray1;
+    padding: 12px 16px;
+    font-weight: 500;
+    color: $gray9;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .research-list,
+  .education-list {
+    list-style: none;
+    padding: 0 16px;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 8px;
+      color: $gray8;
+      line-height: 1.5;
+
+      &:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $gray8;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .modal-close {
+    background: none;
+    border: none;
+    color: $white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .modal-container {
+      margin: 0 16px;
+    }
+  }
+}
