@@ -14,7 +14,7 @@
    - [`gallery.yml`](#22-갤러리-업데이트-_datagalleryyml): 갤러리 이미지 및 정보 업데이트
    - [`courses.yml`](#23-강의-정보-업데이트-_datacoursesyml): 강의 정보 업데이트
    - [`students.yml`](#24-학생-정보-업데이트-_datastudentsyml): 학생 정보 업데이트
-   - [`professor.yml`](#25-교수-정보-업데이트-_dataprofessoryml): 교수 정보 업데이트
+   - [`professor.yml`](#25-교수-정보-업데이트-_dataprofessoryml): 교수님 정보 업데이트
    - [`publications.yml`](#26-논문-정보-업데이트-_datapublicationsyml): 논문 발표 정보 업데이트
 
 3. 연구 내용 업데이트 ([리서치 가이드](#27-연구-내용-업데이트-_researches))
@@ -164,7 +164,7 @@ alumni:
     degree: "학위 (재학기간)"
 ```
 
-### 2.5 교수 정보 업데이트 (\_data/professor.yml)
+### 2.5 교수님 정보 업데이트 (\_data/professor.yml)
 
 1. 교수 프로필 사진을 `assets/images/professor/` 폴더에 업로드
 
@@ -266,7 +266,7 @@ BigDataLab/
 |   |-- gallery.yml      # 갤러리 이미지 및 정보
 |   |-- courses.yml      # 강의 정보
 |   |-- students.yml     # 학생 정보
-|   |-- professor.yml    # 교수 정보
+|   |-- professor.yml    # 교수님 정보
 |   |-- publications.yml # 논문 발표 정보
 |-- _includes/           # 재사용 가능한 HTML 코드
 |-- _layouts/            # 레이아웃 파일
