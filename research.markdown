@@ -8,7 +8,8 @@ title: Research
   <h1 class="page-title">Research</h1>
 
   <div class="research-grid">
-    {% for research in site.researches %}
+    {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
+    {% for research in sorted_researches %}
     <div class="research-item" data-category="{{ research.category }}">
       <a href="{{ research.url }}">
         <div class="item-image">

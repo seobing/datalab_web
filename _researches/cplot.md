@@ -16,4 +16,4 @@ Advances in the next-generation sequencing technology have led to a dramatic dec
 
 [https://bigdata.dongguk.edu/cPlot](https://bigdata.dongguk.edu/cPlot){:target="\_blank"}
 
-![cPlot Introduction](/assets/images/research/cplot/intro_fig1[1].jpg)
+![cPlot Introduction](/assets/images/research/cplot/image1.png)

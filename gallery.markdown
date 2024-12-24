@@ -18,7 +18,7 @@ title: Gallery
     {% for item in site.data.gallery.items %}
     <div class="gallery-item" data-category="{{ item.category }}">
       <div class="item-image">
-        <img src="{{ item.image }}" alt="{{ item.title }}">
+        <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
       </div>
       <div class="item-info">
         <h3>{{ item.title }}</h3>

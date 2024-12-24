@@ -20,7 +20,7 @@ title: Students
          data-research='{{ student.research | jsonify }}'
          data-education='{{ student.education | jsonify }}'>
       <div class="student-image">
-        <img src="{{ student.image }}" alt="{{ student.name }}">
+        <img src="{{ student.image }}" alt="{{ student.name }}" loading="lazy"/>
       </div>
       <div class="student-info">
         <h3>{{ student.name }}</h3>

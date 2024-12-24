@@ -10,6 +10,7 @@ footer {
     align-items: center;
     text-align: center;
     height: 100px;
+    text-align: left;
 
     @include breakpoint(desktop-small) {
       height: auto;

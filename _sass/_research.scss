@@ -25,6 +25,7 @@
     will-change: transform, opacity;
     backface-visibility: hidden;
     perspective: 1000px;
+    cursor: pointer;
 
     // 그림자 효과 추가
     padding: 12px;
@@ -39,13 +40,22 @@
       text-decoration: none;
     }
 
+    &:hover {
+      transform: translateY(-5px);
+
+      .item-image {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+      }
+    }
+
     .item-image {
       border-radius: 8px;
       overflow: hidden;
       aspect-ratio: 4/3;
       background-color: $gray2;
       border: 1px solid $gray3;
-      //   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
 
       img {
         cursor: pointer;
