@@ -56,7 +56,7 @@ title: Publications
                     <div></div>
                 {% endif %}
                 {% if pub.link != "No Link" %}
-                  <a href="{{ pub.link }}" target="_blank">view</a>
+                  <a href="{{ pub.link }}" target="_blank">link</a>
                 {% else %}
                   <div></div>
                 {% endif %}

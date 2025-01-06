@@ -36,7 +36,7 @@
 
       .name-division {
         h2 {
-          @include font-display-2-bold;
+          @include font-display-2-medium;
           color: $gray10;
           margin-bottom: 8px;
         }
