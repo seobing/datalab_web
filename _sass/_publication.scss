@@ -67,22 +67,21 @@
       padding: 0;
 
       li {
-        margin-bottom: 20px;
-        padding: 20px 24px;
+        margin-bottom: 15px;
+        padding: 12px 15px;
         border: 1px solid $gray3;
         border-radius: 8px;
 
         h3 {
           @include font-body-1-reading---regular;
           color: $gray10;
-          margin-bottom: 15px;
         }
 
         .list-info {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           .year {
             /* SubTitle/XxSmall */
             font-family: Pretendard;
@@ -91,14 +90,13 @@
             font-weight: 600;
             line-height: 160%; /* 19.2px */
             color: $gray7;
-            border-radius: 8px;
+            border-radius: 6px;
             background: #f3f5f7;
             color: #4e5760;
             padding: 4px 6px;
           }
           a {
-            color: $gray8;
-            padding: 4px 12px;
+            padding: 2px 10px;
             border-radius: 6px;
             background: #e9f5ff;
             color: #1b90e8;

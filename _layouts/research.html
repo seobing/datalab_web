@@ -21,14 +21,14 @@ layout: default
 
       <div class="research-navigation">
         <div class="nav-links">
-          {% if page.previous %}
-          <a href="{{ page.previous.url }}" class="prev">‹ Prev</a>
+          {% if page.next %}
+          <a href="{{ page.next.url }}" class="prev">‹ Prev</a>
           {% endif %}
 
           <span class="separator">|</span>
 
-          {% if page.next %}
-          <a href="{{ page.next.url }}" class="next">Next ›</a>
+          {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="next">Next ›</a>
           {% endif %}
         </div>
 

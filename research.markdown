@@ -23,7 +23,8 @@ title: Research
         </div>
         <div class="item-info">
           <h3>{{ research.title }}</h3>
-          <p>{{ research.date | date: "%Y.%m.%d" }} 
+          <p class="content">{{ research.content | strip_html | truncatewords: 30 }}</p>
+          <p class="date">{{ research.date | date: "%Y.%m.%d" }} 
             {% if research.description %}
             | {{ research.author }}
             {% endif %}

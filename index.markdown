@@ -6,15 +6,14 @@ layout: default
 ---
 
 <section class="home-intro-section">
-  <div class="container">
-    <img src="/assets/images/logos/intro.png" alt="DataLab Logo" width="100%" />
-    <div class="intro-text">
-      <h1>Department of Computer Science·AI</h1>
-      <p>
-        Looking for passionate Ph. D. and M.S. students who want to study the research area of data science and Bioinformatics. <br/>
-        If interested, please contact to Dr. Gangman Yi.
-      </p>
-    </div>
+    <!-- <img src="/assets/images/backgrounds/home.png" alt="DataLab Logo" width="100%" /> -->
+  <div class="overlay"></div>
+  <div class="container intro-text">
+    <h1>Department of Computer Science·AI</h1>
+    <p>
+      Looking for passionate Ph. D. and M.S. students who want to study the research area of data science and Bioinformatics. <br/>
+      If interested, please contact to Dr. Gangman Yi.
+    </p>
   </div>
 </section>
 
@@ -68,6 +67,7 @@ layout: default
             {% endif %}
             <div class="research-info">
               <h3>{{ research.title }}</h3>
+              <p class="content">{{ research.content | strip_html | truncatewords: 30 }}</p>
               <p class="date">{{ research.date | date: "%Y-%m-%d" }}</p>
             </div>
           </div>
@@ -89,8 +89,8 @@ layout: default
         who want to study the research areaa of data science and Bioinformactics.
       </p>
     </div>
-    <div class="recruit-content">
+    <!-- <div class="recruit-content">
       <a class="contact-button" href="mailto:gangman@dongguk.edu">Contact</a>
-    </div>
+    </div> -->
   </div>
 </section>

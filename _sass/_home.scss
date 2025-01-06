@@ -1,40 +1,61 @@
 .home-intro-section {
   background-color: $primary-color;
-  padding: 66px 0px 112px 0px;
+  padding: 300px 0px 300px 0px;
   margin-bottom: 117px;
+  @include center-flex;
+  position: relative;
+  background-image: url("/assets/images/backgrounds/home.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  // aspect-ratio: 16/9;
   .intro-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     h1 {
       @include font-title-1-bold;
+      text-align: center;
       color: $white;
       margin-top: 48px;
     }
     p {
       margin-top: 26px;
+      text-align: center;
       @include font-body-1-reading---regular;
-      color: $gray6;
+      color: $gray3;
     }
   }
 
   @include breakpoint(tablet) {
-    padding: 40px 0px 60px 0px;
+    // padding: 80px 0px 60px 0px;
+    padding: 200px 0px 185px 0px;
     margin-bottom: 60px;
-  }
-
-  @include breakpoint(mobile) {
-    padding: 32px 0px 48px 0px;
-    margin-bottom: 40px;
 
     .intro-text {
       h1 {
-        font-size: 28px;
-        margin-top: 32px;
+        @include font-title-3-bold;
       }
       p {
-        margin-top: 16px;
-        font-size: 14px;
+        @include font-body-2-reading---regular;
       }
     }
+  }
+
+  @include breakpoint(mobile) {
+    // padding: 80px 0px 48px 0px;
+
+    padding: 200px 0px 185px 0px;
+    margin-bottom: 40px;
   }
 }
 
@@ -180,6 +201,16 @@
         }
       }
 
+      .content {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 최대 두 줄로 제한 */
+        -webkit-box-orient: vertical;
+        @include font-body-1-reading---medium;
+        color: $gray6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
       .date {
         @include font-body-1-reading---medium;
         color: $gray5;
@@ -263,10 +294,11 @@
 
   @include breakpoint(desktop-small) {
     .recruit-container {
-      padding: 32px 24px;
-      flex-direction: column;
+      // padding: 32px 24px;
+      // flex-direction: column;
       gap: 24px;
-      text-align: center;
+      // text-align: center;
+      // justify-content: center;
     }
 
     .recruit-content {
@@ -283,6 +315,19 @@
 
   @include breakpoint(tablet) {
     margin-bottom: 80px;
+    .recruit-container {
+      padding: 32px 24px;
+    }
+    .recruit-content {
+      h2 {
+        @include font-title-3-bold;
+        color: $white;
+      }
+
+      p {
+        @include font-body-2-reading---regular;
+      }
+    }
   }
 
   @include breakpoint(mobile) {

@@ -83,9 +83,6 @@
     .item-info {
       padding: 16px 0;
       transform: translateZ(0);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
 
       h3 {
         @include font-heading-1-medium;
@@ -93,8 +90,16 @@
         margin-bottom: 4px;
         font-family: $font-stack;
       }
-
-      p {
+      .content {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 최대 두 줄로 제한 */
+        -webkit-box-orient: vertical;
+        @include font-body-1-reading---medium;
+        color: $gray6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .date {
         @include font-body-2-reading---regular;
         color: $gray7;
         font-family: $font-stack;
