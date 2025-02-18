@@ -4,7 +4,7 @@
   margin-bottom: 117px;
   @include center-flex;
   position: relative;
-  background-image: url("/assets/images/backgrounds/home.png");
+  background-image: url("/~gangman/assets/images/backgrounds/home.png");
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.4);
@@ -80,14 +80,14 @@
       }
 
       .ml {
-        background-image: url("/assets/images/backgrounds/machine-learning-background.png");
+        background-image: url("/~gangman/assets/images/backgrounds/machine-learning-background.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
 
       .bio {
-        background-image: url("/assets/images/backgrounds/bio-informatics-background.png");
+        background-image: url("/~gangman/assets/images/backgrounds/bio-informatics-background.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -263,7 +263,7 @@
   }
 
   .recruit-container {
-    background-image: url("/assets/images/banners/recruit-background.png");
+    background-image: url("/~gangman/assets/images/banners/recruit-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

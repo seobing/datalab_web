@@ -3,7 +3,7 @@ layout: default
 title: Research
 ---
 
-<script src="/assets/js/research.js"></script>
+<script src="/~gangman/assets/js/research.js"></script>
 <div class="research-container container">
   <h1 class="page-title">Research</h1>
 
@@ -11,7 +11,7 @@ title: Research
     {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
     {% for research in sorted_researches %}
     <div class="research-item" data-category="{{ research.category }}">
-      <a href="{{ research.url }}">
+      <a href="/~gangman{{ research.url }}">
         <div class="item-image">
           {% if research.thumbnail %}
           <img src="{{ research.thumbnail }}" alt="{{ research.title }}">

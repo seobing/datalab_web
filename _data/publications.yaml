@@ -352,6 +352,10 @@
   year: "2012"
 - category: Conferences
   link: No Link
+  title: 'Dongyeon Kim, Yejin Kan, and Gangman Yi, "T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation," The 39th Annual AAAI conference on artificial intelligence (AAAI), 2025'
+  year: "2025"
+- category: Conferences
+  link: No Link
   title:
     Yejin Kan, Jinkyung Yang and Gangman Yi, "Integration of multi-view features
     of protein sequences for improved protein function prediction", The 23rd European
@@ -571,6 +575,10 @@
     Ubiquitous Computing Application and Wireless Sensor (UCAWSN-14), Park, J.H.,
     Pan, Y., Chao, H.-C., Yi, G., LNEE, Springer, 2014
   year: "2014"
+- category: Patents
+  link: No Link
+  title: '"스마트 폴리싱을 위한 핫스팟 기반의 순찰 경로 최적화 방법 및 최적화 장치" [제 10-2751950 호]'
+  year: Unknown
 - category: Patents
   link: No Link
   title: '"헤드 마운트 디스플레이 장치 및 그 동작 방법" [제 10-1653591 호]'

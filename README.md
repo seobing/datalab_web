@@ -80,18 +80,19 @@ assets/images/
 3. 파일 형식
    - 사진: JPG 형식 권장
    - 로고/아이콘: PNG 형식(투명배경) 권장
+4. ⚠️주의 **이미지 경로 지정시 /~gangman/assets/images/적절한 경로 + 이미지 이름** (/~gangman 빼먹지 않기)
 
 예시:
 
 ```yaml
 # 갤러리 이미지 추가 시
-image: "/assets/images/gallery/2024-workshop.jpg"
+image: "/~gangman/assets/images/gallery/2024-workshop.jpg"
 
 # 학생 프로필 추가 시
-image: "/assets/images/students/kim-minsu.jpg"
+image: "/~gangman/assets/images/students/kim-minsu.jpg"
 
 # 연구 이미지 추가 시
-image: "/assets/images/research/gene-annotation/result-2024.png"
+image: "/~gangman/assets/images/research/gene-annotation/result-2024.png"
 ```
 
 ### 2.2 갤러리 업데이트 (\_data/gallery.yml)
@@ -105,7 +106,7 @@ image: "/assets/images/research/gene-annotation/result-2024.png"
 items:
   - title: "행사 제목" # 예: "2024 워크샵"
     date: "날짜" # 예: "Mar 15, 2024"
-    image: "/assets/images/gallery/이미지파일명.jpg"
+    image: "/~gangman/assets/images/gallery/이미지파일명.jpg"
     category: "카테고리" # conference, graduation, workshop, server, etc 중 선택
     location: "장소" # 예: "Korea" 또는 구체적인 도시명
 ```
@@ -136,7 +137,7 @@ current_students:
   - name: "학생 이름"
     position: "직위" # "Ph.D. Student", "M.S. Student", "Undergraduate Student"
     category: "카테고리" # phd, ms, undergraduate
-    image: "/assets/images/students/학생사진.jpg" # 예: "/assets/images/students/kim-minsu.jpg"
+    image: "/~gangman/assets/images/students/학생사진.jpg" # 예: "/~gangman/assets/images/students/kim-minsu.jpg"
     research:
       - "연구 분야 1"
       - "연구 분야 2"
@@ -176,7 +177,7 @@ alumni:
 
 ```yaml
 name: "교수님 이름"
-image: "/assets/images/professor/professor.jpg"
+image: "/~gangman/assets/images/professor/professor.jpg"
 division: "소속 학과"
 contact:
   office: "연구실 위치"
@@ -233,12 +234,12 @@ publications:
    title: 연구 제목
    category: 카테고리명
    date: YYYY-MM-DD
-   thumbnail: /assets/images/research/카테고리명/썸네일이미지.png
+   thumbnail: /~gangman/assets/images/research/카테고리명/썸네일이미지.png
    description: 연구 설명
    author: 저자명
    ---
 
-   ![대표이미지](/assets/images/research/카테고리명/이미지.png)
+   ![대표이미지](/~gangman/assets/images/research/카테고리명/이미지.png)
 
    ### 연구 제목
 

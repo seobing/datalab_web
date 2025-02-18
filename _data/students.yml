@@ -12,7 +12,7 @@ current_students:
   - name: Yejin Kan
     position: Ph.D. Student
     category: phd
-    image: /assets/images/students/yejin.jpg
+    image: /~gangman/assets/images/students/yejin.jpg
     research:
       - Research on De novo Assemblers
       - Research on Protein Function Prediction
@@ -27,7 +27,7 @@ current_students:
   - name: Dongyeon Kim
     position: Ph.D. Student
     category: phd
-    image: /assets/images/students/Dongyeon.jpg
+    image: /~gangman/assets/images/students/Dongyeon.jpg
     research:
       - Research on Metric Learning Algorithms
       - Research on Multi-Label Learning Algorithms
@@ -39,21 +39,10 @@ current_students:
         institution: Dongguk University, Korea
         period: 2016.03 - 2021.08
 
-  - name: Seungmin Lee
-    position: M.S. Student
-    category: ms
-    image: /assets/images/students/seungmin.png
-    research:
-      - Research on Multi-View Clutering Algorithms
-    education:
-      - degree: B.S. in Multimedia Engineering
-        institution: Dongguk University, Korea
-        period: 2019.03 - 2023.02
-
   - name: Jinkyung Yang
     position: M.S. Student
     category: ms
-    image: /assets/images/students/jinkyung.jpeg
+    image: /~gangman/assets/images/students/jinkyung.jpeg
     research:
       - Research on Protein Function Prediction
     education:
@@ -62,22 +51,13 @@ current_students:
         period: 2020.03 - 2024.02
 
   - name: Minseop Kim
-    position: Undergraduate Student
-    category: undergraduate
-    image: /assets/images/students/Minseob.jpeg
+    position: M.S. Student
+    category: ms
+    image: /~gangman/assets/images/students/Minseob.jpeg
     education:
       - degree: B.S. in Multimedia Engineering
         institution: Dongguk University, Korea
         period: 2019.03 - Current
-
-  - name: Minseop Kim
-    position: Undergraduate Student
-    category: undergraduate
-    image: /assets/images/students/minseop.jpg
-    education:
-      - degree: B.S. in Multimedia Engineering
-        institution: Dongguk University, Korea
-        period: 2020.03 - Current
 
 part_time_students:
   - name: Hodong Shin
@@ -93,6 +73,10 @@ part_time_students:
     course: Ph.D. Student
 
 alumni:
+  - name: Seungmin Lee
+    thesis: A Study on Anchor Graph Based Incomplete Multi-view Clustering Algorithm
+    degree: Master Student(2023.03 ~ 2025.02)
+
   - name: Yerin Lee
     thesis: Research on identifying hotspots and optimizing patrol routes using open data-based spatiotemporal information
     degree: Master Student (2022. 09 ~ 2024.08)

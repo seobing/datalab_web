@@ -3,7 +3,7 @@ layout: default
 title: Students
 ---
 
-<script src="/assets/js/students.js"></script>
+<script src="/~gangman/assets/js/students.js"></script>
 <div class="students-container container">
   <h1 class="page-title">Students</h1>
 

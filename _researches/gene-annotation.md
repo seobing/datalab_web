@@ -3,17 +3,17 @@ layout: research
 title: Gene Annotation
 category: gene-annotation
 date: 2019-12-15
-thumbnail: /assets/images/research/gene-annotation/image.png
+thumbnail: /~gangman/assets/images/research/gene-annotation/image.png
 description: AGORA - Annotator for Genome of Organelle from Referenced sequence Analysis
 author: Gangman Yi
 ---
 
-![alt text](/assets/images/research/gene-annotation/image.png)
+![alt text](/~gangman/assets/images/research/gene-annotation/image.png)
 Next-generation sequencing (NGS) technologies have led to the accumulation of high-throughput sequence data from various organisms in biology. To apply gene annotation of organellar genomes for various organisms, more optimized tools for functional gene annotation are required. Almost all gene annotation tools are mainly focused on the chloroplast genome of land plants or the mitochondrial genome of animals. We have developed a web application AGORA for the fast, user-friendly and improved annotations of organellar genomes. Annotator for Genes of Organelle from the Reference sequence Analysis (AGORA) annotates genes based on a basic local alignment search tool (BLAST)-based homology search and clustering with selected reference sequences from the NCBI database or user-defined uploaded data. AGORA can annotate the functional genes in almost all mitochondrion and plastid genomes of eukaryotes. The gene annotation of a genome with an exon–intron structure within a gene or inverted repeat region is also available. It provides information of start and end positions of each gene, BLAST results compared with the reference sequence and visualization of gene map by OGDRAW.
 
 [https://bigdata.dongguk.edu/gene_project/AGORA/](https://bigdata.dongguk.edu/gene_project/AGORA/){:target="\_blank"}
 
-![alt text](/assets/images/research/gene-annotation/image1.png)
+![alt text](/~gangman/assets/images/research/gene-annotation/image1.png)
 
 ### Input
 
@@ -54,11 +54,11 @@ For more information about genetic code please see [NCBI](https://www.ncbi.nlm.n
 
 - As you see below examples, output file is the BLAST result that includes amino acid and nucloetide. The Query is set to the refereces and Data base is set to query. The number of matched position is decided upon the "Maximum matched sub gene's count"
 
-![alt text](/assets/images/research/gene-annotation/image2.png)
+![alt text](/~gangman/assets/images/research/gene-annotation/image2.png)
 
 _The blast result of amino acid_
 
-![alt text](/assets/images/research/gene-annotation/image3.png)
+![alt text](/~gangman/assets/images/research/gene-annotation/image3.png)
 
 _The blast result of nucleotide_
 
@@ -90,4 +90,4 @@ _The blast result of nucleotide_
 
 - If all genes are matched correctly, you can see the figure. Here is example
 
-![alt text](/assets/images/research/gene-annotation/image4.png)
+![alt text](/~gangman/assets/images/research/gene-annotation/image4.png)

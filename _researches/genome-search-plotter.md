@@ -3,12 +3,12 @@ layout: research
 title: Genome Search Plotter
 category: genome-search-plotter
 date: 2017-09-13
-thumbnail: /assets/images/research/genome-search-plotter/image.png
+thumbnail: /~gangman/assets/images/research/genome-search-plotter/image.png
 description: A Robust Method for Finding the Automated Best Matched Genes Based on Grouping Similar Fragments of Large-Scale References for Genome Assembly
 author: Gangman Yi
 ---
 
-![Genome Search Plotter](/assets/images/research/genome-search-plotter/image.png)
+![Genome Search Plotter](/~gangman/assets/images/research/genome-search-plotter/image.png)
 
 ### A Robust Method for Finding the Automated Best Matched Genes Based on Grouping Similar Fragments of Large-Scale References for Genome Assembly
 
@@ -16,7 +16,7 @@ Big data research on genomic sequence analysis has accelerated considerably with
 
 [https://bigdata.dongguk.edu/gene_project/genome_search_plotter](https://bigdata.dongguk.edu/gene_project/genome_search_plotter){:target="\_blank"}
 
-![Genome Search Plotter](/assets/images/research/genome-search-plotter/image1.png)
+![Genome Search Plotter](/~gangman/assets/images/research/genome-search-plotter/image1.png)
 
 ### Input
 
@@ -36,7 +36,7 @@ Big data research on genomic sequence analysis has accelerated considerably with
 
 - Please refer to below Figure 1-B.
 
-![Input Example](/assets/images/research/genome-search-plotter/image2.png)
+![Input Example](/~gangman/assets/images/research/genome-search-plotter/image2.png)
 
 _Figure 1. Maximum number of hit group and mininum number of subgene's count_
 

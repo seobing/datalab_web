@@ -84,7 +84,7 @@ def scrape_gallery_data(url):
             item = {
                 "title": title,
                 "date": date,
-                "image": f"/assets/images/gallery/{filename}",
+                "image": f"/~gangman/assets/images/gallery/{filename}",
                 "category": category.lower().replace(' ', '_')
             }
             
@@ -98,7 +98,7 @@ def scrape_gallery_data(url):
 
 def main():
     url = "https://datalab.dongguk.edu/~gangman/lab-tour.html"
-    image_dir = "/Users/gimminseob/dev/WEB/BigDataLab/assets/images/gallery"
+    image_dir = "/Users/gimminseob/dev/WEB/BigDataLab/~gangman/assets/images/gallery"
     yaml_path = "/Users/gimminseob/dev/WEB/BigDataLab/_data/gallery.yml"
     
     # 디렉토리 생성
@@ -111,7 +111,7 @@ def main():
     # 이미지 다운로드
     for item in gallery_data["items"]:
         # 원본 이미지 URL 구성
-        img_src = item['image'].replace('/assets/images/gallery/', 'assets/img/lab-tour/')
+        img_src = item['image'].replace('/~gangman/assets/images/gallery/', 'assets/img/lab-tour/')
         img_url = urljoin(base_url, img_src)
         
         # 저장할 경로 구성

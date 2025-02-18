@@ -6,10 +6,10 @@ layout: default
 ---
 
 <section class="home-intro-section">
-    <!-- <img src="/assets/images/backgrounds/home.png" alt="DataLab Logo" width="100%" /> -->
+    <!-- <img src="/~gangman/assets/images/backgrounds/home.png" alt="DataLab Logo" width="100%" /> -->
   <div class="overlay"></div>
   <div class="container intro-text">
-    <h1>Department of Computer Science·AI</h1>
+    <h1>Welcome to DataLab!</h1>
     <p>
       Looking for passionate Ph. D. and M.S. students who want to study the research area of data science and Bioinformatics. <br/>
       If interested, please contact to Dr. Gangman Yi.
@@ -20,7 +20,7 @@ layout: default
 <section class="home-research-area-section">
   <div class="container">
     <h2>Research Area</h2>
-    <img src="/assets/images/banners/home-intro.png" alt="Research Area" width="100%" />
+    <img src="/~gangman/assets/images/banners/home-intro.png" alt="Research Area" width="100%" />
     <!-- <div class="flex-container">
       <div class="flex1">
         <div class="flex-container">
@@ -55,7 +55,7 @@ layout: default
       {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
       {% for research in sorted_researches limit:4 %}
         <div class="research-slide">
-          <div class="research-card" onclick="window.location.href='{{ research.url }}'">
+          <div class="research-card" onclick="window.location.href='/~gangman{{ research.url }}'">
             {% if research.thumbnail %}
               <div class="image-container">
                 <img src="{{ research.thumbnail }}" alt="{{ research.title }}" />
@@ -75,7 +75,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="button-wrapper">
-      <a class="show-more-button" href="/research">SEE ALL</a>
+      <a class="show-more-button" href="/~gangman/research">SEE ALL</a>
     </div>
   </div>
 </section>

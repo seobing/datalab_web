@@ -3,12 +3,12 @@ layout: research
 title: cPlot
 category: cplot
 date: 2022-09-21
-thumbnail: /assets/images/research/cplot/image.png
+thumbnail: /~gangman/assets/images/research/cplot/image.png
 description: Contig-Plotting Visualization for the Analysis of Short-Read Nucleotide Sequence Alignments
 author: Gangman Yi
 ---
 
-![cPlot](/assets/images/research/cplot/image.png)
+![cPlot](/~gangman/assets/images/research/cplot/image.png)
 
 ### cPlot: Contig-Plotting Visualization for the Analysis of Short-Read Nucleotide Sequence Alignments
 
@@ -16,4 +16,4 @@ Advances in the next-generation sequencing technology have led to a dramatic dec
 
 [https://bigdata.dongguk.edu/cPlot](https://bigdata.dongguk.edu/cPlot){:target="\_blank"}
 
-![cPlot Introduction](/assets/images/research/cplot/image1.png)
+![cPlot Introduction](/~gangman/assets/images/research/cplot/image1.png)

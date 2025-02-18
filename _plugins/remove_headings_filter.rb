@@ -7,7 +7,8 @@ module Jekyll
         input
           .lines
           # 정규식으로, 줄 앞부분에 #이 1개 이상 붙은 경우 제거
-          .reject { |l| l.match?(/^#{1,6}\s/) }
+          # .reject { |l| l.match?(/^#{1,6}\s/) }
+          .reject { |l| l.match?(/^#{'#'}{1,6}\s/) }
           .join
       end
     end

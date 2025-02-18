@@ -3,7 +3,7 @@ layout: default
 title: Courses
 ---
 
-<script src="/assets/js/courses.js"></script>
+<script src="/~gangman/assets/js/courses.js"></script>
 <div class="courses-container container">
   <h1 class="page-title">Courses</h1>
 

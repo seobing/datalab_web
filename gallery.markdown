@@ -3,7 +3,7 @@ layout: default
 title: Gallery
 ---
 
-<script src="/assets/js/gallery.js"></script>
+<script src="/~gangman/assets/js/gallery.js"></script>
 <div class="gallery-container container">
   <h1 class="page-title">Gallery</h1>
 
@@ -15,7 +15,8 @@ title: Gallery
   </div>
 
   <div class="gallery-grid">
-    {% for item in site.data.gallery.items %}
+    {% assign sorted_items = site.data.gallery.items | sort: "sort_date" | reverse %}
+    {% for item in sorted_items %}
     <div class="gallery-item" data-category="{{ item.category }}">
       <div class="item-image">
         <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
