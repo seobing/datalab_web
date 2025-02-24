@@ -85,8 +85,8 @@ layout: default
     <div class="recruit-content">
       <h2>Researcher Recruitment</h2>
       <p>
-        Looking for passionate Ph. D. and M.S. students<br />
-        who want to study the research areaa of data science and Bioinformactics.
+        Looking for passionate Ph. D. and M.S. students who want to study the research areaa of data science and Bioinformactics.<br>
+        데이터 사이언스 및 바이오인포매틱스 연구 분야를 공부하고자 하는 박사/석사 과정 학생을 찾습니다.
       </p>
     </div>
     <!-- <div class="recruit-content">

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Supervised Protein Family Classification and New Family Construction"
+    />
+    <meta name="author" content="2020112553 김민섭(biyotteu)" />
+    <meta name="designer" content="유정은" />
+
+    <title>SClassify</title>
+    <!-- Pretendard CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="/~gangman/assets/css/main.css"
+    /><!--로컬에서 테스트 시에는 /~gangman/빼기-->
+  </head>
+  <body>
+    <header
+  class="default-header header"
+>
+  <nav class="navbar container">
+    <a href="/~gangman/" class="logo-link">
+      <img
+        src="/~gangman/assets/images/logos/logo-black.png"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="hamburger-menu" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <div class="menu-logo-container">
+        <a href="/~gangman/" class="logo-link">
+          <img
+            src="/~gangman/assets/images/logos/logo-black.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="hamburger-menu" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <li class="item"><a href="/~gangman/research">Research</a></li>
+      <li class="item"><a href="/~gangman/professor">Professor</a></li>
+      <li class="item"><a href="/~gangman/students">Students</a></li>
+      <li class="item"><a href="/~gangman/publication">Publication</a></li>
+      <li class="item"><a href="/~gangman/courses">Courses</a></li>
+      <li class="item"><a href="/~gangman/gallery">Gallery</a></li>
+      <!-- <li class="item contact-item">
+        <a href="mailto:gangman@dongguk.edu" class="contact-link">
+          <img
+            src="/~gangman/assets/images/icons/mail-black.png"
+            class="contact"
+            alt="contact"
+          />
+        </a>
+      </li> -->
+    </ul>
+    <!-- <a href="mailto:gangman@dongguk.edu" class="contact-link">
+      <img
+        src="/~gangman/assets/images/icons/mail-black.png"
+        class="contact"
+        alt="contact"
+      />
+    </a> -->
+  </nav>
+</header>
+
+    <!-- 헤더 포함 -->
+    <main>
+      <div class="research-detail container">
+  <article class="research-content">
+    <div class="research-entry">
+      <header class="research-header">
+        <h2>SClassify</h2>
+        <div class="research-meta">
+          <time datetime="2012-08-09"
+            >2012.08.09</time
+          >
+          
+          <span class="author">Gangman Yi</span>
+          
+        </div>
+      </header>
+
+      <div class="research-body"><h3 id="supervised-protein-family-classification-and-new-family-construction">Supervised Protein Family Classification and New Family Construction</h3>
+
+<p>SClassify is a supervised protein family classification algorithm that overcomes the problems of existing supervised and unsupervised algorithms and achieves much improved accuracy. It can assign proteins to existing families in databases, and by taking into account similarities between the unclassified proteins, can assign them to new families.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>The SClassify source code, including sample input and output files, can be compiled under the Unix/Linux/Windows(Cygwin) environment. The following steps will create a directory called sclassify. Detailed usage of SClassify is provided in a README file.</p>
+
+<ul>
+  <li>gunzip <a href="https://bigdata.dongguk.edu/~gangman/files/projects/sclassify.tar.gz">sclassify.tar.gz</a></li>
+  <li>tar xvf sclassify.tar</li>
+  <li>cd sclassify</li>
+  <li>./install</li>
+</ul>
+
+<h3 id="how-to-use">How to use</h3>
+
+<p>The program assumes that e-values between each unclassified protein and each protein in existing families and e-values between each pair of unclassified proteins have already been obtained by other software such as BLAST or SSEARCH. The following files are needed:</p>
+
+<ol>
+  <li>
+    <p>A file that lists the name of each protein in existing families along with the name of its family in a two-column tab-separated format (example file: pfam.list).</p>
+  </li>
+  <li>
+    <p>A file that lists the name of each unclassified protein in a one-column format (example file: test.list).</p>
+  </li>
+  <li>
+    <p>A file that lists the e-values between each unclassified protein and each protein in existing families in a three-column tab-separated format that gives the name of an unclassified protein, the name of a protein in an existing family, and the e-value between them. There is no need to have an e-value for each pair if some of them are missing. The file is optional (example files: blast/test_pfam.score, ssearch/test_pfam.score).</p>
+  </li>
+  <li>
+    <p>A file that lists the e-values between each pair of unclassified proteins in a three-column tab-separated format that gives the names of two unclassified proteins and the e-value between them. There is no need to have an e-value for each pair if some of them are missing. The file is optional (example files: blast/test_test.score, ssearch/test_test.score).</p>
+  </li>
+</ol>
+
+<p><strong>USAGE</strong><br />
+./sclassify -c infile1 -u infile2 -p infile3 -n infile4 -e cutoff -o outfile<br />
+where infile1 to infile4 are the input files described above, cutoff is the e-value cutoff, and outfile is the output file.</p>
+
+<p><strong>EXAMPLES</strong></p>
+</div>
+
+      <div class="research-navigation">
+        <div class="nav-links">
+          
+          <a href="/research/genome-search-plotter/" class="prev">‹ Prev</a>
+          
+
+          <span class="separator">|</span>
+
+          
+          <a href="/research/c-hunter/" class="next">Next ›</a>
+          
+        </div>
+
+        <a href="/~gangman/research" class="back">Back to list</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+      <!-- 페이지별 내용 -->
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <div class="footer-wrap">
+      <img
+        src="/~gangman/assets/images/logos/gray_dgu_logo.png"
+        alt="동국대학교 로고"
+      />
+      <p>
+        신공학관 연구실 #9114, 동국대학교 [04620] 서울특별시 중구 필동로 1길 30
+      </p>
+    </div>
+    <div class="footer-wrap">
+      <p>Copyright <strong>&copy;2024 DataLab.</strong> All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- 푸터 포함 -->
+    <!-- <script src="/~gangman/assets/js/main.js"></script> -->
+    <script src="/~gangman/assets/js/navigation.js"></script>
+    <script src="/~gangman/assets/js/pagination.js"></script>
+  </body>
+</html>

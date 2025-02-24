@@ -4,7 +4,7 @@ title: Professor
 ---
 
 <div class="professor-container container">
-  <h1 class="page-title">PROFESSOR</h1>
+  <h1 class="page-title">Professor</h1>
   
   <div class="professor-content">
     <div class="professor-info">

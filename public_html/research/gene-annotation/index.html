@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGORA - Annotator for Genome of Organelle from Referenced sequence Analysis"
+    />
+    <meta name="author" content="2020112553 김민섭(biyotteu)" />
+    <meta name="designer" content="유정은" />
+
+    <title>Gene Annotation</title>
+    <!-- Pretendard CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="/~gangman/assets/css/main.css"
+    /><!--로컬에서 테스트 시에는 /~gangman/빼기-->
+  </head>
+  <body>
+    <header
+  class="default-header header"
+>
+  <nav class="navbar container">
+    <a href="/~gangman/" class="logo-link">
+      <img
+        src="/~gangman/assets/images/logos/logo-black.png"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="hamburger-menu" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <div class="menu-logo-container">
+        <a href="/~gangman/" class="logo-link">
+          <img
+            src="/~gangman/assets/images/logos/logo-black.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="hamburger-menu" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <li class="item"><a href="/~gangman/research">Research</a></li>
+      <li class="item"><a href="/~gangman/professor">Professor</a></li>
+      <li class="item"><a href="/~gangman/students">Students</a></li>
+      <li class="item"><a href="/~gangman/publication">Publication</a></li>
+      <li class="item"><a href="/~gangman/courses">Courses</a></li>
+      <li class="item"><a href="/~gangman/gallery">Gallery</a></li>
+      <!-- <li class="item contact-item">
+        <a href="mailto:gangman@dongguk.edu" class="contact-link">
+          <img
+            src="/~gangman/assets/images/icons/mail-black.png"
+            class="contact"
+            alt="contact"
+          />
+        </a>
+      </li> -->
+    </ul>
+    <!-- <a href="mailto:gangman@dongguk.edu" class="contact-link">
+      <img
+        src="/~gangman/assets/images/icons/mail-black.png"
+        class="contact"
+        alt="contact"
+      />
+    </a> -->
+  </nav>
+</header>
+
+    <!-- 헤더 포함 -->
+    <main>
+      <div class="research-detail container">
+  <article class="research-content">
+    <div class="research-entry">
+      <header class="research-header">
+        <h2>Gene Annotation</h2>
+        <div class="research-meta">
+          <time datetime="2019-12-15"
+            >2019.12.15</time
+          >
+          
+          <span class="author">Gangman Yi</span>
+          
+        </div>
+      </header>
+
+      <div class="research-body"><p><img src="/~gangman/assets/images/research/gene-annotation/image.png" alt="alt text" />
+Next-generation sequencing (NGS) technologies have led to the accumulation of high-throughput sequence data from various organisms in biology. To apply gene annotation of organellar genomes for various organisms, more optimized tools for functional gene annotation are required. Almost all gene annotation tools are mainly focused on the chloroplast genome of land plants or the mitochondrial genome of animals. We have developed a web application AGORA for the fast, user-friendly and improved annotations of organellar genomes. Annotator for Genes of Organelle from the Reference sequence Analysis (AGORA) annotates genes based on a basic local alignment search tool (BLAST)-based homology search and clustering with selected reference sequences from the NCBI database or user-defined uploaded data. AGORA can annotate the functional genes in almost all mitochondrion and plastid genomes of eukaryotes. The gene annotation of a genome with an exon–intron structure within a gene or inverted repeat region is also available. It provides information of start and end positions of each gene, BLAST results compared with the reference sequence and visualization of gene map by OGDRAW.</p>
+
+<p><a href="https://bigdata.dongguk.edu/gene_project/AGORA/" target="\_blank">https://bigdata.dongguk.edu/gene_project/AGORA/</a></p>
+
+<p><img src="/~gangman/assets/images/research/gene-annotation/image1.png" alt="alt text" /></p>
+
+<h3 id="input">Input</h3>
+
+<p><strong>Reference sequence:</strong></p>
+
+<ul>
+  <li>In order to run the BLAST with query and references, you need to put reference sequences. If you have the user-defined amino acid or nucleotide sequences, you can upload it on the system. Otherwise, you can put the accesion number such as NC_000000.For more information, please refer <a href="https://www.ncbi.nlm.nih.gov/Sequin/acc.html">NCBI site</a></li>
+</ul>
+
+<p><strong>Input File Format:</strong></p>
+
+<ul>
+  <li>Input file is an assembled contig. The format should be “FASTA”. The AGORA allows only one assembled query contig. For more information about FASTA, please refer to <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp">NCBI</a> site</li>
+</ul>
+
+<p><strong>Type:</strong></p>
+
+<ul>
+  <li>Select Choloroplast or Mitochondrion for your organellar genome</li>
+</ul>
+
+<p><strong>Genetic Code:</strong></p>
+
+<ul>
+  <li>This code is used for running the tBLASTn
+    <ul>
+      <li>Standard</li>
+      <li>Vertebrate Mitochondrial</li>
+      <li>Yeast Mitochondrial</li>
+      <li>Mold Mitochondrial</li>
+      <li>Invertebrate Mitochondrial</li>
+      <li>Ciliate Nuclear</li>
+      <li>Echinoderm Mitochondrial</li>
+      <li>Euplotid Nuclear</li>
+      <li>Bacteria and Archaea</li>
+      <li>Alternative Yeast Nuclear</li>
+      <li>Ascidian Mitochondrial</li>
+      <li>Flatworm Mitochondrial</li>
+      <li>Blepharisma Macronuclear</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more information about genetic code please see <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">NCBI</a></p>
+
+<h3 id="output">Output</h3>
+
+<p><strong>Output:</strong></p>
+
+<ul>
+  <li>As you see below examples, output file is the BLAST result that includes amino acid and nucloetide. The Query is set to the refereces and Data base is set to query. The number of matched position is decided upon the “Maximum matched sub gene’s count”</li>
+</ul>
+
+<p><img src="/~gangman/assets/images/research/gene-annotation/image2.png" alt="alt text" /></p>
+
+<p><em>The blast result of amino acid</em></p>
+
+<p><img src="/~gangman/assets/images/research/gene-annotation/image3.png" alt="alt text" /></p>
+
+<p><em>The blast result of nucleotide</em></p>
+
+<p><strong>Amino acid db sequences:</strong></p>
+
+<ul>
+  <li>This file includes the amino acid data base sequences. If the user uploaded the user-defined sequence, this file is same to that uploaded file. Otherwise, system is automatically generated from the NCBI.</li>
+</ul>
+
+<p><strong>Amino acid sequences:</strong></p>
+
+<ul>
+  <li>This is CDS translation files that is matched from the BLAST</li>
+</ul>
+
+<p><strong>Output CSV file:</strong></p>
+
+<ul>
+  <li>This file provides the start and end position, direction and gene product for each gene.</li>
+</ul>
+
+<p><strong>Nucleotide db sequences:</strong></p>
+
+<ul>
+  <li>This file is nucleotide data base sequences.</li>
+</ul>
+
+<p><strong>Nucleotide sequences:</strong></p>
+
+<ul>
+  <li>The FASTA formatted sequences file is includes the BLAST matched sequences.</li>
+</ul>
+
+<p><strong>GenBank File format:</strong></p>
+
+<ul>
+  <li>This file is GenBank formatted file. With this file we draw the circular gene map by running OGDRAW</li>
+</ul>
+
+<p><strong>OGDRAW:</strong></p>
+
+<ul>
+  <li>If all genes are matched correctly, you can see the figure. Here is example</li>
+</ul>
+
+<p><img src="/~gangman/assets/images/research/gene-annotation/image4.png" alt="alt text" /></p>
+</div>
+
+      <div class="research-navigation">
+        <div class="nav-links">
+          
+          <a href="/research/cplot/" class="prev">‹ Prev</a>
+          
+
+          <span class="separator">|</span>
+
+          
+          <a href="/research/geneco/" class="next">Next ›</a>
+          
+        </div>
+
+        <a href="/~gangman/research" class="back">Back to list</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+      <!-- 페이지별 내용 -->
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <div class="footer-wrap">
+      <img
+        src="/~gangman/assets/images/logos/gray_dgu_logo.png"
+        alt="동국대학교 로고"
+      />
+      <p>
+        신공학관 연구실 #9114, 동국대학교 [04620] 서울특별시 중구 필동로 1길 30
+      </p>
+    </div>
+    <div class="footer-wrap">
+      <p>Copyright <strong>&copy;2024 DataLab.</strong> All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- 푸터 포함 -->
+    <!-- <script src="/~gangman/assets/js/main.js"></script> -->
+    <script src="/~gangman/assets/js/navigation.js"></script>
+    <script src="/~gangman/assets/js/pagination.js"></script>
+  </body>
+</html>

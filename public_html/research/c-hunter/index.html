@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Identifying clusters of functionally related genes in genomes"
+    />
+    <meta name="author" content="2020112553 김민섭(biyotteu)" />
+    <meta name="designer" content="유정은" />
+
+    <title>C-Hunter</title>
+    <!-- Pretendard CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="/~gangman/assets/css/main.css"
+    /><!--로컬에서 테스트 시에는 /~gangman/빼기-->
+  </head>
+  <body>
+    <header
+  class="default-header header"
+>
+  <nav class="navbar container">
+    <a href="/~gangman/" class="logo-link">
+      <img
+        src="/~gangman/assets/images/logos/logo-black.png"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="hamburger-menu" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <div class="menu-logo-container">
+        <a href="/~gangman/" class="logo-link">
+          <img
+            src="/~gangman/assets/images/logos/logo-black.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="hamburger-menu" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <li class="item"><a href="/~gangman/research">Research</a></li>
+      <li class="item"><a href="/~gangman/professor">Professor</a></li>
+      <li class="item"><a href="/~gangman/students">Students</a></li>
+      <li class="item"><a href="/~gangman/publication">Publication</a></li>
+      <li class="item"><a href="/~gangman/courses">Courses</a></li>
+      <li class="item"><a href="/~gangman/gallery">Gallery</a></li>
+      <!-- <li class="item contact-item">
+        <a href="mailto:gangman@dongguk.edu" class="contact-link">
+          <img
+            src="/~gangman/assets/images/icons/mail-black.png"
+            class="contact"
+            alt="contact"
+          />
+        </a>
+      </li> -->
+    </ul>
+    <!-- <a href="mailto:gangman@dongguk.edu" class="contact-link">
+      <img
+        src="/~gangman/assets/images/icons/mail-black.png"
+        class="contact"
+        alt="contact"
+      />
+    </a> -->
+  </nav>
+</header>
+
+    <!-- 헤더 포함 -->
+    <main>
+      <div class="research-detail container">
+  <article class="research-content">
+    <div class="research-entry">
+      <header class="research-header">
+        <h2>C-Hunter</h2>
+        <div class="research-meta">
+          <time datetime="2007-05-01"
+            >2007.05.01</time
+          >
+          
+          <span class="author">Gangman Yi</span>
+          
+        </div>
+      </header>
+
+      <div class="research-body"><h3 id="identifying-clusters-of-functionally-related-genes-in-genomes">Identifying clusters of functionally related genes in genomes</h3>
+
+<p>C-Hunter is a new clustering algorithm which incorporates knowledge of gene function derived from Gene Ontology, with the organization of genes on chromosomes. In order to use C-Hunter program, basic data sets are needed. All data sets for eight species(AT,CE,DM,DR,EC,HS,MM &amp; SC), Data/Map file, GO, gene2accession and gene2go are supplied with C-Hunter program together. But, if you want to use new data sets, you can download from each website and you can make them again. C-Hunter program can be compiled under the Unix/Linux/Windows(Cygwin) environment, if the compiler supports STL.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ul>
+  <li>tar -zxvf C_Hunter_v.1.2.tar.gz</li>
+  <li>cd C_Hunter_v.1.2</li>
+  <li>./install</li>
+</ul>
+
+<h3 id="procedure-for-preparing-data-sets">Procedure for preparing data sets</h3>
+
+<p>If you are going to use alreay-made data sets, you don’t need to do this procedure.</p>
+
+<ol>
+  <li>Download go.obo text file (include Molecular Function, Biological Process, Cellular) at http://www.geneontology.org/page/download-ontology</li>
+  <li>Download gene2accession at NCBI, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/</li>
+  <li>Download gene2go at NCBI, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/</li>
+  <li>
+    <p>Make Chromosome list file (text file by tab-separated format)</p>
+
+    <ul>
+      <li>1st_Column = Chromsome Number</li>
+      <li>2nd_Column = Accession</li>
+      <li>3rd_Column = GI</li>
+    </ul>
+  </li>
+  <li>
+    <p>Run “obo2scheme.py” with 1 Gene Ontology data</p>
+
+    <ul>
+      <li>Usage : python obo2scheme.py go.obo (file from #1)</li>
+      <li>The output file name will be “scheme.GO.data”</li>
+    </ul>
+  </li>
+  <li>Run “Make_GO_Map_Data.php” with gene2accession, gene2go and Chr_list
+    <ul>
+      <li>Usage : php Make_GO_Map_Data.php gene2accession, gene2go, Chr_list, Ouput file name</li>
+      <li>This converting program makes map files and GO data files.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="download">Download</h3>
+
+<ul>
+  <li><a href="https://bigdata.dongguk.edu/~gangman/files/projects/C_Hunter_v.1.2.tar.gz">C_Hunter_v.1.2.tar.gz</a></li>
+  <li><a href="https://bigdata.dongguk.edu/~gangman/files/projects/C_Hunter_v.1.2.Fasta.tar.gz">C_Hunter_v.1.2.Fasta.tar.gz</a></li>
+</ul>
+</div>
+
+      <div class="research-navigation">
+        <div class="nav-links">
+          
+          <a href="/research/sclassify/" class="prev">‹ Prev</a>
+          
+
+          <span class="separator">|</span>
+
+          
+        </div>
+
+        <a href="/~gangman/research" class="back">Back to list</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+      <!-- 페이지별 내용 -->
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <div class="footer-wrap">
+      <img
+        src="/~gangman/assets/images/logos/gray_dgu_logo.png"
+        alt="동국대학교 로고"
+      />
+      <p>
+        신공학관 연구실 #9114, 동국대학교 [04620] 서울특별시 중구 필동로 1길 30
+      </p>
+    </div>
+    <div class="footer-wrap">
+      <p>Copyright <strong>&copy;2024 DataLab.</strong> All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- 푸터 포함 -->
+    <!-- <script src="/~gangman/assets/js/main.js"></script> -->
+    <script src="/~gangman/assets/js/navigation.js"></script>
+    <script src="/~gangman/assets/js/pagination.js"></script>
+  </body>
+</html>

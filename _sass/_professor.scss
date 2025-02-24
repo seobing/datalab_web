@@ -1,6 +1,7 @@
 .professor-container {
-  padding: 64px 0px;
-
+  margin-top: 64px;
+  //padding: 64px 0px;
+  z-index: 0;
   .page-title {
     @include font-display-2-medium;
     margin-bottom: 90px;
@@ -8,7 +9,7 @@
   }
 
   .professor-content {
-    padding: 0 100px;
+    padding: 0 0;
     margin: 0 auto;
   }
 

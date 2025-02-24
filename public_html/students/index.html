@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+    />
+    <meta name="author" content="2020112553 김민섭(biyotteu)" />
+    <meta name="designer" content="유정은" />
+
+    <title>Students</title>
+    <!-- Pretendard CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="/~gangman/assets/css/main.css"
+    /><!--로컬에서 테스트 시에는 /~gangman/빼기-->
+  </head>
+  <body>
+    <header
+  class="default-header header"
+>
+  <nav class="navbar container">
+    <a href="/~gangman/" class="logo-link">
+      <img
+        src="/~gangman/assets/images/logos/logo-black.png"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="hamburger-menu" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <div class="menu-logo-container">
+        <a href="/~gangman/" class="logo-link">
+          <img
+            src="/~gangman/assets/images/logos/logo-black.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="hamburger-menu" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <li class="item"><a href="/~gangman/research">Research</a></li>
+      <li class="item"><a href="/~gangman/professor">Professor</a></li>
+      <li class="item"><a href="/~gangman/students">Students</a></li>
+      <li class="item"><a href="/~gangman/publication">Publication</a></li>
+      <li class="item"><a href="/~gangman/courses">Courses</a></li>
+      <li class="item"><a href="/~gangman/gallery">Gallery</a></li>
+      <!-- <li class="item contact-item">
+        <a href="mailto:gangman@dongguk.edu" class="contact-link">
+          <img
+            src="/~gangman/assets/images/icons/mail-black.png"
+            class="contact"
+            alt="contact"
+          />
+        </a>
+      </li> -->
+    </ul>
+    <!-- <a href="mailto:gangman@dongguk.edu" class="contact-link">
+      <img
+        src="/~gangman/assets/images/icons/mail-black.png"
+        class="contact"
+        alt="contact"
+      />
+    </a> -->
+  </nav>
+</header>
+
+    <!-- 헤더 포함 -->
+    <main>
+      <script src="/~gangman/assets/js/students.js"></script>
+
+<div class="students-container container">
+  <h1 class="page-title">Students</h1>
+
+  <div class="category-toggles">
+    
+    <button class="category-toggle active" data-category="all">All</button>
+    
+    <button class="category-toggle " data-category="phd">Ph.D.</button>
+    
+    <button class="category-toggle " data-category="ms">M.S.</button>
+    
+    <button class="category-toggle " data-category="undergraduate">Undergraduate</button>
+    
+  </div>
+
+  <!-- Current Students Grid -->
+  <div class="students-grid">
+    
+    <div class="student-item" data-category="phd" data-research="[&quot;Research on De novo Assemblers&quot;,&quot;Research on Protein Function Prediction&quot;]" data-education="[{&quot;degree&quot;:&quot;M.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2021.03 - 2023.02&quot;},{&quot;degree&quot;:&quot;B.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2017.03 - 2021.02&quot;}]">
+      <div class="student-image">
+        <img src="/~gangman/assets/images/students/yejin.jpg" alt="Yejin Kan" loading="lazy" />
+      </div>
+      <div class="student-info">
+        <h3>Yejin Kan</h3>
+        <p class="position">Ph.D. Student</p>
+      </div>
+    </div>
+    
+    <div class="student-item" data-category="phd" data-research="[&quot;Research on Metric Learning Algorithms&quot;,&quot;Research on Multi-Label Learning Algorithms&quot;]" data-education="[{&quot;degree&quot;:&quot;M.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2021.09 - 2023.08&quot;},{&quot;degree&quot;:&quot;B.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2016.03 - 2021.08&quot;}]">
+      <div class="student-image">
+        <img src="/~gangman/assets/images/students/Dongyeon.jpg" alt="Dongyeon Kim" loading="lazy" />
+      </div>
+      <div class="student-info">
+        <h3>Dongyeon Kim</h3>
+        <p class="position">Ph.D. Student</p>
+      </div>
+    </div>
+    
+    <div class="student-item" data-category="ms" data-research="[&quot;Research on Protein Function Prediction&quot;]" data-education="[{&quot;degree&quot;:&quot;B.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2020.03 - 2024.02&quot;}]">
+      <div class="student-image">
+        <img src="/~gangman/assets/images/students/jinkyung.jpeg" alt="Jinkyung Yang" loading="lazy" />
+      </div>
+      <div class="student-info">
+        <h3>Jinkyung Yang</h3>
+        <p class="position">M.S. Student</p>
+      </div>
+    </div>
+    
+    <div class="student-item" data-category="ms" data-research="null" data-education="[{&quot;degree&quot;:&quot;B.S. in Multimedia Engineering&quot;,&quot;institution&quot;:&quot;Dongguk University, Korea&quot;,&quot;period&quot;:&quot;2019.03 - Current&quot;}]">
+      <div class="student-image">
+        <img src="/~gangman/assets/images/students/Minseob.jpeg" alt="Minseop Kim" loading="lazy" />
+      </div>
+      <div class="student-info">
+        <h3>Minseop Kim</h3>
+        <p class="position">M.S. Student</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <hr />
+
+  <!-- Part Time Students -->
+  <section class="part-time-section">
+    <h2>Part Time</h2>
+    <table class="students-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Affiliation</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><strong>Hodong Shin</strong></td>
+          <td>2024.3 ~ Current (Kaonmedia, Seongnam-si, Gyeonggi-do, Korea)</td>
+          <td>Ph.D. Student</td>
+        </tr>
+        
+        <tr>
+          <td><strong>HyungJoon Seo</strong></td>
+          <td>2018.9 ~ Current (Yonhap News, Seoul, Korea)</td>
+          <td>Ph.D. Student</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Hongsoo Yoon</strong></td>
+          <td>Current (JR Industry, Uiwang-si, Gyeonggi-do)</td>
+          <td>Ph.D. Student</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Alumni -->
+  <section class="alumni-section">
+    <h2>Alumni</h2>
+    <table class="students-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Thesis</th>
+          <th>Degree</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><strong>Seungmin Lee</strong></td>
+          <td>A Study on Anchor Graph Based Incomplete Multi-view Clustering Algorithm</td>
+          <td>Master Student(2023.03 ~ 2025.02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Yerin Lee</strong></td>
+          <td>Research on identifying hotspots and optimizing patrol routes using open data-based spatiotemporal information</td>
+          <td>Master Student (2022. 09 ~ 2024.08)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Hodong Shin</strong></td>
+          <td>A Study for processing large-scale data using edge computing based on the next-generation mobile communication</td>
+          <td>Master Student (2021. 03 ~ 2024.02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Dongyeon Kim</strong></td>
+          <td>A Study on Parameter Automation Algorithm for Clustering-based Multi-metric Learning</td>
+          <td>Master Student (2021. 09 ~ 2023. 08)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Yejin Kan</strong></td>
+          <td>A Study on Similarity-based Gap Filling Algorithm Using Hybrid Reads</td>
+          <td>Master Student (2021. 03 ~ 2023. 02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Adil Abdu</strong></td>
+          <td>A Study on Automatic Detection of DBSCAN Parameters and Efficient Clustering of Data in Overlapping Density Region</td>
+          <td>Master Student (2020. 03 ~ 2022. 02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Firaol Dida</strong></td>
+          <td>A Study on Gap Filling Algorithm Based On Markov Chain for Sequence Assembly</td>
+          <td>Master Student (2020. 03 ~ 2022. 02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Jeongkyu Kim</strong></td>
+          <td>Research on Anchoring–based Alignment Algorithm of DNA Sequences</td>
+          <td>Master Student (2019. 03 ~ 2021. 02)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Mingeun Ji</strong></td>
+          <td>A Study on Read Alignment Algorithm based on Index for Analysis Similarity of DNA Sequences</td>
+          <td>Master Student (2018. 03 ~ 2020. 08)</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Youra Jeong</strong></td>
+          <td>The computational balance of sequence alignments on donnated computing resources</td>
+          <td>Master Student (2017. 03 ~ 2019. 02)</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Student Modal -->
+  <div class="student-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title"></h2>
+        <button class="modal-close">×</button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-section">
+          <div class="section-header">Research</div>
+          <ul class="research-list"></ul>
+        </div>
+        <div class="modal-section">
+          <div class="section-header">Education</div>
+          <ul class="education-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 페이지별 내용 -->
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <div class="footer-wrap">
+      <img
+        src="/~gangman/assets/images/logos/gray_dgu_logo.png"
+        alt="동국대학교 로고"
+      />
+      <p>
+        신공학관 연구실 #9114, 동국대학교 [04620] 서울특별시 중구 필동로 1길 30
+      </p>
+    </div>
+    <div class="footer-wrap">
+      <p>Copyright <strong>&copy;2024 DataLab.</strong> All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- 푸터 포함 -->
+    <!-- <script src="/~gangman/assets/js/main.js"></script> -->
+    <script src="/~gangman/assets/js/navigation.js"></script>
+    <script src="/~gangman/assets/js/pagination.js"></script>
+  </body>
+</html>
