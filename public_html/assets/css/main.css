@@ -1,0 +1,2284 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #191f28;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 24px 0px;
+  position: relative;
+}
+header .logo-link {
+  display: flex;
+  align-items: center;
+}
+header .logo-link .logo {
+  height: 32px;
+}
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+  align-items: center;
+}
+header .navbar .nav-links .item {
+  position: relative;
+}
+header .navbar .nav-links .item a {
+  color: #191f28;
+  text-decoration: none;
+}
+header .navbar .nav-links .item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #191f28;
+  transition: width 0.3s ease;
+}
+header .navbar .nav-links .item:hover::after {
+  width: 100%;
+}
+header .navbar .nav-links .contact-item {
+  display: none;
+}
+header .navbar .contact-link {
+  display: block;
+}
+header .navbar .contact-link .contact {
+  height: 48px;
+}
+header .navbar .menu-logo-container {
+  display: none;
+  width: 100%;
+  padding: 24px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18.4px;
+  height: 16.4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+header .hamburger-menu span {
+  width: 100%;
+  height: 2px;
+  background: #191f28;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+  transform-origin: center;
+}
+header .hamburger-menu.active span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+header .hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+header .hamburger-menu.active span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.home-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: transparent;
+}
+.home-header .navbar .nav-links .item a {
+  color: #ffffff;
+}
+.home-header .navbar .nav-links .item::after {
+  background-color: #ffffff;
+}
+.home-header .hamburger-menu span {
+  background: #ffffff;
+}
+.home-header .hamburger-menu.active span {
+  background: #191f28;
+}
+
+.default-header {
+  background: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  header .navbar .menu-logo-container {
+    display: flex;
+  }
+  header .navbar .hamburger-menu {
+    display: flex;
+  }
+  header .navbar > .contact-link {
+    display: none;
+  }
+  header .navbar .nav-links {
+    position: fixed;
+    gap: 0px;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transform: none;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding: 0;
+    flex-direction: column;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    align-items: flex-start;
+  }
+  header .navbar .nav-links.active {
+    top: 0px;
+  }
+  header .navbar .nav-links .item {
+    width: 100%;
+  }
+  header .navbar .nav-links .item a {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+    color: #4e5968;
+    padding: 16px 20px;
+    display: block;
+  }
+  header .navbar .nav-links .item a.active {
+    color: #2272eb;
+  }
+  header .navbar .nav-links .item::after {
+    display: none;
+  }
+  header .navbar .nav-links .contact-item {
+    display: block;
+  }
+  header .navbar .contact-link {
+    display: none;
+  }
+  .home-header .nav-links {
+    background: #0f0f2d;
+  }
+  .home-header {
+    position: absolute;
+    left: 0%;
+    transform: none;
+    width: 100%;
+  }
+  .home-header .navbar .nav-links .item a {
+    color: #191f28;
+  }
+}
+@media (max-width: 480px) {
+  header .logo-link .logo {
+    height: 25px;
+  }
+  header .navbar .nav-links {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar .nav-links .item a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #191f28;
+    transition: width 0.3s ease;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar .nav-links:hover ~ .item a.active::after {
+    width: 0;
+  }
+  .navbar .nav-links:hover a.active::after {
+    width: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-header .navbar .nav-links .item a.active::after {
+    background-color: #ffffff;
+  }
+}
+
+footer {
+  background: #f2f4f6;
+  color: #6b7684;
+  padding: 10px 0px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  footer .footer-container {
+    height: auto;
+    padding: 10px 16px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+footer .footer-container .footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+@media (max-width: 480px) {
+  footer .footer-container .footer-wrap p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+footer .footer-container .footer-wrap img {
+  height: 27px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header .logo {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+.home-intro-section {
+  background-color: #0f0f2d;
+  padding: 300px 0px 300px 0px;
+  margin-bottom: 117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/~gangman/assets/images/backgrounds/home.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.home-intro-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.45);
+}
+.home-intro-section .intro-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-intro-section .intro-text h1 {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.7%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 48px;
+}
+.home-intro-section .intro-text p {
+  margin-top: 26px;
+  text-align: center;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #e5e8eb;
+}
+@media (max-width: 768px) {
+  .home-intro-section {
+    padding: 200px 0px 185px 0px;
+    margin-bottom: 60px;
+  }
+  .home-intro-section .intro-text h1 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+  }
+  .home-intro-section .intro-text p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+}
+@media (max-width: 480px) {
+  .home-intro-section {
+    padding: 200px 0px 185px 0px;
+    margin-bottom: 40px;
+  }
+}
+
+.home-research-area-section {
+  margin-bottom: 129px;
+}
+.home-research-area-section h2 {
+  margin-bottom: 40px;
+}
+.home-research-area-section .flex-container {
+  display: flex;
+  gap: 20px;
+}
+.home-research-area-section .flex-container .flex1 {
+  flex: 1;
+}
+.home-research-area-section .flex-container .flex1 .card-container {
+  height: 223px;
+  padding: 33px 23px;
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+  color: #ffffff;
+  border-radius: 12px;
+}
+.home-research-area-section .flex-container .flex1 .ml {
+  background-image: url("/~gangman/assets/images/backgrounds/machine-learning-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-research-area-section .flex-container .flex1 .bio {
+  background-image: url("/~gangman/assets/images/backgrounds/bio-informatics-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-research-area-section .flex-container .flex1 .about {
+  background-color: #f2f4f6;
+}
+.home-research-area-section .flex-container .flex1 .about h3 {
+  color: #333d4b;
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+  margin-bottom: 12px;
+}
+.home-research-area-section .flex-container .flex1 .about p {
+  color: #8b95a1;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+}
+@media (max-width: 768px) {
+  .home-research-area-section {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .home-research-area-section {
+    margin-bottom: 60px;
+  }
+  .home-research-area-section h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.home-research-section {
+  margin-bottom: 120px;
+}
+.home-research-section h2 {
+  margin-bottom: 44px;
+}
+.home-research-section .research-slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .home-research-section .research-slider {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .home-research-section .research-slider {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .home-research-section .research-slider {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.home-research-section .research-card {
+  cursor: pointer;
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.home-research-section .research-card:hover {
+  transform: translateY(-5px);
+}
+.home-research-section .research-card .image-container {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+.home-research-section .research-card .image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  object-position: center;
+  border: 1px solid #e5e8eb;
+}
+.home-research-section .research-card .image-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 480px) {
+  .home-research-section .research-card .image-container {
+    aspect-ratio: 16/9;
+  }
+}
+.home-research-section .research-card .research-info h3 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+  margin-bottom: 4px;
+  color: #191f28;
+}
+@media (max-width: 480px) {
+  .home-research-section .research-card .research-info h3 {
+    font-size: 20px;
+  }
+}
+.home-research-section .research-card .research-info .content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 두 줄로 제한 */
+  -webkit-box-orient: vertical;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #8b95a1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-research-section .research-card .research-info .date {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #b0b8c1;
+}
+.home-research-section .research-card .research-thumbnail-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #f6f8f9;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.home-research-section .research-card .research-thumbnail-placeholder h3 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+  color: #4e5968;
+  text-align: center;
+  word-break: break-word;
+}
+.home-research-section .button-wrapper {
+  text-align: center;
+}
+.home-research-section .show-more-button {
+  border: 1px solid #191f28;
+  border-radius: 24px;
+  padding: 10px 32px;
+  color: #191f28;
+  cursor: pointer;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+.home-research-section .show-more-button:hover {
+  background-color: rgba(25, 31, 40, 0.15);
+}
+
+.home-recruit-section {
+  margin-bottom: 130px;
+  width: 100%;
+  overflow: hidden;
+}
+.home-recruit-section .container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .home-recruit-section .container {
+    max-width: calc(100% - 40px);
+  }
+}
+.home-recruit-section .recruit-container {
+  background-image: url("/~gangman/assets/images/banners/recruit-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  border-radius: 24px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 55px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.home-recruit-section .recruit-content h2 {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+  color: #ffffff;
+}
+.home-recruit-section .recruit-content p {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.home-recruit-section .recruit-content .contact-button {
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  padding: 10px 32px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+  transition: background-color 0.3s ease;
+}
+.home-recruit-section .recruit-content .contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 1200px) {
+  .home-recruit-section .recruit-container {
+    gap: 24px;
+  }
+  .home-recruit-section .recruit-content h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .home-recruit-section .recruit-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .home-recruit-section {
+    margin-bottom: 80px;
+  }
+  .home-recruit-section .recruit-container {
+    padding: 32px 24px;
+  }
+  .home-recruit-section .recruit-content h2 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+    color: #ffffff;
+  }
+  .home-recruit-section .recruit-content p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+}
+@media (max-width: 480px) {
+  .home-recruit-section {
+    margin-bottom: 60px;
+  }
+}
+
+.error-404-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.error-404-container h1 {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 56px;
+  /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+   you can change 5vw value
+    font-size:clamp(44.8px, 5vw, 56px); */
+  line-height: 128.6%;
+  text-decoration: none;
+  letter-spacing: -3.2%;
+  color: #191f28;
+  margin-bottom: 12px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .error-404-container h1 {
+    font-size: clamp(32px, 8vw, 56px);
+  }
+}
+.error-404-container p {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: #4e5968;
+  margin-bottom: 32px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .error-404-container p {
+    font-size: clamp(15px, 4vw, 17px);
+    margin-bottom: 24px;
+  }
+}
+.error-404-container .go-home-button {
+  border: 1px solid #191f28;
+  border-radius: 24px;
+  padding: 10px 32px;
+  color: #191f28;
+  cursor: pointer;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146.7%;
+  text-decoration: none;
+  letter-spacing: 1%;
+  transition: background-color 0.3s ease;
+}
+.error-404-container .go-home-button:hover {
+  background-color: rgba(25, 31, 40, 0.15);
+}
+@media (max-width: 480px) {
+  .error-404-container .go-home-button {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+}
+
+.publication-section {
+  margin-top: 64px;
+}
+.publication-section .title-container {
+  margin-bottom: 26px;
+}
+.publication-section .title-container h1 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  color: #191f28;
+}
+.publication-section .category-btn {
+  margin-right: 16px;
+  margin-bottom: 10px;
+  padding: 8px 14px;
+  /* Caption/Medium */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  border: 1px solid #e5e8eb;
+  background-color: transparent;
+  color: #4e5968;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.publication-section .category-btn:hover {
+  background-color: #f2f4f6;
+}
+.publication-section .category-btn.active {
+  background-color: #333d4b;
+  color: white;
+}
+.publication-section .category-section {
+  margin-top: 10px;
+  display: none;
+}
+.publication-section .category-section .title {
+  margin-bottom: 26px;
+}
+.publication-section .category-section .title h1 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  color: #191f28;
+}
+.publication-section .category-section.active {
+  display: block;
+}
+.publication-section .category-section h2 {
+  font-size: 1.5rem;
+  color: #045b98;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.publication-section .category-section ul {
+  list-style: none;
+  padding: 0;
+}
+.publication-section .category-section ul li {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #e5e8eb;
+  border-radius: 8px;
+}
+.publication-section .category-section ul li h3 {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+}
+.publication-section .category-section ul li .list-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.publication-section .category-section ul li .list-info .year {
+  /* SubTitle/XxSmall */
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 19.2px */
+  color: #6b7684;
+  border-radius: 6px;
+  background: #f3f5f7;
+  color: #4e5760;
+  padding: 4px 6px;
+}
+.publication-section .category-section ul li .list-info a {
+  padding: 2px 10px;
+  border-radius: 6px;
+  background: #e9f5ff;
+  color: #1b90e8;
+  text-decoration: none;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.publication-section .category-section ul li p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .publication-section {
+    margin-top: 32px;
+  }
+  .publication-section .title-container {
+    margin-bottom: 16px;
+  }
+  .publication-section .title-container h1 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+  }
+  .publication-section .category-btn {
+    margin-right: 8px;
+  }
+  .publication-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .publication-section ul li {
+    margin-bottom: 16px;
+  }
+  .publication-section ul li h3 {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+}
+.courses-container {
+  margin-top: 64px;
+}
+.courses-container .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 40px;
+}
+.courses-container .year-section {
+  margin-bottom: 20px;
+}
+.courses-container .year-section .courses-grid {
+  display: grid;
+  border-left: 1px solid #d1d6db;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-left: 10px;
+  padding-left: 18px;
+  opacity: 1;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+}
+.courses-container .year-section .courses-grid.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 0;
+}
+.courses-container .year-section .year-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f0f2d;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 136.4%;
+  text-decoration: none;
+  letter-spacing: -1.9%;
+}
+.courses-container .year-section .year-toggle::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/~gangman/assets/images/icons/icon-arrow-down-mono.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #2272eb;
+  margin-right: 8px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.courses-container .year-section .year-toggle.collapsed::before {
+  transform: rotate(-90deg);
+}
+.courses-container .year-section .semester-card {
+  background: #f9fafb;
+  border: 1px solid #b0b8c1;
+  border-radius: 8px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.courses-container .year-section .semester-card .semester {
+  color: #6b7684;
+  margin-bottom: 8px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138.5%;
+  text-decoration: none;
+  letter-spacing: 1.9%;
+}
+.courses-container .year-section .semester-card .course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.courses-container .year-section .semester-card .course-list li {
+  color: #191f28;
+  margin-bottom: 8px;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+.courses-container .year-section .semester-card .course-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .courses-container {
+    padding: 32px 20px;
+  }
+  .courses-container .page-title {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+    margin-bottom: 28px;
+  }
+  .courses-container .courses-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .courses-container .year-toggle {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration: none;
+    letter-spacing: -1.2%;
+  }
+}
+.gallery-container {
+  margin-top: 64px;
+}
+.gallery-container .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 40px;
+  color: #191f28;
+}
+@media (max-width: 480px) {
+  .gallery-container .page-title {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+    margin-bottom: 16px;
+  }
+}
+.gallery-container .category-toggles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.gallery-container .category-toggles .category-toggle {
+  padding: 8px 16px;
+  border: 1px solid #b0b8c1;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #4e5968;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.gallery-container .category-toggles .category-toggle:hover {
+  background: #f6f8f9;
+}
+.gallery-container .category-toggles .category-toggle.active {
+  background: #0f0f2d;
+  color: #ffffff;
+  border-color: #0f0f2d;
+}
+.gallery-container .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.gallery-container .gallery-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.gallery-container .gallery-item.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+.gallery-container .gallery-item:hover .item-image img {
+  transform: scale(1.05);
+}
+.gallery-container .gallery-item .item-image {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background-color: #f6f8f9;
+}
+.gallery-container .gallery-item .item-image img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.gallery-container .gallery-item .item-info {
+  padding: 16px 0;
+  transform: translateZ(0);
+}
+.gallery-container .gallery-item .item-info h3 {
+  color: #191f28;
+  margin-bottom: 4px;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.gallery-container .gallery-item .item-info p {
+  color: #6b7684;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 32px 20px;
+  }
+  .gallery-container .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery-modal .modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+}
+.gallery-modal .modal-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.gallery-modal .modal-prev,
+.gallery-modal .modal-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.gallery-modal .modal-prev::before,
+.gallery-modal .modal-next::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  display: block;
+}
+.gallery-modal .modal-prev:hover,
+.gallery-modal .modal-next:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-50%) scale(1.05);
+}
+@media (max-width: 480px) {
+  .gallery-modal .modal-prev,
+  .gallery-modal .modal-next {
+    width: 32px;
+    height: 32px;
+    background: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .gallery-modal .modal-prev::before,
+  .gallery-modal .modal-next::before {
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  }
+  .gallery-modal .modal-prev:hover,
+  .gallery-modal .modal-next:hover {
+    background: none;
+    transform: translateY(-50%);
+  }
+}
+.gallery-modal .modal-prev {
+  left: 24px;
+}
+.gallery-modal .modal-prev::before {
+  transform: rotate(135deg);
+  margin-left: 4px;
+}
+@media (max-width: 480px) {
+  .gallery-modal .modal-prev {
+    left: 16px;
+  }
+  .gallery-modal .modal-prev::before {
+    transform: rotate(135deg);
+    margin-left: 6px;
+  }
+}
+.gallery-modal .modal-next {
+  right: 24px;
+}
+.gallery-modal .modal-next::before {
+  transform: rotate(-45deg);
+  margin-right: 4px;
+}
+@media (max-width: 480px) {
+  .gallery-modal .modal-next {
+    right: 16px;
+  }
+  .gallery-modal .modal-next::before {
+    transform: rotate(-45deg);
+    margin-right: 6px;
+  }
+}
+.gallery-modal .modal-close {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  -webkit-tap-highlight-color: transparent;
+}
+.gallery-modal .modal-close:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+@media (max-width: 480px) {
+  .gallery-modal .modal-close {
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+  }
+  .gallery-modal .modal-close:hover {
+    transform: none;
+  }
+}
+
+.students-container {
+  margin-top: 64px;
+  z-index: 0;
+}
+.students-container .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 40px;
+  color: #191f28;
+}
+@media (max-width: 480px) {
+  .students-container .page-title {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+    margin-bottom: 16px;
+  }
+}
+.students-container h2 {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+  margin-bottom: 16px;
+  color: #191f28;
+  margin-top: 48px;
+}
+.students-container hr {
+  background: #b0b8c1;
+  height: 1px;
+  border: none;
+}
+.students-container .category-toggles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.students-container .category-toggles .category-toggle {
+  padding: 8px 16px;
+  border: 1px solid #b0b8c1;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #4e5968;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.students-container .category-toggles .category-toggle:hover {
+  background: #f6f8f9;
+}
+.students-container .category-toggles .category-toggle.active {
+  background: #0f0f2d;
+  color: #ffffff;
+  border-color: #0f0f2d;
+}
+.students-container .students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+  z-index: 0;
+}
+.students-container .student-item {
+  z-index: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 0;
+  cursor: pointer;
+  will-change: transform;
+}
+.students-container .student-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.students-container .student-item:hover .student-image img {
+  transform: scale(1.05);
+}
+.students-container .student-item:hover .student-image {
+  border-radius: 0px;
+}
+.students-container .student-item.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+.students-container .student-item .student-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: border-radius 0.3s ease-in-out;
+  border: 1px solid #e5e8eb;
+}
+.students-container .student-item .student-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+.students-container .student-item .student-info {
+  padding: 16px;
+}
+.students-container .student-item .student-info h3 {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  letter-spacing: -1.2%;
+  margin-bottom: 4px;
+  color: #191f28;
+}
+.students-container .student-item .student-info .position {
+  display: inline;
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 138.5%;
+  text-decoration: none;
+  letter-spacing: 1.9%;
+  color: #6b7684;
+  padding: 4px;
+  border-radius: 4px;
+  background: #f2f4f6;
+}
+.students-container .students-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 40px;
+}
+.students-container .students-table thead {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.students-container .students-table thead th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-left: 24px;
+}
+.students-container .students-table thead th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-right: 24px;
+}
+.students-container .students-table thead td:first-child {
+  margin-left: 24px;
+}
+.students-container .students-table thead td:last-child {
+  margin-right: 24px;
+}
+.students-container .students-table th,
+.students-container .students-table td {
+  padding: 12px 24px;
+  text-align: left;
+}
+.students-container .students-table td:first-child {
+  padding-left: 24px;
+}
+.students-container .students-table td:last-child {
+  padding-right: 24px;
+}
+.students-container .students-table td {
+  border-bottom: 1px solid #e5e8eb;
+}
+.students-container .students-table th {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  background: #f6f8f9;
+}
+.students-container .students-table td {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157.1%;
+  text-decoration: none;
+  letter-spacing: 1.5%;
+}
+@media (max-width: 768px) {
+  .students-container {
+    padding: 32px 16px;
+  }
+  .students-container .students-grid {
+    grid-template-columns: 2fr;
+  }
+  .students-container .students-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+.student-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.student-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.student-modal .modal-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.student-modal .modal-header {
+  background: #333d4b;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.student-modal .modal-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.student-modal .modal-content {
+  padding: 24px;
+}
+.student-modal .modal-section {
+  margin-bottom: 24px;
+}
+.student-modal .modal-section:last-child {
+  margin-bottom: 0;
+}
+.student-modal .section-header {
+  background: #f6f8f9;
+  padding: 12px 16px;
+  font-weight: 500;
+  color: #333d4b;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.student-modal .research-list,
+.student-modal .education-list {
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+}
+.student-modal .research-list li,
+.student-modal .education-list li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 8px;
+  color: #4e5968;
+  line-height: 1.5;
+}
+.student-modal .research-list li:before,
+.student-modal .education-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4e5968;
+}
+.student-modal .research-list li:last-child,
+.student-modal .education-list li:last-child {
+  margin-bottom: 0;
+}
+.student-modal .modal-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.student-modal .modal-close:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .student-modal .modal-container {
+    margin: 0 16px;
+  }
+}
+
+.professor-container {
+  margin-top: 64px;
+  z-index: 0;
+}
+.professor-container .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 90px;
+  color: #191f28;
+}
+.professor-container .professor-content {
+  padding: 0 0;
+  margin: 0 auto;
+}
+.professor-container .professor-info {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+.professor-container .professor-info .professor-image {
+  flex-shrink: 0;
+  width: 300px;
+}
+.professor-container .professor-info .professor-image img {
+  border: 1px solid #e5e8eb;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.professor-container .professor-info .professor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.professor-container .professor-info .professor-details .name-division h2 {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  color: #191f28;
+  margin-bottom: 8px;
+}
+.professor-container .professor-info .professor-details .name-division .division {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141.2%;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: #333d4b;
+}
+.professor-container .professor-info .professor-details .contact-info .contact-info-wrap {
+  display: flex;
+  gap: 17px;
+}
+.professor-container .professor-info .professor-details .contact-info p {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #4e5968;
+  margin-bottom: 8px;
+}
+.professor-container .professor-info .professor-details .contact-info p.location {
+  margin-left: 48px;
+}
+.professor-container .professor-info .professor-details .contact-info p strong {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  display: inline-block;
+  width: 48px;
+}
+.professor-container .professor-info .professor-details .justify {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #4e5968;
+}
+.professor-container .content-section {
+  margin-bottom: 32px;
+}
+.professor-container .content-section h3 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  margin-bottom: 18px;
+  padding: 10px 24px;
+  background-color: #f2f4f6;
+  border-radius: 8px;
+}
+.professor-container .content-section h4 {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #4e5968;
+  margin: 24px 0 12px;
+}
+.professor-container .content-section p {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  padding: 0 24px;
+}
+.professor-container .content-section ul {
+  list-style: none;
+  padding: 0px 24px;
+}
+.professor-container .content-section ul li {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.6;
+}
+.professor-container .content-section ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0f0f2d;
+}
+.professor-container .content-section ul li ul {
+  padding: 0px 6px;
+}
+@media (max-width: 1200px) {
+  .professor-container {
+    padding: 16px 20px;
+  }
+  .professor-container .page-title {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 136.4%;
+    text-decoration: none;
+    letter-spacing: -1.9%;
+    margin-bottom: 60px;
+    color: #191f28;
+  }
+  .professor-container .professor-content {
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+  .professor-container .professor-info {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .professor-container .professor-info .professor-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .professor-container .professor-info .professor-details .name-division h2 {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration: none;
+    letter-spacing: -1.2%;
+  }
+  .professor-container .professor-info .professor-details .name-division .division {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    letter-spacing: 0.6%;
+  }
+  .professor-container .professor-info .professor-details .contact-info .contact-info-wrap strong {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+  .professor-container .professor-info .professor-details .contact-info .contact-info-wrap p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+  .professor-container .professor-info .professor-details .justify {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    letter-spacing: 1%;
+  }
+  .professor-container .content-section {
+    margin-bottom: 32px;
+  }
+  .professor-container .content-section h3 {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    letter-spacing: 0.6%;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+  }
+  .professor-container .content-section h4 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+    margin: 20px 0 10px;
+  }
+  .professor-container .content-section p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+    padding: 0 12px;
+  }
+  .professor-container .content-section ul {
+    list-style: none;
+    padding: 0px 12px;
+  }
+  .professor-container .content-section ul li {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 146.7%;
+    text-decoration: none;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+    padding-left: 12px;
+  }
+  .professor-container .content-section ul li ul {
+    padding: 8px 4px 0;
+  }
+}
+
+.research-container {
+  margin-top: 64px;
+}
+.research-container .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 40px;
+  color: #191f28;
+}
+@media (max-width: 480px) {
+  .research-container .page-title {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-decoration: none;
+    letter-spacing: -2.3%;
+    margin-bottom: 16px;
+  }
+}
+.research-container .research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.research-container .research-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+  padding: 12px;
+}
+.research-container .research-item.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+.research-container .research-item a {
+  text-decoration: none;
+}
+.research-container .research-item:hover {
+  transform: translateY(-5px);
+}
+.research-container .research-item:hover .item-image {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+.research-container .research-item .item-image {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background-color: #f2f4f6;
+  border: 1px solid #e5e8eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+.research-container .research-item .item-image img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.research-container .research-item .item-image .alt-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f4f6;
+  color: #191f28;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+}
+.research-container .research-item .item-info {
+  padding: 16px 0;
+  transform: translateZ(0);
+}
+.research-container .research-item .item-info h3 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 136.4%;
+  text-decoration: none;
+  letter-spacing: -1.9%;
+  color: #191f28;
+  margin-bottom: 4px;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.research-container .research-item .item-info .content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 두 줄로 제한 */
+  -webkit-box-orient: vertical;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #8b95a1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.research-container .research-item .item-info .date {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-decoration: none;
+  letter-spacing: 1%;
+  color: #6b7684;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (max-width: 768px) {
+  .research-container {
+    padding: 32px 20px;
+  }
+  .research-container .research-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.research-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.research-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.research-detail {
+  padding: 64px 100px;
+}
+.research-detail .page-title {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 40px;
+  color: #191f28;
+}
+.research-detail .research-content {
+  margin: 0 auto;
+}
+.research-detail .research-entry .research-header {
+  margin-bottom: 32px;
+  padding: 26px 0;
+  border-top: 2px solid #191f28;
+  border-bottom: 1px solid #b0b8c1;
+}
+.research-detail .research-entry .research-header h2 {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133.4%;
+  text-decoration: none;
+  letter-spacing: -2.3%;
+  color: #191f28;
+  margin-bottom: 8px;
+}
+.research-detail .research-entry .research-header .research-meta {
+  display: flex;
+  gap: 16px;
+  color: #6b7684;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+}
+.research-detail .research-entry .research-header .research-meta time {
+  color: inherit;
+}
+.research-detail .research-entry .research-header .research-meta .author::before {
+  content: "|";
+  margin-right: 16px;
+}
+.research-detail .research-body {
+  color: #333d4b;
+}
+.research-detail .research-body strong + ul,
+.research-detail .research-body strong + ol {
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+.research-detail .research-body ul,
+.research-detail .research-body ol {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.research-detail .research-body ul li,
+.research-detail .research-body ol li {
+  list-style-position: outside;
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+.research-detail .research-body ul li:last-child,
+.research-detail .research-body ol li:last-child {
+  margin-bottom: 0;
+}
+.research-detail .research-body strong {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.research-detail .research-body p {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  margin-bottom: 24px;
+  text-align: justify;
+  overflow-wrap: break-word;
+  text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: normal;
+}
+.research-detail .research-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border-radius: 8px;
+}
+.research-detail .research-body h3 {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135.8%;
+  text-decoration: none;
+  letter-spacing: -2.4%;
+  color: #191f28;
+  margin: 48px 0 24px;
+}
+.research-detail .research-body dl dt {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #333d4b;
+  margin-bottom: 8px;
+}
+.research-detail .research-body dl dd {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #4e5968;
+  margin-bottom: 16px;
+  margin-left: 0;
+}
+.research-detail .research-body a {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+.research-detail .research-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  padding: 16px 0;
+}
+.research-detail .research-navigation .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #191f28;
+}
+.research-detail .research-navigation .nav-links .separator {
+  color: #191f28;
+}
+.research-detail .research-navigation .nav-links a {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.research-detail .research-navigation .nav-links a:hover {
+  color: #8b95a1;
+}
+.research-detail .research-navigation .back {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.6%;
+  color: #191f28;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.research-detail .research-navigation .back:hover {
+  color: #8b95a1;
+}
+@media (max-width: 768px) {
+  .research-detail {
+    padding: 32px 20px;
+  }
+  .research-detail .research-navigation .nav-links {
+    padding-left: 8px;
+  }
+  .research-detail .research-navigation .back {
+    padding-right: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .research-detail p {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

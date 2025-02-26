@@ -52,8 +52,9 @@ layout: default
   <div class="container">
     <h2>Research</h2>
     <div class="research-slider">
-      {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
-      {% for research in sorted_researches limit:4 %}
+      {% assign selected_slugs = "deeppi,t-mdml,gene-annotation,geneco" | split: "," %}
+      {% assign featured_researches = site.researches | where_exp: "research", "selected_slugs contains research.slug" | sort: 'date' | reverse %}
+      {% for research in featured_researches %}
         <div class="research-slide">
           <div class="research-card" onclick="window.location.href='/~gangman{{ research.url }}'">
             {% if research.thumbnail %}

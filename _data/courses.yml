@@ -1,3 +1,8 @@
+2025:
+  - semester: "2025.01"
+    courses:
+      - name: "CSC4009 Database"
+      - name: "CSC2007 Data Structure"
 2024:
   - semester: "2024.02"
     courses:

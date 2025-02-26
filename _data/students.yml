@@ -39,6 +39,22 @@ current_students:
         institution: Dongguk University, Korea
         period: 2016.03 - 2021.08
 
+  - name: Ilkhomjon
+    position: Ph.D. Student
+    category: phd
+    image: /~gangman/assets/images/students/Ilkhomjon.jpg
+    research:
+      - Research on Graph Mining
+      - Combinatorial Algorithms
+      - Formal Concept Analysis 
+    education:
+      - degree: M.S. in Software Convergence
+        institution: Soonchunhyang University, Korea
+        period: 2023.03 - 2025.02
+      - degree: B.S. in Computer Software Convergence
+        institution: Soonchunhyang University, Korea
+        period: 2019.03 - 2023.02
+      
   - name: Jinkyung Yang
     position: M.S. Student
     category: ms
