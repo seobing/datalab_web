@@ -1,8 +1,10 @@
 ---
 layout: research
 title: geneCo
+slug: geneco
 category: geneco
 date: 2019-01-27
+permalink: /research/geneco/
 thumbnail: /~gangman/assets/images/research/geneco/image.png
 description: geneCo - A visualized comparative genomic method to analyze multiple genome structures
 author: Gangman Yi

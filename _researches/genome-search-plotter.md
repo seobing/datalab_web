@@ -1,8 +1,10 @@
 ---
 layout: research
 title: Genome Search Plotter
+slug: genome-search-plotter
 category: genome-search-plotter
 date: 2017-09-13
+permalink: /research/genome-search-plotter/
 thumbnail: /~gangman/assets/images/research/genome-search-plotter/image.png
 description: A Robust Method for Finding the Automated Best Matched Genes Based on Grouping Similar Fragments of Large-Scale References for Genome Assembly
 author: Gangman Yi

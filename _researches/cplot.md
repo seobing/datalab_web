@@ -1,8 +1,10 @@
 ---
 layout: research
 title: cPlot
+slug: cplot
 category: cplot
 date: 2022-09-21
+permalink: /research/cplot/
 thumbnail: /~gangman/assets/images/research/cplot/image.png
 description: Contig-Plotting Visualization for the Analysis of Short-Read Nucleotide Sequence Alignments
 author: Gangman Yi

@@ -22,13 +22,13 @@ layout: default
       <div class="research-navigation">
         <div class="nav-links">
           {% if page.next %}
-          <a href="{{ page.next.url }}" class="prev">‹ Prev</a>
+          <a href="/~gangman{{ page.next.url }}" class="prev">‹ Prev</a>
           {% endif %}
 
           <span class="separator">|</span>
 
           {% if page.previous %}
-          <a href="{{ page.previous.url }}" class="next">Next ›</a>
+          <a href="/~gangman{{ page.previous.url }}" class="next">Next ›</a>
           {% endif %}
         </div>
 

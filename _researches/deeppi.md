@@ -1,8 +1,10 @@
 ---
 layout: research
 title: DeepPI
+slug: deeppi
 category: deeppi
 date: 2024-02-03
+permalink: /research/deeppi/
 thumbnail: /~gangman/assets/images/research/deeppi/deeppi.png
 description: Alignment‑Free Analysis of Flexible Length Proteins Based on Deep Learning and Image Generator
 author: Mingeun Ji·Yejin Kan·Dongyeon Kim·Seungmin Lee·Gangman Yi

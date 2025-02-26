@@ -1,8 +1,10 @@
 ---
 layout: research
-title: T-MDMLsl
+title: T-MDML
+slug: t-mdml
 category: t-mdml
 date: 2024-12-10
+permalink: /research/t-mdml/
 thumbnail: /~gangman/assets/images/research/t-mdml/t-mdml.png
 description: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation
 author: Dongyeon Kim·Yejin Kan·Gangman Yi
