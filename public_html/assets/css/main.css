@@ -1672,6 +1672,16 @@ footer .footer-container .footer-wrap img {
   margin-bottom: 90px;
   color: #191f28;
 }
+.professor-container .page-title-same-professor {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: none;
+  letter-spacing: -2.8%;
+  margin-bottom: 10px;
+  color: #191f28;
+}
 .professor-container .professor-content {
   padding: 0 0;
   margin: 0 auto;
@@ -1803,7 +1813,7 @@ footer .footer-container .footer-wrap img {
   margin-bottom: 12px;
   padding-left: 16px;
   position: relative;
-  line-height: 1.6;
+  line-height: 1;
 }
 .professor-container .content-section ul li:before {
   content: "•";

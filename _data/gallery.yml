@@ -60,144 +60,144 @@ items:
     category: conference
     location: Swiss
   - title: Master Degree - Yerin Lee
-    date: "Aug 22"
+    date: "Aug 22, 2024"
     sort_date: "2024-08-22" # location에 "2024"로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Graduation_yerin.jpg
     category: graduation
     location: "2024"
   - title: Master Degree - Dongyeon Kim
-    date: "Aug 25"
+    date: "Aug 25, 2023"
     sort_date: "2023-08-25" # location에 "2023"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/MasterDegreeDongyeonKim.jpg
     category: graduation
     location: "2023"
   - title: Master Degree - Yejin Kan
-    date: "Feb 17"
+    date: "Feb 17, 2023"
     sort_date: "2023-02-17" # location에 "2023"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/masterDegreeYejinKan.jpg
     category: graduation
     location: "2023"
   - title: Master Degree - Adil&Firaol
-    date: "Feb 23"
+    date: "Feb 23, 2022"
     sort_date: "2022-02-23" # location에 "2022"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/MasterDegreeAdilFiraol.jpg
     category: graduation
     location: "2022"
   - title: Master Degree - Jeongkyu Kim
-    date: "Feb 26"
+    date: "Feb 26, 2021"
     sort_date: "2021-02-26" # location에 "2021"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/MasterDegreeJeongkyuKim.jpg
     category: graduation
     location: "2021"
   - title: Master Degree - Mingeun Ji
-    date: "Sep 26"
+    date: "Sep 26, 2020"
     sort_date: "2020-09-26" # location에 "2020"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/MasterDegreeMingeunJi.jpg
     category: graduation
     location: "2020"
   - title: 2024 Data Challenge Workshop
-    date: "Aug 19"
+    date: "Aug 19, 2023"
     sort_date: "2023-08-19" # location에 "2023"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop.jpg
     category: workshop
     location: "2023"
   - title: 2023 Data Challenge Workshop2
-    date: "Oct 07-08"
+    date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
     image: /~gangman/assets/images/gallery/2023DataChallengeWorkshop1.jpg
     category: workshop
     location: "2023"
   - title: 2023 Data Challenge Workshop1
-    date: "Oct 07-08"
+    date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
     image: /~gangman/assets/images/gallery/2023DataChallengeWorkshop2.jpg
     category: workshop
     location: "2023"
   - title: 2021 Data Challenge Workshop
-    date: "Oct 08"
+    date: "Oct 08, 2021"
     sort_date: "2021-10-08"
     image: /~gangman/assets/images/gallery/2021DataChallengeWorkshop.jpg
     category: workshop
     location: "2021"
   - title: 2020 Data Challenge Workshop
-    date: "Oct 09"
+    date: "Oct 09, 2020"
     sort_date: "2020-10-09"
     image: /~gangman/assets/images/gallery/2020Workshop.jpg
     category: workshop
     location: "2020"
   - title: New Server!
-    date: "May 30"
+    date: "May 30, 2023"
     sort_date: "2023-05-30" # location에 "2023"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/newServer.jpg
     category: server
     location: "2023"
-  - title: Moved toNew Server Room!
-    date: "Mar 02"
+  - title: Moved to New Server Room!
+    date: "Mar 02, 2022"
     sort_date: "2022-03-02" # location에 "2022"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/new_server.jpg
     category: server
     location: "2022"
   - title: Server
-    date: "Mar 28"
+    date: "Mar 28, 2019"
     sort_date: "2019-03-28" # location에 "2019"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Server.jpg
     category: server
     location: "2019"
-  - title: World Cup Tour
-    date: "Sep 05"
+  - title: World Cup
+    date: "Sep 05, 2024"
     sort_date: "2024-09-05" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/soccer.jpg
     category: etc.
     location: "2024"
   - title: Yerin's Birthday
-    date: "Jul 05"
+    date: "Jul 05, 2024"
     sort_date: "2024-07-05" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024yerin_birthday.jpg
     category: etc.
     location: "2024"
   #- title: Field-Trip
-  #  date: "Apr 08"
+  #  date: "Apr 08, 2024"
   #  sort_date: "2024-04-08" # location에 "2024"으로 표기된 연도를 사용
   #  image: /~gangman/assets/images/gallery/FieldTrip2024.jpg
   #  category: etc.
   #  location: "2024"
-  - title: Lotus LanternFestival
-    date: "Apr 05"
+  - title: Lotus Lantern Festival
+    date: "Apr 05, 2024"
     sort_date: "2024-04-05" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Lotus Lantern Festival.jpg
     category: etc.
     location: "2024"
   - title: Minseop & Dongyeon's Birthday
-    date: "Mar 05 & 17"
+    date: "Mar 05 & 17, 2024"
     sort_date: "2024-03-05" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/MarchBirthday.jpg
     category: etc.
     location: "2024"
   - title: Yejin's Birthday
-    date: "Jan 30"
+    date: "Jan 30, 2024"
     sort_date: "2024-01-30" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Yejins Birthday.jpg
     category: etc.
     location: "2024"
   - title: Seungmin & Jinkyung's Birthday
-    date: "Dec 11 & 27 2023"
+    date: "Dec 11 & 27, 2023"
     sort_date: "2023-12-11" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/December Birthday.jpg
     category: etc.
   - title: Yerin's Birthday& New Member!
-    date: "Jun 29 & Jul 05"
+    date: "Jun 29 & Jul 05, 2023"
     sort_date: "2023-06-29" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/YerinBirthday.jpg
     category: etc.
     location: "2023"
-  - title: Dinner Togetherafter Cleanup!
-    date: "May 24"
+  - title: Dinner Together after Clean up!
+    date: "May 24, 2023"
     sort_date: "2023-05-24" # location에 "2023"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/DinnerTogetherAfterCleanup.jpg
     category: etc.
     location: "2023"
   - title: Seungmin &Jinkyung's Birthday
-    date: "Dec 11 & 27"
+    date: "Dec 11 & 27, 2022"
     sort_date: "2022-12-11" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/SeungminJinKyungBirthday.jpg
     category: etc.

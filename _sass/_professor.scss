@@ -7,6 +7,11 @@
     margin-bottom: 90px;
     color: $gray10;
   }
+  .page-title-same-professor{
+    @include font-display-2-medium;
+    margin-bottom: 10px;
+    color: $gray10;
+  }
 
   .professor-content {
     padding: 0 0;
@@ -80,7 +85,7 @@
 
   .content-section {
     margin-bottom: 32px;
-
+    
     h3 {
       @include font-body-1-normal---medium;
       color: $gray10;
@@ -112,7 +117,7 @@
         margin-bottom: 12px;
         padding-left: 16px;
         position: relative;
-        line-height: 1.6;
+        line-height: 1;
 
         &:before {
           content: "•";

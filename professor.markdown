@@ -13,7 +13,7 @@ title: Professor
       </div>
       <div class="professor-details">
         <div class="name-division">
-          <h2>{{ site.data.professor.name }}</h2>
+          <h1 class="page-title-same-professor">{{ site.data.professor.name }}</h1>
           <p class="division">{{ site.data.professor.division }}</p>
         </div>
         
