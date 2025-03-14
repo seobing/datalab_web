@@ -53,12 +53,12 @@ items:
     image: /~gangman/assets/images/gallery/year_end_party_2024.jpg
     category: etc.
     location: "2024"
-  #- title: Seungmin's Birthday
-  #  date: "Dec 11, 2024"
-  #  sort_date: "2024-12-11" # location에 "2024"으로 표기된 연도를 사용
-  #  image: /~gangman/assets/images/gallery/Seungmin Birthday2024.jpg
-  #  category: etc.
-  #  location: "2024"
+  - title: Seungmin's Birthday
+    date: "Dec 11, 2024"
+    sort_date: "2024-12-11" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/Seungmin Birthday2024.jpg
+    category: etc.
+    location: "2024"
   - title: Coex Hall
     date: "Nov 12, 2024"
     sort_date: "2024-11-12" # location에 "2024"으로 표기된 연도를 사용
