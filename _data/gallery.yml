@@ -65,7 +65,7 @@ items:
     image: /~gangman/assets/images/gallery/Coex.jpg
     category: etc.
     location: "2024"
-  - title: 2024 Data Challenge Workshop1
+  - title: 2024 Data Challenge Workshop2
     date: "Nov 01-02, 2024"
     sort_date: "2024-11-01" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop2.jpg
@@ -166,13 +166,13 @@ items:
     image: /~gangman/assets/images/gallery/MasterDegreeMingeunJi.jpg
     category: graduation
     location: "2020"
-  - title: 2024 Data Challenge Workshop1
+  - title: 2024 Data Challenge Workshop2
     date: "Aug 19, 2024"
     sort_date: "2024-08-19" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop.jpg
     category: workshop
     location: "2024"
-  - title: 2023 Data Challenge Workshop2
+  - title: 2023 Data Challenge Workshop1
     date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
     image: /~gangman/assets/images/gallery/2023DataChallengeWorkshop1.jpg

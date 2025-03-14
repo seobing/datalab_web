@@ -46,6 +46,30 @@ layout: default
       </div>
     </div>-->
   </div>
+    <!--<a href="lab-tour.html">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="assets/images/research/t-mdml/t-mdml.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/research/deeppi/deeppi.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/research/gene-annotation/image.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </a>
+    <br><br><br>-->
 </section>
 
 <section class="home-research-section">
@@ -90,7 +114,6 @@ layout: default
       <b>[2024.12]</b> Dongyeon’s paper accepted to <b>AAAI 2025</b>: “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br><br>
       <b>[2024.08]</b> Yerin’s Graduation with a Master's Degree<br><br>
       <b>[2024.05]</b> Yejin’s poster accepted to <b>ECCB 2024</b>: “Integration of Multi-view Features of Protein Sequences for Improved Protein Function Prediction”<br><br>
-      <b>[2024.03]</b> Jinkyung’s Admission to the Master’s program<br><br>
     </p>
   </div>
 </section>
