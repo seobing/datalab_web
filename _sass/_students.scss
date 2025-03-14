@@ -194,6 +194,38 @@
     td {
       @include font-label-1-reading---regular;
     }
+
+
+    
+    /*테이블 간격 조정*/
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 15%; /* Name */
+      white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 45%; /* Thesis (이전보다 줄임) */
+      overflow: hidden;
+      text-overflow: ellipsis; /* 너무 길면 ...으로 표시 */
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 20%; /* Degree */
+      white-space: nowrap;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 20%; /* Current */
+      white-space: nowrap;
+    }
+
+
+
+
   }
 
   @include breakpoint(tablet) {

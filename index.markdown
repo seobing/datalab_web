@@ -21,7 +21,7 @@ layout: default
   <div class="container">
     <h2>Research Area</h2>
     <img src="/~gangman/assets/images/banners/home-intro.png" alt="Research Area" width="100%" />
-    <!-- <div class="flex-container">
+    <!--<div class="flex-container">
       <div class="flex1">
         <div class="flex-container">
           <div class="flex1">
@@ -44,7 +44,7 @@ layout: default
           </p>
         </div>
       </div>
-    </div> -->
+    </div>-->
   </div>
 </section>
 
@@ -80,20 +80,20 @@ layout: default
     </div>
   </div>
 </section>
-<!--<section class="home-research-area-section">
+<section class="home-research-area-section">
   <div class="container intro-text">
-    <h2>News</h2>
+    <h2>News!</h2>
     <p>
-      <b>[2025.03]</b> Minseop’s Admission to Master’s program<br><br>
-      <b>[2025.02]</b> Seungmin’s Graduation with Master Degree<br><br>
-      <b>[2025.02]</b> Accepted to <b>RECOMB 2025</b>: Jinkyung’s poster “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction prediction”<br><br>
-      <b>[2024.12]</b> Accepted to <b>AAAI 2025</b>: Dongyeon’s paper “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br><br>
-      <b>[2024.08]</b> Yerin’s Graduation with Master Degree<br><br>
-      <b>[2024.05]</b> Accepted to <b>ECCB 2024</b>: Yejin’s poster “Integration of mlti-view features of protein sequences for improved protein function prediction”<br><br>
-      <b>[2024.03]</b> Jinkyung’s Admission to Master’s program<br><br>
+      <b>[2025.03]</b> Minseop’s Admission to the Master’s program<br><br>
+      <b>[2025.02]</b> Seungmin’s Graduation with a Master's Degree<br><br>
+      <b>[2025.02]</b>Jinkyung’s poster accepted to <b>RECOMB 2025</b>: “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction Prediction”<br><br>
+      <b>[2024.12]</b> Dongyeon’s paper accepted to <b>AAAI 2025</b>: “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br><br>
+      <b>[2024.08]</b> Yerin’s Graduation with a Master's Degree<br><br>
+      <b>[2024.05]</b> Yejin’s poster accepted to <b>ECCB 2024</b>: “Integration of Multi-view Features of Protein Sequences for Improved Protein Function Prediction”<br><br>
+      <b>[2024.03]</b> Jinkyung’s Admission to the Master’s program<br><br>
     </p>
   </div>
-</section>-->
+</section>
 
 <section class="home-recruit-section">
   <div class="container recruit-container">

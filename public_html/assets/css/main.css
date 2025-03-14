@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: scroll;
 }
 
 main {
@@ -1487,6 +1488,7 @@ footer .footer-container .footer-wrap img {
   border-collapse: separate;
   border-spacing: 0;
   margin-bottom: 40px;
+  /*테이블 간격 조정*/
 }
 .students-container .students-table thead {
   border-radius: 8px;
@@ -1538,6 +1540,27 @@ footer .footer-container .footer-wrap img {
   line-height: 157.1%;
   text-decoration: none;
   letter-spacing: 1.5%;
+}
+.students-container .students-table th:nth-child(1),
+.students-container .students-table td:nth-child(1) {
+  width: 15%; /* Name */
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+.students-container .students-table th:nth-child(2),
+.students-container .students-table td:nth-child(2) {
+  width: 45%; /* Thesis (이전보다 줄임) */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 너무 길면 ...으로 표시 */
+}
+.students-container .students-table th:nth-child(3),
+.students-container .students-table td:nth-child(3) {
+  width: 20%; /* Degree */
+  white-space: nowrap;
+}
+.students-container .students-table th:nth-child(4),
+.students-container .students-table td:nth-child(4) {
+  width: 20%; /* Current */
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   .students-container {
