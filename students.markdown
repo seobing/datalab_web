@@ -64,6 +64,7 @@ title: Students
           <th>Name</th>
           <th>Thesis</th>
           <th>Degree</th>
+          <th>Current</th>
         </tr>
       </thead>
       <tbody>
@@ -72,6 +73,7 @@ title: Students
           <td><strong>{{ alum.name }}</strong></td>
           <td>{{ alum.thesis }}</td>
           <td>{{ alum.degree }}</td>
+          <td>{{ alum.current }}</td>
         </tr>
         {% endfor %}
       </tbody>

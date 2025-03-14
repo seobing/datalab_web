@@ -350,186 +350,180 @@
     family construction," Journal of Computational Biology, Vol. 19(8), pp. 957-967,
     2012
   year: "2012"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title: 'Dongyeon Kim, Yejin Kan, and Gangman Yi, "T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation," The 39th Annual AAAI conference on artificial intelligence (AAAI), 2025'
   year: "2025"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Yejin Kan, Jinkyung Yang and Gangman Yi, "Integration of multi-view features
     of protein sequences for improved protein function prediction", The 23rd European
     Conference on Computational Biology (ECCB), 2024
   year: "2024"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     'Kim, Dongyeon; Kan, Yejin; Yi, Gangman, "Novel Patrol Route Optimization
     Method Based on Big Data Analysis", In: 2022 IEEE International Conference on
     Big Data (Big Data). IEEE, 2022. p. 6699-6701.'
   year: "2022"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Y. Kan, D. Kim and G. Yi, "A Novel Gap-Filling Method Based on Hybrid Read
     Information Analysis," in 2022 IEEE International Conference on Bioinformatics
     and Biomedicine (BIBM), Las Vegas, NV, USA, 2022 pp. 3827-3829.
   year: "2022"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Jaehee Jung, Gangman Yi, "A computational model based on long short-term
     memory for predicting organellar genes in plastid genomes," 2019 IEEE International
     Conference on Bioinformatics and Biomedicine (BIBM), 2019.
   year: "2019"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     'Mingeun Ji, Jeongkyu Kim, Gangman Yi, "GO Cluster Finder: Visualization
     tool to identify gene clusters that are composed of functionally related genes,"
     Inteligent Systems for Molecular Biology (ISMB), 2019.'
   year: "2019"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Jaehee Jung, Gangman Yi, "A tool for analyzing evolutionary trees of reconciled
     genes and single gene," 2018 IEEE International Conference on Bioinformatics and
     Biomedicine (BIBM), 2762-2763, 2018.
   year: "2018"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Jeong, H.Y., Lee, D.G., Lee, J.D., Yi, G., Park, J.H., “Topic Mali Based
     Ontology Model for SaaS Application in Cloud Computing”, 7th International Conference
     on Ubi-Media Computing and Workshops U-MEDIA 2014.
   year: "2014"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Lee, H.K., Ahn, K.J., Jung, J.H., Yi, G., “Performance Optimization by Simplification
     of Relationshili in Scalable Layer”, IEEE WAINA2014, 887 – 894, 2014.
   year: "2014"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Jung, J., Yi, G., Sukno, S.A. and Thon, M.R., “A Database of Fungal Protein
     Clusters for Comparative Genomics”, 25th Fungal Genetics Conference, Asilomar,
     CA, USA. March 17-22, 2009.
   year: "2009"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Jung, J., Yi, G., Sukno, S.A. and Thon, M.R., “A Protein Function Classifier
     for Fungi”, 25th Fungal Genetics Conference, Asilomar, CA, USA. March 17-22, 2009.
   year: "2009"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     "Jung, J., Yi, G., Sukno, S. and Thon, M.R., “FPC-DB: the fungal protein
     cluster database”,9th European conference on fungal genetics, Edinburgh, Scotland,
     April 4-5, 2008."
   year: "2008"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Yi, G., Jung, J., Benito, E.P., Eslava, A.P., Díaz-Mínguez, J.M., Sukno,
     S.A., Thon, M.R. XXXVI Congreso de la Sociedad Española de Genética. Leon, España,
     Sep. 18-21, (2007).
   year: "2007"
-- category: Conferences
+- category: International_Conferences
   link: No Link
   title:
     Yi, G., Jung, J., Sukno, S. and Thon, M.R., “Computational resources for
     fungal genomics”,24th Fungal Genetics Conference, Asilomar, CA, USA, March 20-25,
     2007.
   year: "2007"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     이예린, 김동연, 간예진, 이승민 & 이강만. (2024). 시공간 정보 포함 공개데이터 기반 핫스팟 탐지 및 순찰경로 최적화. 한국정보과학회
     학술발표논문집, 414-416.
   year: "2024"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title: 이승민, 양유진, 김나연, & 이강만. (2022). 랭킹 기반의 캠퍼스 웹사이트 검색 알고리즘. 한국정보과학회 학술발표논문집, 1742-1744.
   year: "2022"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     간예진, 김동연, 지민근, 이승민, 이강만, Gap Filling 알고리즘 연구를 위한 BLAST 기반 Gap 분석, 한국정보과학회
     2022 한국컴퓨터종합학술대회, VOL 49 NO. 01 PP.1625~1627 2022. 06
   year: "2022"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     정재희, 지민근, 이강만 , "IoT 디바이스 기반 공공서비스 데이터의 지능형 예측 모델," 정보처리학회 추계 학술대회, VOL 26
     NO. 02 PP. 1014 ~ 1015, 2019
   year: "2019"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     도예진, 박희정, 구해린, 이강만, "블록체인 기반 통합 마일리지 서비스 연구", 2018년도 한국멀티미디어학회 춘계학술발표대회,
     VOL 21 NO. 01.
-  year: Unknown
-- category: Conferences
+  year: "2018"
+- category: Domestic_Conferences
   link: No Link
   title:
     조준영, 길기용, 용창민, 이강만. (2017). Chatscript와 대화 주제 유도 알고리즘을 이용한 챗봇 개발. 한국정보과학회
     학술발표논문집, 2017.12, 1884-1886.
   year: "2017"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     정재희, 지민근, 정유라, 이강만 ,참고 모델 시퀀스를 이용한 세포내 기관별 분석 방법, 2017 정보처리학회 춘계 학술대회, VOL
     24 NO. 848-849.
   year: "2017"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     한석현, 이강만, “단백질의기능분석을위한클러스터링알고리즘연구”, 한국정보처리학회2015년춘계학술발표대회, VOL 22 NO. 01
     PP. 0737 ~ 0740 2015. 04.
   year: "2015"
-- category: Conferences
-  link: No Link
-  title:
-    조준영, 길기용, 용창민, 이강만. (2017). Chatscript와 대화 주제 유도 알고리즘을 이용한 챗봇 개발. 한국정보과학회
-    학술발표논문집, 2017.12, 1884-1886.
-  year: "2017"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     배기동, 황은지, 임호균, 이강만, “소리감지를이용한유아보호스마트통신시스템구현”, 한국정보처리학회2015년춘계학술발표대회, VOL
     22 NO. 01 PP. 0081 ~ 0083 2015. 04.
   year: "2015"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     배기동, 황은지, 임호균, 이강만, “가스측정을통한간편한건강상태확인시스템구현”, 한국정보처리학회2015년춘계학술발표대회, VOL 22
     NO. 01 PP. 0078 ~ 0080 2015. 04.
   year: "2015"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     김한준, 황은지, 양경민, 양지영, 이강만, “모션센서를이용한가상분할데스크탑구현”, 한국정보과학회2014년제41회정기총회및동계학술발표회VOL
     41, NO. 02.
   year: "2014"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     오현석, 주재웅, 강원민, 이강만, 정화영, 박종혁, “웰니스서비스의u-Healthcare 보안연구동향및고찰”, 한국정보처리학회2014년제42회추계학술발표대회,
     VOL 21 NO. 02 PP. 0457 ~ 0459 2014. 11월.
   year: "2014"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title: 이강만, “냄새센서를이용한사용자의장건강상태에관한연구”, 강릉원주대학과학기술연구소, 2013.
   year: "2013"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title:
     지민근, 이강만, “C-Hunter 알고리즘을이용한유전자기능분석구현에관한연구”, 한국정보처리학회2013년제40회추계학술발표대회, VOL
     20 NO. 02 PP. 1340 ~ 1342, 2013. 11월.
   year: "2013"
-- category: Conferences
+- category: Domestic_Conferences
   link: No Link
   title: 이강만, “생물정보의빅데이터처리”, 한국정보기술학회지, 제10권, 제3호, 45-49, 2012
   year: "2012"

@@ -38,7 +38,8 @@ title: Publications
     <!-- Toggle Buttons -->
     <div class="text-center mb-4">
       <button class="btn btn-outline-primary category-btn active" data-category="journals">Journals</button>
-      <button class="btn btn-outline-primary category-btn" data-category="conferences">Conferences</button>
+      <button class="btn btn-outline-primary category-btn" data-category="international_conferences">International Conferences</button>
+      <button class="btn btn-outline-primary category-btn" data-category="domestic_conferences">Domestic Conferences</button>
       <button class="btn btn-outline-primary category-btn" data-category="edited-volumes">Edited Volumes</button>
       <button class="btn btn-outline-primary category-btn" data-category="patents">Patents</button>
     </div>
@@ -68,10 +69,34 @@ title: Publications
       </ul>
     </div>
 
-    <div id="conferences" class="category-section">
+    <div id="international_conferences" class="category-section">
       <ul class="list-unstyled">
         {% for pub in site.data.publications %}
-          {% if pub.category == "Conferences" %}
+          {% if pub.category == "International_Conferences" %}
+            <li>
+              <div class="list-info">
+                {% if pub.year != "Unknown" %}
+                  <div class="year">{{ pub.year }}</div>
+                {% else %}
+                    <div></div>
+                {% endif %}
+                {% if pub.link != "No Link" %}
+                  <a href="{{ pub.link }}" target="_blank">view</a>
+                {% else %}
+                  <div></div>
+                {% endif %}
+              </div>
+              <h3>{{ pub.title }}</h3>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div id="domestic_conferences" class="category-section">
+      <ul class="list-unstyled">
+        {% for pub in site.data.publications %}
+          {% if pub.category == "Domestic_Conferences" %}
             <li>
               <div class="list-info">
                 {% if pub.year != "Unknown" %}

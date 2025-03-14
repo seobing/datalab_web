@@ -27,7 +27,7 @@ current_students:
   - name: Dongyeon Kim
     position: Ph.D. Student
     category: phd
-    image: /~gangman/assets/images/students/Dongyeon.jpg
+    image: /~gangman/assets/images/students/young_Dongyeon.jpg
     research:
       - Research on Metric Learning Algorithms
       - Research on Multi-Label Learning Algorithms
@@ -51,16 +51,16 @@ current_students:
       - degree: M.S. in Software Convergence
         institution: Soonchunhyang University, Korea
         period: 2023.03 - 2025.02
-      - degree: B.S. in Computer Software Convergence
+      - degree: B.S. in Computer Software Engineering
         institution: Soonchunhyang University, Korea
         period: 2019.03 - 2023.02
       
   - name: Jinkyung Yang
     position: M.S. Student
     category: ms
-    image: /~gangman/assets/images/students/jinkyung.jpeg
+    image: /~gangman/assets/images/students/jinkyung2.jpeg
     research:
-      - Research on Protein Function Prediction
+      - Research on Drug-Target Interaction Prediction
     education:
       - degree: B.S. in Multimedia Engineering
         institution: Dongguk University, Korea
@@ -70,10 +70,12 @@ current_students:
     position: M.S. Student
     category: ms
     image: /~gangman/assets/images/students/Minseob.jpeg
+    research:
+      - "-"
     education:
       - degree: B.S. in Multimedia Engineering
         institution: Dongguk University, Korea
-        period: 2019.03 - Current
+        period: 2019.03 - 2025.02
 
 part_time_students:
   - name: Hodong Shin
@@ -92,39 +94,49 @@ alumni:
   - name: Seungmin Lee
     thesis: A Study on Anchor Graph Based Incomplete Multi-view Clustering Algorithm
     degree: Master Student(2023.03 ~ 2025.02)
+    current: "-"
 
   - name: Yerin Lee
     thesis: Research on identifying hotspots and optimizing patrol routes using open data-based spatiotemporal information
-    degree: Master Student (2022. 09 ~ 2024.08)
+    degree: Master Student (2022.09 ~ 2024.08)
+    current: LJ-gc
 
   - name: Hodong Shin
     thesis: A Study for processing large-scale data using edge computing based on the next-generation mobile communication
-    degree: Master Student (2021. 03 ~ 2024.02)
+    degree: Master Student (2021.03 ~ 2024.02)
+    current: Ph.D. course / Kaonmedia
 
   - name: Dongyeon Kim
     thesis: A Study on Parameter Automation Algorithm for Clustering-based Multi-metric Learning
-    degree: Master Student (2021. 09 ~ 2023. 08)
+    degree: Master Student (2021.09 ~ 2023.08)
+    current: Ph.D course
 
   - name: Yejin Kan
     thesis: A Study on Similarity-based Gap Filling Algorithm Using Hybrid Reads
-    degree: Master Student (2021. 03 ~ 2023. 02)
+    degree: Master Student (2021.03 ~ 2023.02)
+    current: Ph.D course
 
   - name: Adil Abdu
     thesis: A Study on Automatic Detection of DBSCAN Parameters and Efficient Clustering of Data in Overlapping Density Region
-    degree: Master Student (2020. 03 ~ 2022. 02)
+    degree: Master Student (2020.03 ~ 2022.02)
+    current: "-"
 
   - name: Firaol Dida
     thesis: A Study on Gap Filling Algorithm Based On Markov Chain for Sequence Assembly
-    degree: Master Student (2020. 03 ~ 2022. 02)
+    degree: Master Student (2020.03 ~ 2022.02)
+    current: "-"
 
   - name: Jeongkyu Kim
     thesis: Research on Anchoring–based Alignment Algorithm of DNA Sequences
-    degree: Master Student (2019. 03 ~ 2021. 02)
+    degree: Master Student (2019.03 ~ 2021.02)
+    current: Geninus
 
   - name: Mingeun Ji
     thesis: A Study on Read Alignment Algorithm based on Index for Analysis Similarity of DNA Sequences
-    degree: Master Student (2018. 03 ~ 2020. 08)
+    degree: Master Student (2018.03 ~ 2020.08)
+    current: Baehwa Women's University
 
   - name: Youra Jeong
     thesis: The computational balance of sequence alignments on donnated computing resources
-    degree: Master Student (2017. 03 ~ 2019. 02)
+    degree: Master Student (2017.03 ~ 2019.02)
+    current: "-"

@@ -11,6 +11,77 @@ categories:
     id: etc.
 
 items:
+  - title: Minseop's Birthday
+    date: "Mar 05, 2025"
+    sort_date: "2025-03-05" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/minseops Birthday2025.jpg
+    category: etc.
+    location: "2025"
+  - title: AAAI2025
+    date: "Feb 26-Mar 05, 2025, Philadelphia"
+    sort_date: "2025-02-26"
+    image: /~gangman/assets/images/gallery/AAAI2025.jpg
+    category: conference
+    location: Pennsylvania, USA
+  - title: Master Degree - Seungmin Lee
+    date: "Fen 13, 2025"
+    sort_date: "2025-02-13" # location에 "2024"로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/Graduation_seungmin.jpg
+    category: graduation
+    location: "2025"
+  #- title: Yejin's Birthday
+  #  date: "Jan 30, 2025"
+  #  sort_date: "2025-01-30" # location에 "2025"으로 표기된 연도를 사용
+  #  image: /~gangman/assets/images/gallery/Yejins Birthday2025.jpg
+  #  category: etc.
+  #  location: "2025"
+  - title: 2025 New Year's party
+    date: "Jan 09, 2025"
+    sort_date: "2025-01-30" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/new_years_party_2025.jpg
+    category: etc.
+    location: "2025"
+  - title: Jinkyung's Birthday
+    date: "Dec 27, 2024"
+    sort_date: "2024-12-27" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/Jinkyungs Birthday2024.jpg
+    category: etc.
+    location: "2024"
+  - title: 2024 year-end party
+    date: "Dec 23, 2024"
+    sort_date: "2024-12-23" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/year_end_party_2024.jpg
+    category: etc.
+    location: "2024"
+  #- title: Seungmin's Birthday
+  #  date: "Dec 11, 2024"
+  #  sort_date: "2024-12-11" # location에 "2024"으로 표기된 연도를 사용
+  #  image: /~gangman/assets/images/gallery/Seungmin Birthday2024.jpg
+  #  category: etc.
+  #  location: "2024"
+  - title: Coex Hall
+    date: "Nov 12, 2024"
+    sort_date: "2024-11-12" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/Coex.jpg
+    category: etc.
+    location: "2024"
+  - title: 2024 Data Challenge Workshop1
+    date: "Nov 01-02, 2024"
+    sort_date: "2024-11-01" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop2.jpg
+    category: workshop
+    location: "2024"
+  - title: Namsangol Hanok Village
+    date: "Oct 24, 2024"
+    sort_date: "2024-10-24" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/namsangol.jpg
+    category: etc.
+    location: "2024"
+
+
+
+
+
   - title: ECCB2024
     date: "Sep 16-20, 2024, Turku"
     sort_date: "2024-09-16"
@@ -48,13 +119,13 @@ items:
     category: conference
     location: Japan
   - title: KCC2022
-    date: "Jen 29, 2022, Jeju"
+    date: "Jan 29, 2022, Jeju"
     sort_date: "2022-01-29"
     image: /~gangman/assets/images/gallery/KCC2022.jpg
     category: conference
     location: Korea
   - title: ISMB2019
-    date: "July 22, 2019, Bazel"
+    date: "Jul 22, 2019, Bazel"
     sort_date: "2019-07-22"
     image: /~gangman/assets/images/gallery/PresentationISMB2019.jpg
     category: conference
@@ -95,12 +166,12 @@ items:
     image: /~gangman/assets/images/gallery/MasterDegreeMingeunJi.jpg
     category: graduation
     location: "2020"
-  - title: 2024 Data Challenge Workshop
-    date: "Aug 19, 2023"
-    sort_date: "2023-08-19" # location에 "2023"으로 표기된 연도를 사용
+  - title: 2024 Data Challenge Workshop1
+    date: "Aug 19, 2024"
+    sort_date: "2024-08-19" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop.jpg
     category: workshop
-    location: "2023"
+    location: "2024"
   - title: 2023 Data Challenge Workshop2
     date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
@@ -155,12 +226,12 @@ items:
     image: /~gangman/assets/images/gallery/2024yerin_birthday.jpg
     category: etc.
     location: "2024"
-  #- title: Field-Trip
-  #  date: "Apr 08, 2024"
-  #  sort_date: "2024-04-08" # location에 "2024"으로 표기된 연도를 사용
-  #  image: /~gangman/assets/images/gallery/FieldTrip2024.jpg
-  #  category: etc.
-  #  location: "2024"
+  - title: Namsangol Hanok Village
+    date: "Apr 08, 2024"
+    sort_date: "2024-04-08" # location에 "2024"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/FieldTrip2024.jpg
+    category: etc.
+    location: "2024"
   - title: Lotus Lantern Festival
     date: "Apr 05, 2024"
     sort_date: "2024-04-05" # location에 "2024"으로 표기된 연도를 사용
@@ -184,7 +255,7 @@ items:
     sort_date: "2023-12-11" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/December Birthday.jpg
     category: etc.
-  - title: Yerin's Birthday& New Member!
+  - title: Yerin's Birthday
     date: "Jun 29 & Jul 05, 2023"
     sort_date: "2023-06-29" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/YerinBirthday.jpg
@@ -202,9 +273,9 @@ items:
     image: /~gangman/assets/images/gallery/SeungminJinKyungBirthday.jpg
     category: etc.
     location: "2022"
-  #- title: Field-Trip
-  #  date: "Apr 08, 2021, Namsan"
-  #  sort_date: "2021-04-08"
-  #  image: /~gangman/assets/images/gallery/210408_Field trip_0.jpg
-  #  category: etc.
-  #  location: Seoul
+  - title: Namsan
+    date: "Apr 08, 2021, Namsan"
+    sort_date: "2021-04-08"
+    image: /~gangman/assets/images/gallery/210408_Field trip_0.jpg
+    category: etc.
+    location: Seoul

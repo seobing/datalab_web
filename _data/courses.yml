@@ -3,10 +3,12 @@
     courses:
       - name: "CSC4009 Database"
       - name: "CSC2007 Data Structure"
+      - name: "CAI7166 Bio Bigdata Analysis Specialties1"
 2024:
   - semester: "2024.02"
     courses:
       - name: "CSC4020 Database Design"
+      - name: "CAI7165 Bio Bigdata Analysis Algorithm"
   - semester: "2024.01"
     courses:
       - name: "CSC2001 Basic Programming"
@@ -18,6 +20,7 @@
     courses:
       - name: "ASW2006 Algorithm"
       - name: "MME4121 Computer Network"
+      - name: "GME6050 Bigdata Computing"
 
 2022:
   - semester: "2022.01"
@@ -32,7 +35,7 @@
       - name: "MME2045 Introduction to Programming in C"
       - name: "MME4089 Multimedia Network"
       - name: "MME4118 Multimedia Convergence Engineering"
-      - name: "GME6056 Special Topic in Data Processing of Big Data"
+      - name: "GME6056 Special Topic in Data Processing of Bigdata"
   - semester: "2021.01"
     courses:
       - name: "MME2042 Multimedia Data Structure"
@@ -50,7 +53,7 @@
       - name: "GME6010 Network-based Game Development"
   - semester: "2020.01"
     courses:
-      - name: "MME4108 Introduction to Multimedia Big Data"
+      - name: "MME4108 Introduction to Multimedia Bigdata"
       - name: "MME2042 Multimedia Data Structure"
       - name: "GME7026 Multimedia Seminar"
 
@@ -68,12 +71,12 @@
       - name: "MME2041 Multimedia Algorithm"
       - name: "MME4090 Capstone Design"
       - name: "MME4092 Visualization of Multimedia Information"
-      - name: "GME6056 Special topic in Data Processing of Big Data"
+      - name: "GME6056 Special topic in Data Processing of Bigdata"
   - semester: "2018.01"
     courses:
       - name: "MME2042 Multimedia Data Structure"
-      - name: "MME4096 Introduction to Multimedia Big Data"
-      - name: "GME6055 Special topic in Big Data Computing"
+      - name: "MME4096 Introduction to Multimedia Bigdata"
+      - name: "GME6055 Special topic in Bigdata Computing"
 
 2017:
   - semester: "2017.02"
@@ -83,7 +86,7 @@
       - name: "GME6036 Multimedia System Design"
   - semester: "2017.01"
     courses:
-      - name: "MME4096 Introduction to Multimedia Big Data"
+      - name: "MME4096 Introduction to Multimedia Bigdata"
       - name: "MME2038 Creative Engineering Design"
       - name: "MME2007 Multimedia Programming"
 
