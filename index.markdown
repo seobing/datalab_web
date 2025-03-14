@@ -86,7 +86,7 @@ layout: default
     <p>
       <b>[2025.03]</b> Minseop’s Admission to the Master’s program<br><br>
       <b>[2025.02]</b> Seungmin’s Graduation with a Master's Degree<br><br>
-      <b>[2025.02]</b>Jinkyung’s poster accepted to <b>RECOMB 2025</b>: “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction Prediction”<br><br>
+      <b>[2025.02]</b> Jinkyung’s poster accepted to <b>RECOMB 2025</b>: “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction Prediction”<br><br>
       <b>[2024.12]</b> Dongyeon’s paper accepted to <b>AAAI 2025</b>: “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br><br>
       <b>[2024.08]</b> Yerin’s Graduation with a Master's Degree<br><br>
       <b>[2024.05]</b> Yejin’s poster accepted to <b>ECCB 2024</b>: “Integration of Multi-view Features of Protein Sequences for Improved Protein Function Prediction”<br><br>

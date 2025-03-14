@@ -1548,13 +1548,13 @@ footer .footer-container .footer-wrap img {
 }
 .students-container .students-table th:nth-child(2),
 .students-container .students-table td:nth-child(2) {
-  width: 45%; /* Thesis (이전보다 줄임) */
+  width: 40%; /* Thesis (이전보다 줄임) */
   overflow: hidden;
   text-overflow: ellipsis; /* 너무 길면 ...으로 표시 */
 }
 .students-container .students-table th:nth-child(3),
 .students-container .students-table td:nth-child(3) {
-  width: 20%; /* Degree */
+  width: 25%; /* Degree */
   white-space: nowrap;
 }
 .students-container .students-table th:nth-child(4),
