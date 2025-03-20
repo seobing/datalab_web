@@ -7,15 +7,23 @@ categories:
     id: workshop
   - name: Server
     id: server
+  - name: Birthday
+    id: birthday
   - name: Etc.
     id: etc.
 
 items:
+  - title: Dongyeon's Birthday
+    date: "Mar 17, 2025"
+    sort_date: "2025-03-17" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/dongyeon birthday2025.jpg
+    category: birthday
+    location: "2025"
   - title: Minseop's Birthday
     date: "Mar 05, 2025"
     sort_date: "2025-03-05" # location에 "2025"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/minseops Birthday2025.jpg
-    category: etc.
+    category: birthday
     location: "2025"
   - title: AAAI2025
     date: "Feb 26-Mar 05, 2025, Philadelphia"
@@ -33,7 +41,7 @@ items:
   #  date: "Jan 30, 2025"
   #  sort_date: "2025-01-30" # location에 "2025"으로 표기된 연도를 사용
   #  image: /~gangman/assets/images/gallery/Yejins Birthday2025.jpg
-  #  category: etc.
+  #  category: birthday
   #  location: "2025"
   - title: 2025 New Year's party
     date: "Jan 09, 2025"
@@ -45,7 +53,7 @@ items:
     date: "Dec 27, 2024"
     sort_date: "2024-12-27" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Jinkyungs Birthday2024.jpg
-    category: etc.
+    category: birthday
     location: "2024"
   - title: 2024 year-end party
     date: "Dec 23, 2024"
@@ -57,7 +65,7 @@ items:
     date: "Dec 11, 2024"
     sort_date: "2024-12-11" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Seungmin Birthday2024.jpg
-    category: etc.
+    category: birthday
     location: "2024"
   - title: Coex Hall
     date: "Nov 12, 2024"
@@ -166,19 +174,19 @@ items:
     image: /~gangman/assets/images/gallery/MasterDegreeMingeunJi.jpg
     category: graduation
     location: "2020"
-  - title: 2024 Data Challenge Workshop2
+  - title: 2024 Data Challenge Workshop1
     date: "Aug 19, 2024"
     sort_date: "2024-08-19" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024DataChallengeWorkshop.jpg
     category: workshop
     location: "2024"
-  - title: 2023 Data Challenge Workshop1
+  - title: 2023 Data Challenge Workshop
     date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
     image: /~gangman/assets/images/gallery/2023DataChallengeWorkshop1.jpg
     category: workshop
     location: "2023"
-  - title: 2023 Data Challenge Workshop1
+  - title: 2023 Data Challenge Workshop
     date: "Oct 07-08, 2023"
     sort_date: "2023-10-07"
     image: /~gangman/assets/images/gallery/2023DataChallengeWorkshop2.jpg
@@ -224,7 +232,7 @@ items:
     date: "Jul 05, 2024"
     sort_date: "2024-07-05" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/2024yerin_birthday.jpg
-    category: etc.
+    category: birthday
     location: "2024"
   - title: Namsangol Hanok Village
     date: "Apr 08, 2024"
@@ -242,24 +250,24 @@ items:
     date: "Mar 05 & 17, 2024"
     sort_date: "2024-03-05" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/MarchBirthday.jpg
-    category: etc.
+    category: birthday
     location: "2024"
   - title: Yejin's Birthday
     date: "Jan 30, 2024"
     sort_date: "2024-01-30" # location에 "2024"으로 표기된 연도를 사용
     image: /~gangman/assets/images/gallery/Yejins Birthday.jpg
-    category: etc.
+    category: birthday
     location: "2024"
   - title: Seungmin & Jinkyung's Birthday
     date: "Dec 11 & 27, 2023"
     sort_date: "2023-12-11" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/December Birthday.jpg
-    category: etc.
+    category: birthday
   - title: Yerin's Birthday
     date: "Jun 29 & Jul 05, 2023"
     sort_date: "2023-06-29" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/YerinBirthday.jpg
-    category: etc.
+    category: birthday
     location: "2023"
   - title: Dinner Together after Clean up!
     date: "May 24, 2023"
@@ -271,7 +279,7 @@ items:
     date: "Dec 11 & 27, 2022"
     sort_date: "2022-12-11" # 첫 번째 날짜를 기준으로 함
     image: /~gangman/assets/images/gallery/SeungminJinKyungBirthday.jpg
-    category: etc.
+    category: birthday
     location: "2022"
   - title: Namsan
     date: "Apr 08, 2021, Namsan"

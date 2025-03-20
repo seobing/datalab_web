@@ -77,22 +77,24 @@ current_students:
         institution: Dongguk University, Korea
         period: 2019.03 - 2025.02
 
- # - name: Sejin Park
- #   position: Undergraduate Student
- #   category: undergraduate
- #   image: /~gangman/assets/images/students/sejin.jpeg
- #   research:
- #     - "-"
- #   education:
- #     - "-"
+  - name: Sejin Park
+    position: Undergraduate Student
+    category: undergraduate
+    image: /~gangman/assets/images/students/sejin.jpeg
+    research:
+      - "-"
+    education:
+      - degree: B.S. in Computer Science Engineering (in progress)
+        institution: Dongguk University, Korea
+        period: 2021.03 - Current
 
 part_time_students:
   - name: Hodong Shin
-    affiliation: 2024.3 ~ Current (Kaonmedia, Seongnam-si, Gyeonggi-do, Korea)
+    affiliation: 2024.03 ~ Current (Kaonmedia, Seongnam-si, Gyeonggi-do, Korea)
     course: Ph.D. Student
 
   - name: HyungJoon Seo
-    affiliation: 2018.9 ~ Current (Yonhap News, Seoul, Korea)
+    affiliation: 2018.09 ~ Current (Yonhap News, Seoul, Korea)
     course: Ph.D. Student
 
   - name: Hongsoo Yoon

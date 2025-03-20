@@ -30,6 +30,120 @@ title: Students
     {% endfor %}
   </div>
 
+
+<!-- 인원 스와이프해서 옆으로 넘기기
+<style>
+.students-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.students-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); /* 관성 느낌 */
+  will-change: transform;
+}
+
+.student-item {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.arrow.left { left: 5px; }
+.arrow.right { right: 5px; }
+</style>
+
+<div class="students-slider">
+  <button class="arrow left">&#9664;</button>
+  <div class="students-track">
+    {% for student in site.data.students.current_students %}
+    <div class="student-item" data-category="{{ student.category }}"
+         data-research='{{ student.research | jsonify }}'
+         data-education='{{ student.education | jsonify }}'>
+      <div class="student-image">
+        <img src="{{ student.image }}" alt="{{ student.name }}" loading="lazy"/>
+      </div>
+      <div class="student-info">
+        <h3>{{ student.name }}</h3>
+        <p class="position">{{ student.position }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <button class="arrow right">&#9654;</button>
+</div>
+
+<script>
+const track = document.querySelector('.students-track');
+const leftBtn = document.querySelector('.arrow.left');
+const rightBtn = document.querySelector('.arrow.right');
+const slider = document.querySelector('.students-slider');
+
+let scrollAmount = 0;
+
+function updateMaxScroll() {
+  const trackWidth = track.scrollWidth;
+  const containerWidth = slider.offsetWidth;
+  return trackWidth - containerWidth;
+}
+
+function setScroll(amount) {
+  const maxScroll = updateMaxScroll();
+  if (amount < 0) amount = 0;
+  if (amount > maxScroll) amount = maxScroll;
+  scrollAmount = amount;
+  track.style.transform = `translateX(-${scrollAmount}px)`;
+}
+
+rightBtn.addEventListener('click', () => {
+  setScroll(scrollAmount + 220);
+});
+
+leftBtn.addEventListener('click', () => {
+  setScroll(scrollAmount - 220);
+});
+
+// 드래그로 이동
+let isDown = false;
+let startX, startScroll;
+
+track.addEventListener('mousedown', e => {
+  isDown = true;
+  startX = e.pageX;
+  startScroll = scrollAmount;
+  track.style.transition = 'none'; // 드래그 중 transition 제거
+});
+
+track.addEventListener('mouseleave', () => isDown = false);
+track.addEventListener('mouseup', () => {
+  isDown = false;
+  track.style.transition = 'transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)';
+});
+
+track.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  const dx = e.pageX - startX;
+  setScroll(startScroll - dx);
+});
+
+// 반응형 대응
+window.addEventListener('resize', () => setScroll(scrollAmount));
+</script>-->
+
   <hr />
 
   <!-- Part Time Students -->
