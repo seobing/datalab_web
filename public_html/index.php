@@ -1,3 +1,37 @@
+<?php
+  
+date_default_timezone_set("Asia/Seoul");
+
+$log_dir = "/var/www/html/datalab.log";
+
+$remote_addr = $_SERVER['REMOTE_ADDR'];
+//$ip_info = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $remote_addr));
+//$ip_info = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=". $remote_addr));
+//if ( $remote_addr != gethostbyaddr($remote_addr)){
+//        $remote_addr = $remote_addr ."\t" . gethostbyaddr($remote_addr);
+//}
+
+//$remote_addr = $ip_info->geoplugin_countryName ."\t". $ip_info->geoplugin_city ."\t".  $remote_addr ;
+$submit_date = date("Y-m-d H:i:s");
+
+$log_flag = false;
+
+if( file_exists( $log_dir ) )
+        $log_file = fopen( $log_dir , "a") or die("Unable to open file!");
+else{
+        $log_file = fopen( $log_dir, "w") or die("Unable to open file!");
+        $log_flag = true;
+
+        fwrite($log_file, "—————————————————————————————————————————————————————————————————————————\n");
+        fwrite($log_file, "DATE\t\t\tIP\n");
+        fwrite($log_file, "—————————————————————————————————————————————————————————————————————————\n");
+}
+
+fwrite($log_file, $submit_date . "\t" . $remote_addr . "\n");
+fclose($log_file);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

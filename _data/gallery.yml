@@ -13,6 +13,18 @@ categories:
     id: etc.
 
 items:
+  - title: New Member!
+    date: "Mar 20, 2025"
+    sort_date: "2025-03-20" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/sejin_newmember.jpg
+    category: etc.
+    location: "2025"
+  - title: Dinner Together
+    date: "Mar 19, 2025"
+    sort_date: "2025-03-19" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/0319dinner.jpg
+    category: etc.
+    location: "2025"
   - title: Dongyeon's Birthday
     date: "Mar 17, 2025"
     sort_date: "2025-03-17" # location에 "2025"으로 표기된 연도를 사용
