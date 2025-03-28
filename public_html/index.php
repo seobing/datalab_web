@@ -260,6 +260,7 @@ fclose($log_file);
   <div class="container intro-text">
     <h2>News!</h2>
     <p>
+      <b>[2025.03]</b> 양진경 석사과정이 '<b>2025년도 여대학원생 공학연구팀제 심화과정</b>: 약물-표적 상호작용 예측을 위한 그래프 신경망 모델 개발 연구' 지원사업에 선정되었습니다. <br /><br />
       <b>[2025.03]</b> Minseop joined the lab as a master's student<br /><br />
       <b>[2025.03]</b> Ilkhomjon joined the lab as a Ph.D. student<br /><br />
       <b>[2025.02]</b> Seungmin graduated with a master's degree<br /><br />
