@@ -37,7 +37,7 @@ items:
     image: /~gangman/assets/images/gallery/minseops Birthday2025.jpg
     category: birthday
     location: "2025"
-  - title: AAAI2025
+  - title: AAAI 2025
     date: "Feb 26-Mar 05, 2025, Philadelphia"
     sort_date: "2025-02-26"
     image: /~gangman/assets/images/gallery/AAAI2025.jpg
@@ -102,31 +102,31 @@ items:
 
 
 
-  - title: ECCB2024
+  - title: ECCB 2024
     date: "Sep 16-20, 2024, Turku"
     sort_date: "2024-09-16"
     image: /~gangman/assets/images/gallery/ECCB2024.jpg
     category: conference
     location: Finland
-  - title: IJCAI2024
+  - title: IJCAI 2024
     date: "Aug 03-09, 2024, Jeju"
     sort_date: "2024-08-03"
     image: /~gangman/assets/images/gallery/IJCAI2024.jpg
     category: conference
     location: Korea
-  - title: ICML2024
+  - title: ICML 2024
     date: "July 21-27, 2024, Vienna"
     sort_date: "2024-07-21"
     image: /~gangman/assets/images/gallery/ICML2024.jpg
     category: conference
     location: Austria
-  - title: KCC2024
+  - title: KCC 2024
     date: "Jun 26-28, 2024, Jeju"
     sort_date: "2024-06-26"
     image: /~gangman/assets/images/gallery/kcc2024.jpg
     category: conference
     location: Korea
-  - title: KSC2023
+  - title: KSC 2023
     date: "Dec 20-22, 2023, Busan"
     sort_date: "2023-12-20"
     image: /~gangman/assets/images/gallery/KSC2023.jpg
@@ -138,13 +138,13 @@ items:
     image: /~gangman/assets/images/gallery/IEEEBigdata.jpg
     category: conference
     location: Japan
-  - title: KCC2022
+  - title: KCC 2022
     date: "Jan 29, 2022, Jeju"
     sort_date: "2022-01-29"
     image: /~gangman/assets/images/gallery/KCC2022.jpg
     category: conference
     location: Korea
-  - title: ISMB2019
+  - title: ISMB 2019
     date: "Jul 22, 2019, Bazel"
     sort_date: "2019-07-22"
     image: /~gangman/assets/images/gallery/PresentationISMB2019.jpg
