@@ -34,7 +34,6 @@ title: Publications
     <div class="title-container">
       <h1>Publications</h1>
     </div>
-
     <!-- Toggle Buttons -->
     <div class="text-center mb-4">
       <button class="btn btn-outline-primary category-btn active" data-category="journals">Journals</button>
@@ -43,7 +42,6 @@ title: Publications
       <button class="btn btn-outline-primary category-btn" data-category="edited-volumes">Edited Volumes</button>
       <button class="btn btn-outline-primary category-btn" data-category="patents">Patents</button>
     </div>
-
     <!-- Category Sections -->
     <div id="journals" class="category-section active">
       <ul class="list-unstyled">
@@ -68,7 +66,6 @@ title: Publications
         {% endfor %}
       </ul>
     </div>
-
     <div id="international_conferences" class="category-section">
       <ul class="list-unstyled">
         {% for pub in site.data.publications %}
@@ -81,7 +78,7 @@ title: Publications
                     <div></div>
                 {% endif %}
                 {% if pub.link != "No Link" %}
-                  <a href="{{ pub.link }}" target="_blank">view</a>
+                  <a href="{{ pub.link }}" target="_blank">link</a>
                 {% else %}
                   <div></div>
                 {% endif %}
@@ -92,7 +89,6 @@ title: Publications
         {% endfor %}
       </ul>
     </div>
-
     <div id="domestic_conferences" class="category-section">
       <ul class="list-unstyled">
         {% for pub in site.data.publications %}
@@ -105,7 +101,7 @@ title: Publications
                     <div></div>
                 {% endif %}
                 {% if pub.link != "No Link" %}
-                  <a href="{{ pub.link }}" target="_blank">view</a>
+                  <a href="{{ pub.link }}" target="_blank">link</a>
                 {% else %}
                   <div></div>
                 {% endif %}
@@ -116,7 +112,6 @@ title: Publications
         {% endfor %}
       </ul>
     </div>
-
     <div id="edited-volumes" class="category-section">
       <ul class="list-unstyled">
         {% for pub in site.data.publications %}
@@ -129,7 +124,7 @@ title: Publications
                     <div></div>
                 {% endif %}
                 {% if pub.link != "No Link" %}
-                  <a href="{{ pub.link }}" target="_blank">view</a>
+                  <a href="{{ pub.link }}" target="_blank">link</a>
                 {% else %}
                   <div></div>
                 {% endif %}
@@ -140,7 +135,6 @@ title: Publications
         {% endfor %}
       </ul>
     </div>
-
     <div id="patents" class="category-section">
       <ul class="list-unstyled">
         {% for pub in site.data.publications %}
@@ -153,7 +147,7 @@ title: Publications
                     <div></div>
                 {% endif %}
                 {% if pub.link != "No Link" %}
-                  <a href="{{ pub.link }}" target="_blank">view</a>
+                  <a href="{{ pub.link }}" target="_blank">link</a>
                 {% else %}
                   <div></div>
                 {% endif %}

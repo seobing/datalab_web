@@ -13,6 +13,18 @@ categories:
     id: etc.
 
 items:
+  - title: Namsan
+    date: "Apr 10, 2025, Namsan"
+    sort_date: "2025-04-10"
+    image: /~gangman/assets/images/gallery/namsan250410.jpg
+    category: etc.
+    location: Seoul
+  - title: Lunch with Alumni in Philadelphia
+    date: "Mar 02, 2025, Philadelphia"
+    sort_date: "2025-03-02" # location에 "2025"으로 표기된 연도를 사용
+    image: /~gangman/assets/images/gallery/lunch_with_firaol.jpg
+    category: etc.
+    location: "2025"
   - title: New Member!
     date: "Mar 20, 2025"
     sort_date: "2025-03-20" # location에 "2025"으로 표기된 연도를 사용
@@ -115,7 +127,7 @@ items:
     category: conference
     location: Korea
   - title: ICML 2024
-    date: "July 21-27, 2024, Vienna"
+    date: "Jul 21-27, 2024, Vienna"
     sort_date: "2024-07-21"
     image: /~gangman/assets/images/gallery/ICML2024.jpg
     category: conference
@@ -139,8 +151,8 @@ items:
     category: conference
     location: Japan
   - title: KCC 2022
-    date: "Jan 29, 2022, Jeju"
-    sort_date: "2022-01-29"
+    date: "Jun 29-Jul 01, 2022, Jeju"
+    sort_date: "2022-06-29"
     image: /~gangman/assets/images/gallery/KCC2022.jpg
     category: conference
     location: Korea

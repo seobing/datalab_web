@@ -14,21 +14,46 @@ title: Students
   </div>
 
   <!-- Current Students Grid -->
-  <div class="students-grid">
-    {% for student in site.data.students.current_students %}
-    <div class="student-item" data-category="{{ student.category }}"
-         data-research='{{ student.research | jsonify }}'
-         data-education='{{ student.education | jsonify }}'>
-      <div class="student-image">
-        <img src="{{ student.image }}" alt="{{ student.name }}" loading="lazy"/>
-      </div>
-      <div class="student-info">
-        <h3>{{ student.name }}</h3>
-        <p class="position">{{ student.position }}</p>
-      </div>
+  <style>
+    .students-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .students-row .student-item {
+      width: 200px;
+      flex-shrink: 0;
+    }
+  </style>
+
+  {% assign categories = "phd,ms,undergraduate" | split: "," %}
+  {% for category in categories %}
+    <h2>
+      {% if category == "phd" %}Ph.D. Students
+      {% elsif category == "ms" %}M.S. Students
+      {% elsif category == "undergraduate" %}Undergraduate Students
+      {% endif %}
+    </h2>
+    <div class="students-row" data-group="{{ category }}">
+      {% for student in site.data.students.current_students %}
+        {% if student.category == category %}
+        <div class="student-item" data-category="{{ student.category }}"
+            data-research='{{ student.research | jsonify }}'
+            data-education='{{ student.education | jsonify }}'>
+          <div class="student-image">
+            <img src="{{ student.image }}" alt="{{ student.name }}" loading="lazy"/>
+          </div>
+          <div class="student-info">
+            <h3>{{ student.name }}</h3>
+            <p class="position">{{ student.position }}</p>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
+  {% endfor %}
+
 
 
 <!-- 인원 스와이프해서 옆으로 넘기기
