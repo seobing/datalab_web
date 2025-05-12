@@ -21,7 +21,7 @@ C-Hunter is a new clustering algorithm which incorporates knowledge of gene func
 
 ### Procedure for preparing data sets
 
-If you are going to use alreay-made data sets, you don't need to do this procedure.
+If you plan to use a pre-made dataset, you don't need to perform this procedure.
 
 1. Download go.obo text file (include Molecular Function, Biological Process, Cellular) at http://www.geneontology.org/page/download-ontology
 2. Download gene2accession at NCBI, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/

@@ -13,6 +13,24 @@ categories:
     id: etc.
 
 items:
+  - title: Dinner with Alumni on Teacher's Day
+    date: "May 09, 2025, Seoul"
+    sort_date: "2025-05-09"
+    image: /~gangman/assets/images/gallery/TeachersDay.jpg
+    category: etc.
+    location: Seoul
+  - title: RECOMB 2025
+    date: "Apr 26-29, 2025, Seoul"
+    sort_date: "2025-04-29"
+    image: /~gangman/assets/images/gallery/RECOMB2025.jpg
+    category: conference
+    location: Seoul
+  - title: Lotus Latern Parade
+    date: "Apr 26, 2025, Seoul"
+    sort_date: "2025-04-26"
+    image: /~gangman/assets/images/gallery/LotusLaternParade.jpg
+    category: etc.
+    location: Seoul
   - title: Namsan
     date: "Apr 10, 2025, Namsan"
     sort_date: "2025-04-10"

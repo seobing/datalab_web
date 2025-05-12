@@ -26,7 +26,7 @@ title: Students
       flex-shrink: 0;
     }
   </style>
-
+  
   {% assign categories = "phd,ms,undergraduate" | split: "," %}
   {% for category in categories %}
     <h2>

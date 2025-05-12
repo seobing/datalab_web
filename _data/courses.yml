@@ -3,7 +3,7 @@
     courses:
       - name: "CSC4009 Database"
       - name: "CSC2007 Data Structure"
-      - name: "CAI7166 Bio Bigdata Analysis Specialties1"
+      - name: "CAI7166 Special Topic 1 in Bio Bigdata Analysis"
 2024:
   - semester: "2024.02"
     courses:
@@ -27,7 +27,7 @@
     courses:
       - name: "MME2042 Multimedia Data Structure"
       - name: "MME4011 Multimedia Database"
-      - name: "GME7026 Special Topics 2 on Multimedia Engineering"
+      - name: "GME7026 Special Topic 2 on Multimedia Engineering"
 
 2021:
   - semester: "2021.02"
