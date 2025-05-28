@@ -13,6 +13,12 @@ categories:
     id: etc.
 
 items:
+  - title: Lab Meeting!
+    date: "May 28, 2025, Seoul"
+    sort_date: "2025-05-28"
+    image: /~gangman/assets/images/gallery/Lab Meeting in the Subshine.jpg
+    category: etc.
+    location: Dongguk Univ., Seoul
   - title: Dinner with Alumni on Teacher's Day
     date: "May 09, 2025, Seoul"
     sort_date: "2025-05-09"

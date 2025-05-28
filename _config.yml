@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 # url: "https://datalab.dongguk.edu/~gangman" # the base hostname & protocol for your site, e.g. http://example.com
 #url: "https://datalab.dongguk.edu"
 url: ""
-#baseurl: "/~gangman" #로컬
+#.03baseurl: "/~gangman" #로컬
 baseurl: ""
 
 twitter_username: jekyllrb

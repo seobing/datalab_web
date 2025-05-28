@@ -1,4 +1,11 @@
 - category: Journals
+  link: No Link
+  title:
+    'I. Sadriddinov, S. Peng, S. Siet, D. Kim, K. Park, D. Park and G. Yi, 
+    “Optimizations in Enumerating Maximal Balanced Bicliques: Pruning and Vertex Sorting,” 
+    Human-centric Computing and Information Sciences, 2025 (accepted)'
+  year: "2025"
+- category: Journals
   link: https://ieeexplore.ieee.org/abstract/document/10574232
   title:
     S. Ilkhomjon, S. Peng, S. Siet, D. Kim, D. Park and G. Yi, "Algorithm for
