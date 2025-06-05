@@ -87,6 +87,17 @@ current_students:
       - degree: B.S. in Computer Science Engineering (in progress)
         institution: Dongguk University, Korea
         period: 2021.03 - Current
+  
+  - name: Jaewon Jang
+    position: Undergraduate Student
+    category: undergraduate
+    image: /~gangman/assets/images/students/jaewon.jpeg
+    research:
+      - "-"
+    education:
+      - degree: B.S. in Department of Computer Science and Artificial Intelligence (in progress)
+        institution: Dongguk University, Korea
+        period: 2023.03 - Current
 
 part_time_students:
   - name: Hodong Shin
