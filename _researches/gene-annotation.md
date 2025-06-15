@@ -3,6 +3,7 @@ layout: research
 title: Gene Annotation
 slug: gene-annotation
 category: gene-annotation
+type: paper
 date: 2019-12-15
 permalink: /research/gene-annotation/
 thumbnail: /~gangman/assets/images/research/gene-annotation/image.png

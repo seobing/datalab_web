@@ -3,6 +3,7 @@ layout: research
 title: SClassify
 slug: sclassify
 category: sclassify
+type: paper
 date: 2012-08-09
 permalink: /research/sclassify/
 description: Supervised Protein Family Classification and New Family Construction

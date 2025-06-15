@@ -3,6 +3,7 @@ layout: research
 title: DeepPI
 slug: deeppi
 category: deeppi
+type: paper
 date: 2024-02-03
 permalink: /research/deeppi/
 thumbnail: /~gangman/assets/images/research/deeppi/deeppi.png

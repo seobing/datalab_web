@@ -13,7 +13,13 @@ categories:
     id: etc.
 
 items:
-  - title: Lab Meeting!
+  - title: Hanok Village
+    date: "Jun 05, 2025, Seoul"
+    sort_date: "2025-06-05"
+    image: /~gangman/assets/images/gallery/Hanok Village.jpg
+    category: etc.
+    location: Dongguk Univ., Seoul
+  - title: Happy Hours!
     date: "May 28, 2025, Seoul"
     sort_date: "2025-05-28"
     image: /~gangman/assets/images/gallery/Lab Meeting in the Subshine.jpg

@@ -3,6 +3,7 @@ layout: research
 title: Smart Policing
 slug: hotspot
 category: hotspot
+type: paper
 date: 2023-10-16
 permalink: /research/hotspot/
 thumbnail: /~gangman/assets/images/research/hotspot/hotspot.png

@@ -3,6 +3,7 @@ layout: research
 title: C-Hunter
 slug: c-hunter
 category: c-hunter
+type: paper
 date: 2007-05-01
 permalink: /research/c-hunter/
 description: Identifying clusters of functionally related genes in genomes

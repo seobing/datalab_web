@@ -3,6 +3,7 @@ layout: research
 title: cPlot
 slug: cplot
 category: cplot
+type: paper
 date: 2022-09-21
 permalink: /research/cplot/
 thumbnail: /~gangman/assets/images/research/cplot/image.png

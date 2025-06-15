@@ -3,6 +3,7 @@ layout: research
 title: T-MDML
 slug: t-mdml
 category: t-mdml
+type: paper
 date: 2024-12-10
 permalink: /research/t-mdml/
 thumbnail: /~gangman/assets/images/research/t-mdml/t-mdml.png

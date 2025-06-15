@@ -183,6 +183,30 @@ fclose($log_file);
     <br><br><br>-->
 </section>
 
+<section class="home-research-area-section">
+  <div class="container intro-text">
+    <h2>News!</h2>
+    <p>
+      <b>[2025.06]</b> 이승민 졸업생이 (석사과정) '<b>삼성전자</b>'에 최종 합격하였습니다.<br /><br />
+      <b>[2025.05]</b> 김민섭 석사과정이 '<b>서울장학재단</b>: AI 서울테크 대학원 장학금' 지원사업의 장학생으로 선정되었습니다.<br /><br />
+      <!--<b>[2025.05]</b> Paper accepted to <b>KCC 2025</b>: 김민섭, 정지윤, 이여원, 장현진, 박세진 &amp; 이강만, "시계열 안구 움직임 데이터를 활용한 딥러닝 기반 관찰자 상태 분석 시스템 구현"<br /><br />
+      <b>[2025.05]</b> Paper accepted to <b>KCC 2025</b>: 양진경 &amp; 이강만, "PLM 기반 서열 임베딩을 활용한 약물-표적 상호작용 예측"<br /><br />-->
+      <b>[2025.05]</b> Jaewon joined the lab as a undergraduate student<br /><br />
+      <b>[2025.05]</b> Paper accepted to <b>Human-centric Computing and Information Sciences</b>: I. Sadriddinov, S. Peng, S. Siet, D. Kim, K. Park, D. Park and G. Yi, “Optimizations in Enumerating Maximal Balanced Bicliques: Pruning and Vertex Sorting”
+      <br /><br />
+      <b>[2025.03]</b> 양진경 석사과정이 '<b>2025년도 여대학원생 공학연구팀제 심화과정</b>: 약물-표적 상호작용 예측을 위한 그래프 신경망 모델 개발 연구' 지원사업에 선정되었습니다. <br /><br />
+      <b>[2025.03]</b> Sejin joined the lab as a undergraduate student<br /><br />
+      <b>[2025.03]</b> Minseop joined the lab as a master's student<br /><br />
+      <b>[2025.03]</b> Ilkhomjon joined the lab as a Ph.D. student<br /><br />
+      <b>[2025.02]</b> Seungmin graduated with a master's degree<br /><br />
+      <b>[2025.02]</b> Poster accepted to <b>RECOMB 2025</b>: Jinkyung Yang, Yejin Kan and Gangman Yi, “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction Prediction”<br /><br />
+      <b>[2024.12]</b> Paper accepted to <b>AAAI 2025</b>: Dongyeon Kim, Yejin Kan and Gangman Yi, “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br /><br />
+      <b>[2024.08]</b> Yerin graduated with a master's degree<br /><br />
+      <!--<b>[2024.05]</b> Poster accepted to <b>ECCB 2024</b>: Yejin Kan, Jinkyung Yang and Gangman Yi, “Integration of Multi-view Features of Protein Sequences for Improved Protein Function Prediction”<br><br>-->
+    </p>
+  </div>
+</section>
+
 <section class="home-research-section">
   <div class="container">
     <h2>Research</h2>
@@ -254,28 +278,6 @@ fclose($log_file);
     <div class="button-wrapper">
       <a class="show-more-button" href="/~gangman/research">SEE ALL</a>
     </div>
-  </div>
-</section>
-<section class="home-research-area-section">
-  <div class="container intro-text">
-    <h2>News!</h2>
-    <p>
-      <b>[2025.05]</b> 김민섭 석사과정이 '<b>서울장학재단</b>: AI 서울테크 대학원 장학금'에 선정되었습니다.<br /><br />
-      <b>[2025.05]</b> Paper accepted to <b>KCC 2025</b>: 김민섭, 정지윤, 이여원, 장현진, 박세진 &amp; 이강만, "시계열 안구 움직임 데이터를 활용한 딥러닝 기반 관찰자 상태 분석 시스템 구현"<br /><br />
-      <b>[2025.05]</b> Paper accepted to <b>KCC 2025</b>: 양진경 &amp; 이강만, "PLM 기반 서열 임베딩을 활용한 약물-표적 상호작용 예측"<br /><br />
-      <b>[2025.05]</b> Jaewon joined the lab as a undergraduate student<br /><br />
-      <b>[2025.05]</b> Paper accepted to <b>Human-centric Computing and Information Sciences</b>: I. Sadriddinov, S. Peng, S. Siet, D. Kim, K. Park, D. Park and G. Yi, “Optimizations in Enumerating Maximal Balanced Bicliques: Pruning and Vertex Sorting”
-      <br /><br />
-      <b>[2025.03]</b> 양진경 석사과정이 '<b>2025년도 여대학원생 공학연구팀제 심화과정</b>: 약물-표적 상호작용 예측을 위한 그래프 신경망 모델 개발 연구' 지원사업에 선정되었습니다. <br /><br />
-      <b>[2025.03]</b> Sejin joined the lab as a undergraduate student<br /><br />
-      <b>[2025.03]</b> Minseop joined the lab as a master's student<br /><br />
-      <b>[2025.03]</b> Ilkhomjon joined the lab as a Ph.D. student<br /><br />
-      <b>[2025.02]</b> Seungmin graduated with a master's degree<br /><br />
-      <b>[2025.02]</b> Poster accepted to <b>RECOMB 2025</b>: Jinkyung Yang, Yejin Kan and Gangman Yi, “CNGNN-DTI: Integration of Context and Neighbor Information based on Graph Neural Network for Drug-target Interaction Prediction”<br /><br />
-      <b>[2024.12]</b> Paper accepted to <b>AAAI 2025</b>: Dongyeon Kim, Yejin Kan and Gangman Yi, “T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation”<br /><br />
-      <b>[2024.08]</b> Yerin graduated with a master's degree<br /><br />
-      <b>[2024.05]</b> Poster accepted to <b>ECCB 2024</b>: Yejin Kan, Jinkyung Yang and Gangman Yi, “Integration of Multi-view Features of Protein Sequences for Improved Protein Function Prediction”<br /><br />
-    </p>
   </div>
 </section>
 

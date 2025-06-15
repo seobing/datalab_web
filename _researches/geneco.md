@@ -3,6 +3,7 @@ layout: research
 title: geneCo
 slug: geneco
 category: geneco
+type: paper
 date: 2019-01-27
 permalink: /research/geneco/
 thumbnail: /~gangman/assets/images/research/geneco/image.png

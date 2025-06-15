@@ -3,6 +3,7 @@ layout: research
 title: Genome Search Plotter
 slug: genome-search-plotter
 category: genome-search-plotter
+type: paper
 date: 2017-09-13
 permalink: /research/genome-search-plotter/
 thumbnail: /~gangman/assets/images/research/genome-search-plotter/image.png
